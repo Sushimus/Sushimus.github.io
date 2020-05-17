@@ -188,7 +188,8 @@ div.photoContainer {
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
-	background-color: rgba(98,68,56,.5);
+	background-color: rgba(98,68,56,.6);
+	background-clip: padding-box;
 }
 .rexPhotos {
 	margin-bottom: 5px;
