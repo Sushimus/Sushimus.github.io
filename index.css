@@ -16,7 +16,7 @@ html{
 }
 body{
 	margin: 0;
-	height: 120vh;
+	height: 100%;
 }
 h1{
 	padding-top: 20px;
@@ -221,8 +221,8 @@ div.cereal{
 /*<----------------------------------------------Main Pages---------------------------------------------->*/
 div.galleryRex{
 	position: fixed;
-	width: 9.8rem;
-	height: 11rem;
+	width: 26.72vw;
+	height: 30vw;
 	margin-top: 9%;
 	margin-left: 13%;
 	border: 33px solid transparent;
@@ -234,8 +234,8 @@ div.galleryRex:hover{
 }
 div.galleryArt{
 	position: fixed;
-	width: 9.8rem;
-	height: 11rem;
+	width: 26.72vw;
+	height: 30vw;
 	margin-top: 9%;
 	margin-left: 57%;
 	border: 33px solid transparent;
@@ -247,8 +247,8 @@ div.galleryArt:hover{
 }
 div.classBasic{
 	position: fixed;
-	width: 9.8rem;
-	height: 11rem;
+	width: 26.72vw;
+	height: 30vw;
 	margin-top: 9%;
 	margin-left: 13%;
 	background-image: url(classBasic.png);
@@ -263,8 +263,8 @@ div.classBasic:hover{
 }
 div.classAdvance{
 	position: fixed;
-	width: 9.8rem;
-	height: 11rem;
+	width: 26.72vw;
+	height: 30vw;
 	margin-top: 9%;
 	margin-left: 57%;
 	background-image: url(classAdvance.png);
