@@ -364,5 +364,6 @@ div.dropdowncontent{
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 	z-index: 4;
-	background-clip: border-box;
+	background-color: rgba(98,68,56,.6);
+	background-clip: padding-box;
 }
