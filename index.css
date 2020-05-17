@@ -165,10 +165,6 @@ div.cereal{
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 }
-mark.optionContainer{
-	margin-bottom: 150px;
-	position: fixed;
-}
 div.galleryRex{
 	position: fixed;
 	width: 9.8rem;
