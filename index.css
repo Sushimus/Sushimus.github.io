@@ -2,6 +2,8 @@
 	font-family: Maker;
 	src: url(font.woff);
 }
+
+/*<----------------------------------------------General Items---------------------------------------------->*/
 html{
 	margin:0;
 	height: 100%;
@@ -14,8 +16,7 @@ html{
 }
 body{
 	margin: 0;
-	height: 100%;
-	background-color: rgb(250,250,255);
+	height: 120vh;
 }
 h1{
 	padding-top: 20px;
@@ -83,19 +84,6 @@ a{
 	border-style: solid;
 	border-color: transparent;
 }
-mark.cerealReviewButton{
-	background-color: transparent;
-	vertical-align: middle;
-	font-size: .5rem;
-	letter-spacing: 1.75px;
-	line-height: 1.25;
-	color: rgb(245,178,160);
-	text-shadow:
-		1px 0px 2px rgb(100,66,56),
-		0px 1px 2px rgb(100,66,56),
-		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56);
-}
 button{
 	font-family: inherit;
 	background-color: rgba(98,68,56,.5);
@@ -136,142 +124,8 @@ div.banner {
 	z-index:8;
 	width: 100%;
 }
-div.content{
-	z-index: 5;
-	position: absolute;
-	width: 100%;
-}
-div.intro{
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
-	overflow: overlay;
-	background-color: rgba(98,68,56,.6);
-	background-clip: content-box;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.cereal{
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
-	overflow: overlay;
-	background-color: rgba(98,68,56,.6);
-	background-clip: content-box;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.galleryRex{
-	position: fixed;
-	width: 9.8rem;
-	height: 11rem;
-	margin-top: 9%;
-	margin-left: 13%;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.galleryRex:hover{
-	background-color: rgba(0,0,0,.1);
-}
-div.photoContainer {
-	position: absolute;
-	width: 75%;
-	margin-left: 12%;
-	margin-right: 13%;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-	background-color: rgba(98,68,56,.6);
-	background-clip: padding-box;
-}
-.rexPhotos {
-	margin-bottom: 5px;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-}
-.rexColumn {
-	flex: 33%;
-	max-width: 25%;
-	padding: 0 4px;
-}
-.rexColumn img {
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
- 	border-width: 1px;
-	border-style: solid;
-	border-color: rgb(98,68,56);
-}
-@media screen and (max-width: 800px) {
-	.rexColumn {
-		flex: 50%;
-		max-width: 50%;
-	}
-}
-@media screen and (max-width: 600px) {
-	.rexColumn {
-		flex: 100%;
-		max-width: 100%;
-	}
-}
-div.galleryArt{
-	position: fixed;
-	width: 9.8rem;
-	height: 11rem;
-	margin-top: 9%;
-	margin-left: 57%;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.galleryArt:hover{
-	background-color: rgba(0,0,0,.1);
-}
-div.classBasic{
-	position: fixed;
-	width: 9.8rem;
-	height: 11rem;
-	margin-top: 9%;
-	margin-left: 13%;
-	background-image: url(classBasic.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.classBasic:hover{
-	background-color: rgba(0,0,0,.1);
-}
-div.classAdvance{
-	position: fixed;
-	width: 9.8rem;
-	height: 11rem;
-	margin-top: 9%;
-	margin-left: 57%;
-	background-image: url(classAdvance.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.classAdvance:hover{
-	background-color: rgba(0,0,0,.1);
-}
 div.padding150{
 	padding-bottom: 150px;
-}
-div.photoPadding{
-	width: 11%;
 }
 div.dropdown{
 	margin-left: .5rem;
@@ -319,6 +173,180 @@ div.dropdowncontent{
 ::-webkit-scrollbar{
 	width: 0px;
 }
+
+/*<----------------------------------------------Home Page Stuff---------------------------------------------->*/
+div.content{
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+}
+mark.cerealReviewButton{
+	background-color: transparent;
+	vertical-align: middle;
+	font-size: .5rem;
+	letter-spacing: 1.75px;
+	line-height: 1.25;
+	color: rgb(245,178,160);
+	text-shadow:
+		1px 0px 2px rgb(100,66,56),
+		0px 1px 2px rgb(100,66,56),
+		-1px 0px 2px rgb(100,66,56),
+		0px -1px 2px rgb(100,66,56);
+}
+div.intro{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	overflow: overlay;
+	background-color: rgba(98,68,56,.6);
+	background-clip: content-box;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+}
+div.cereal{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	overflow: overlay;
+	background-color: rgba(98,68,56,.6);
+	background-clip: content-box;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+}
+
+/*<----------------------------------------------Main Pages---------------------------------------------->*/
+div.galleryRex{
+	position: fixed;
+	width: 9.8rem;
+	height: 11rem;
+	margin-top: 9%;
+	margin-left: 13%;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+}
+div.galleryRex:hover{
+	background-color: rgba(0,0,0,.1);
+}
+div.galleryArt{
+	position: fixed;
+	width: 9.8rem;
+	height: 11rem;
+	margin-top: 9%;
+	margin-left: 57%;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+}
+div.galleryArt:hover{
+	background-color: rgba(0,0,0,.1);
+}
+div.classBasic{
+	position: fixed;
+	width: 9.8rem;
+	height: 11rem;
+	margin-top: 9%;
+	margin-left: 13%;
+	background-image: url(classBasic.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+}
+div.classBasic:hover{
+	background-color: rgba(0,0,0,.1);
+}
+div.classAdvance{
+	position: fixed;
+	width: 9.8rem;
+	height: 11rem;
+	margin-top: 9%;
+	margin-left: 57%;
+	background-image: url(classAdvance.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+}
+div.classAdvance:hover{
+	background-color: rgba(0,0,0,.1);
+}
+#imgtext {
+	position: absolute;
+	width: 92%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	top: 1rem;
+	color: rgb(245,178,160);
+	text-shadow:
+		1px 0px 2px rgb(100,66,56),
+		0px 1px 2px rgb(100,66,56),
+		-1px 0px 2px rgb(100,66,56),
+		0px -1px 2px rgb(100,66,56);
+	font-size: .5rem;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+	z-index: 4;
+	background-color: rgba(98,68,56,.6);
+	background-clip: padding-box;
+}
+
+/*<----------------------------------------------Gallery of Rex---------------------------------------------->*/
+div.photoContainer {
+	position: absolute;
+	width: 75%;
+	margin-left: 12%;
+	margin-right: 13%;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+	background-color: rgba(98,68,56,.6);
+	background-clip: padding-box;
+}
+.rexPhotos {
+	margin-bottom: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.rexColumn {
+	flex: 33%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+.rexColumn img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+ 	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(98,68,56);
+}
+@media screen and (max-width: 800px) {
+	.rexColumn {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.rexColumn {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+div.photoPadding{
+	width: 11%;
+}
+/*<----------------------------------------------Class Pages---------------------------------------------->*/
 .class {
 	float: left;
 	width: 10%;
@@ -347,24 +375,4 @@ div.dropdowncontent{
 	width: 70%;
 	padding-bottom: 1rem;
 	margin: auto;
-}
-#imgtext {
-	position: absolute;
-	width: 92%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	top: 1rem;
-	color: rgb(245,178,160);
-	text-shadow:
-		1px 0px 2px rgb(100,66,56),
-		0px 1px 2px rgb(100,66,56),
-		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56);
-	font-size: .5rem;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-	z-index: 4;
-	background-color: rgba(98,68,56,.6);
-	background-clip: padding-box;
 }
