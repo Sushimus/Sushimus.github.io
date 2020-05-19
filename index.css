@@ -66,7 +66,12 @@ p{
 		1px 0px 2px rgb(100,66,56),
 		0px 1px 2px rgb(100,66,56),
 		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56);
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
 }
 a{
 	vertical-align: middle;
@@ -78,7 +83,12 @@ a{
 		1px 0px 2px rgb(100,66,56),
 		0px 1px 2px rgb(100,66,56),
 		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56);
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
 	padding: .1rem;
 	border-width: 1px;
 	border-style: solid;
@@ -99,7 +109,12 @@ button{
 		1px 0px 2px rgb(100,66,56),
 		0px 1px 2px rgb(100,66,56),
 		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56);
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
 }
 input{
 	font-family: inherit;
@@ -113,10 +128,15 @@ input{
 	line-height: 1.25;
 	color: rgb(245,178,160);
 	text-shadow:
-		1px 0px 2px rgb(98,68,56),
-		0px 1px 2px rgb(98,68,56),
-		-1px 0px 2px rgb(98,68,56),
-		0px -1px 2px rgb(98,68,56);
+		1px 0px 2px rgb(100,66,56),
+		0px 1px 2px rgb(100,66,56),
+		-1px 0px 2px rgb(100,66,56),
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
 }
 table{
 	margin: auto;
@@ -159,15 +179,15 @@ div.dropdowncontent{
 }
 .dropdowncontent a:hover {
 	text-shadow:
-		1px 0px 2px rgb(100,66,56),
-		0px 1px 2px rgb(100,66,56),
-		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56),
+		1px 0px 3px rgb(100,66,56),
+		0px 1px 3px rgb(100,66,56),
+		-1px 0px 3px rgb(100,66,56),
+		0px -1px 3px rgb(100,66,56),
 		
-		1px 1px 2px rgb(100,66,56),
-		-1px 1px 2px rgb(100,66,56),
-		1px -1px 2px rgb(100,66,56),
-		-1px -1px 2px rgb(100,66,56);
+		1px 1px 3px rgb(100,66,56),
+		-1px 1px 3px rgb(100,66,56),
+		1px -1px 3px rgb(100,66,56),
+		-1px -1px 3px rgb(100,66,56);
 	background-color: rgba(0,0,0,.1);
 	border-width: 1px;
 	border-style: solid;
@@ -200,7 +220,12 @@ mark.cerealReviewButton{
 		1px 0px 2px rgb(100,66,56),
 		0px 1px 2px rgb(100,66,56),
 		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56);
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
 }
 div.intro{
 	position: relative;
@@ -334,27 +359,6 @@ div.rainworld{
 div.moonhunters:hover{
 	background-color: rgba(0,0,0,.1);
 }
-#imgtext {
-	position: absolute;
-	width: 92%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	top: 1rem;
-	color: rgb(245,178,160);
-	text-shadow:
-		1px 0px 2px rgb(100,66,56),
-		0px 1px 2px rgb(100,66,56),
-		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56);
-	font-size: .5rem;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-	z-index: 4;
-	background-color: rgba(98,68,56,.6);
-	background-clip: padding-box;
-}
-
 /*<----------------------------------------------Gallery of Rex---------------------------------------------->*/
 div.photoContainer {
 	position: absolute;
@@ -432,4 +436,29 @@ div.photoPadding{
 	width: 70%;
 	padding-bottom: 1rem;
 	margin: auto;
+}
+#imgtext {
+	position: absolute;
+	width: 92%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	top: 1rem;
+	color: rgb(245,178,160);
+	text-shadow:
+		1px 0px 2px rgb(100,66,56),
+		0px 1px 2px rgb(100,66,56),
+		-1px 0px 2px rgb(100,66,56),
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
+	font-size: .5rem;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+	z-index: 4;
+	background-color: rgba(98,68,56,.6);
+	background-clip: padding-box;
 }
