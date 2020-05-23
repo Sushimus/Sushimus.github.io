@@ -95,11 +95,10 @@ a{
 	border-color: transparent;
 }
 button{
+	cursor: pointer;
 	font-family: inherit;
-	background-color: rgba(98,68,56,.5);
-	border-width: 1px;
-	border-style: solid;
-	border-color: rgb(98,68,56);
+	background-color: transparent;
+	border: none;
 	vertical-align: middle;
 	font-size: .5rem;
 	letter-spacing: 1.75px;
@@ -118,7 +117,7 @@ button{
 }
 input{
 	font-family: inherit;
-	background-color: rgba(98,68,56,.5);
+	background-color: rgba(48,33,27,.5);
 	border-width: 1px;
 	border-style: solid;
 	border-color: rgb(98,68,56);
@@ -137,15 +136,6 @@ input{
 		-1px 1px 2px rgb(100,66,56),
 		1px -1px 2px rgb(100,66,56),
 		-1px -1px 2px rgb(100,66,56);
-}
-table{
-	margin: auto;
-	width: 100vw;
-	padding-bottom: 5%;
-}
-td{
-	padding-left: 10%;
-	padding-top: 5%;
 }
 div.banner {
 	margin-top: -47px;
@@ -233,7 +223,7 @@ div.intro{
 	margin-right: auto;
 	width: 60%;
 	overflow: overlay;
-	background-color: rgba(98,68,56,.6);
+	background-color: rgba(48,33,27,.6);
 	background-clip: content-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
@@ -245,7 +235,7 @@ div.cereal{
 	margin-right: auto;
 	width: 60%;
 	overflow: overlay;
-	background-color: rgba(98,68,56,.6);
+	background-color: rgba(48,33,27,.6);
 	background-clip: content-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
@@ -253,7 +243,17 @@ div.cereal{
 }
 
 /*<----------------------------------------------Main Pages---------------------------------------------->*/
-div.galleryRex{
+table.optionPreview{
+	margin: auto;
+	width: 100vw;
+	padding-bottom: 5%;
+}
+td.optionPreview{
+	padding-top: 5%;
+}
+div.option{
+	padding: 0px;
+	cursor: pointer;
 	position: relative;
 	width: 26.72vw;
 	height: 30vw;
@@ -261,103 +261,9 @@ div.galleryRex{
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 }
-div.galleryRex:hover{
+div.option:hover{
 	background-color: rgba(0,0,0,.1);
-}
-div.galleryArt{
-	position: relative;
-	width: 26.72vw;
-	height: 30vw;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.galleryArt:hover{
-	background-color: rgba(0,0,0,.1);
-}
-div.classBasic{
-	position: relative;
-	width: 26.72vw;
-	height: 30vw;
-	background-image: url(classBasic.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.classBasic:hover{
-	background-color: rgba(0,0,0,.1);
-}
-div.classAdvance{
-	position: relative;
-	width: 26.72vw;
-	height: 30vw;
-	background-image: url(classAdvance.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.classAdvance:hover{
-	background-color: rgba(0,0,0,.1);
-}
-div.hyperlight{
-	position: relative;
-	width: 26.72vw;
-	height: 30vw;
-	background-image: url(hyperlight.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.hyperlight:hover{
-	background-color: rgba(0,0,0,.1);
-}
-div.moonhunters{
-	position: relative;
-	width: 26.72vw;
-	height: 30vw;
-	background-image: url(moonhunters.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.moonhunters:hover{
-	background-color: rgba(0,0,0,.1);
-}
-div.titansouls{
-	position: relative;
-	width: 26.72vw;
-	height: 30vw;
-	background-image: url(titansouls.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.titansouls:hover{
-	background-color: rgba(0,0,0,.1);
-}
-div.rainworld{
-	position: relative;
-	width: 26.72vw;
-	height: 30vw;
-	background-image: url(rainworld.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-}
-div.moonhunters:hover{
-	background-color: rgba(0,0,0,.1);
+	cursor: pointer;
 }
 /*<----------------------------------------------Gallery of Rex---------------------------------------------->*/
 div.photoContainer {
@@ -370,7 +276,7 @@ div.photoContainer {
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
-	background-color: rgba(98,68,56,.6);
+	background-color: rgba(48,33,27,.6);
 	background-clip: padding-box;
 }
 .rexPhotos {
@@ -411,6 +317,7 @@ div.photoPadding{
 .class {
 	float: left;
 	width: 10%;
+	cursor: pointer;
 }
 .class img {
 	opacity: 0.8;
@@ -459,6 +366,36 @@ div.photoPadding{
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 	z-index: 4;
-	background-color: rgba(98,68,56,.6);
+	background-color: rgba(48,33,27,.6);
 	background-clip: padding-box;
+}
+/*<----------------------------------------------Mods---------------------------------------------->*/
+div.rothReview{
+	z-index: 5;
+	position: absolute;
+	margin-top: 2.5rem;
+	margin-left: 9%;
+	margin-right: 10%;
+	margin-bottom: 1.5rem;
+	width: 80%;
+	background-color: rgba(48,33,27,.6);
+	background-clip: content-box;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+}
+div.rothReview img{
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(98,68,56);
+	margin: .5rem;
+}
+td.roth{
+	padding-top: 3vw;
+}
+p.rothWords{
+	background-color: rgba(48,33,27,.6);
+	margin-right: 1.5vw;
+	margin-left: 1.5vw;
+	padding: 10px;
 }
