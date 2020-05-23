@@ -199,7 +199,7 @@ div.content{
 	position: absolute;
 	width: 100%;
 }
-mark.cerealReviewButton{
+mark.homeButton{
 	background-color: transparent;
 	vertical-align: middle;
 	font-size: .5rem;
@@ -222,26 +222,72 @@ div.intro{
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	overflow: overlay;
-	background-color: rgba(48,33,27,.6);
-	background-clip: content-box;
+	background-color: rgba(48,33,27,.8);
+	background-clip: padding-box;
+	border: 33px solid transparent;
+	border-image: url(contentborder2.png) 11 repeat;
+	border-image-slice: 17;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+div.monthlyIdea{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	background-color: rgba(48,33,27,.8);
+	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+div.randomIdea{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	background-color: rgba(48,33,27,.8);
+	background-clip: padding-box;
+	border: 33px solid transparent;
+	border-image: url(contentborder1.png) 11 repeat;
+	border-image-slice: 17;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 div.cereal{
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	overflow: overlay;
-	background-color: rgba(48,33,27,.6);
-	background-clip: content-box;
+	background-color: rgba(48,33,27,.8);
+	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
-
+a.gameIdeas{
+	vertical-align: middle;
+	font-size: .5rem;
+	letter-spacing: 1.75px;
+	line-height: 1.25;
+	color: rgb(255,186,167);
+	text-shadow:
+		1px 0px 2px rgb(100,66,56),
+		0px 1px 2px rgb(100,66,56),
+		-1px 0px 2px rgb(100,66,56),
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
+	text-decoration: none;
+	padding: none;
+}
 /*<----------------------------------------------Main Pages---------------------------------------------->*/
 table.optionPreview{
 	margin: auto;
