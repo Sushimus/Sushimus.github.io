@@ -23,7 +23,7 @@ h1{
 	padding-bottom: 10px;
 	color: rgb(242,146,207);
 	font-size: .8rem;
-	letter-spacing: 3.5px;
+	letter-spacing: 3px;
 	text-shadow:
 		1px 0px 2px rgb(100,66,56),
 		0px 1px 2px rgb(100,66,56),
@@ -59,7 +59,7 @@ h1{
 p{
 	vertical-align: middle;
 	font-size: .5rem;
-	letter-spacing: 1.75px;
+	letter-spacing: 1.5px;
 	line-height: 1.25;
 	color: rgb(255,186,167);
 	text-shadow:
@@ -222,7 +222,8 @@ div.intro{
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	background-color: rgba(48,33,27,.8);
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
 	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder2.png) 11 repeat;
@@ -235,7 +236,8 @@ div.monthlyIdea{
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	background-color: rgba(48,33,27,.8);
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
 	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
@@ -248,7 +250,8 @@ div.randomIdea{
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	background-color: rgba(48,33,27,.8);
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
 	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
@@ -261,7 +264,8 @@ div.cereal{
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	background-color: rgba(48,33,27,.8);
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
 	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
@@ -412,7 +416,8 @@ div.photoPadding{
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 	z-index: 4;
-	background-color: rgba(48,33,27,.6);
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
 	background-clip: padding-box;
 }
 /*<----------------------------------------------Mods---------------------------------------------->*/
@@ -424,8 +429,9 @@ div.rothReview{
 	margin-right: 10%;
 	margin-bottom: 1.5rem;
 	width: 80%;
-	background-color: rgba(48,33,27,.6);
-	background-clip: content-box;
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
+	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
@@ -454,8 +460,9 @@ div.gameReview{
 	margin-right: 10%;
 	margin-bottom: 1.5rem;
 	width: 80%;
-	background-color: rgba(48,33,27,.6);
-	background-clip: content-box;
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
+	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
@@ -484,8 +491,9 @@ div.gameIdea{
 	margin-right: 10%;
 	margin-bottom: 1.5rem;
 	width: 80%;
-	background-color: rgba(48,33,27,.8);
-	background-clip: content-box;
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
+	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
