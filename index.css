@@ -140,7 +140,7 @@ input{
 div.banner {
 	margin-top: -47px;
 	position: fixed;
-	z-index:8;
+	z-index: 7;
 	width: 100%;
 }
 div.padding150{
@@ -188,6 +188,27 @@ div.dropdowncontent{
 }
 .dropdown:hover .dropdownbutton{
 	background-color: none;
+}
+div.goBack {
+	margin-left: 2rem;
+	margin-top: .05rem;
+	position: fixed;
+	z-index: 8;
+	height: .8rem;
+	width: .8rem;
+}
+input.goBackButton {
+	height: .8rem;
+	width: .8rem;
+	background-image: url(buttons/goBackButton.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(98,68,56);
+}
+input.goBackButton:hover {
+	cursor: pointer;
 }
 ::-webkit-scrollbar{
 	width: 0px;
@@ -429,8 +450,7 @@ div.rothReview{
 	margin-right: 10%;
 	margin-bottom: 1.5rem;
 	width: 80%;
-	background: url(dither.png), rgba(48,33,27,.8);
-	background-size: 1vw;
+	background-color: rgba(48,33,27,.6);
 	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
@@ -439,14 +459,16 @@ div.rothReview{
 div.rothReview img{
 	border-width: 1px;
 	border-style: solid;
-	border-color: rgb(98,68,56);
+	border: url(dither.png), rgb(98,68,56);
 	margin: .5rem;
 }
 td.roth{
 	padding-top: 3vw;
 }
 p.rothWords{
-	background-color: rgba(48,33,27,.6);
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
+	background-clip: padding-box;
 	margin-right: 1.5vw;
 	margin-left: 1.5vw;
 	padding: 10px;
