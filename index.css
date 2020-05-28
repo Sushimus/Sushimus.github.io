@@ -375,7 +375,7 @@ a.gameIdeas{
 /*<----------------------------------------------Main Pages---------------------------------------------->*/
 table.optionPreview{
 	margin: auto;
-	width: 100vw;
+	width: 90vw;
 	padding-bottom: 5%;
 }
 td.optionPreview{
@@ -385,8 +385,8 @@ div.option{
 	padding: 0px;
 	cursor: pointer;
 	position: relative;
-	width: 26.72vw;
-	height: 30vw;
+	width: 24.03vw;
+	height: 27vw;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
