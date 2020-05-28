@@ -401,11 +401,10 @@ p.optionText {
 	font-size: 1.5vw;
 	margin-top: -14.5%;
 	margin-left: 6%;
-	background: url(buttons/optionTextBack.png);
+	background-color: rgb(246,209,205);
 	background-size: cover;
 	background-clip: border-box;
-	border: .25vw solid transparent;
-	border-image: url(buttons/optionTextBackBorder.png) 2 repeat;
+	border: .25vw solid rgb(216,178,174);
 	width: 12vw;
 	height: 3vw;
 	padding-top: 1vw;
