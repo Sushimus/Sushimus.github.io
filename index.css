@@ -395,6 +395,21 @@ div.option:hover{
 	background-color: rgba(0,0,0,.1);
 	cursor: pointer;
 }
+p.optionText {
+	position: fixed;
+	z-index: 10;
+	font-size: 1.5vw;
+	margin-top: -14.5%;
+	margin-left: 6%;
+	background: url(buttons/optionTextBack.png);
+	background-size: cover;
+	background-clip: border-box;
+	border: .25vw solid transparent;
+	border-image: url(buttons/optionTextBackBorder.png) 2 repeat;
+	width: 12vw;
+	height: 3vw;
+	padding-top: 1vw;
+}
 /*<----------------------------------------------Gallery of Rex---------------------------------------------->*/
 div.photoContainer {
 	position: absolute;
