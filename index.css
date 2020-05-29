@@ -339,20 +339,6 @@ div.randomIdea{
 	padding-left: 1vw;
 	padding-right: 1vw;
 }
-div.cereal{
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
-	background: url(dither.png), rgba(48,33,27,.8);
-	background-size: 1vw;
-	background-clip: padding-box;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-	padding-left: 1vw;
-	padding-right: 1vw;
-}
 a.gameIdeas{
 	vertical-align: middle;
 	font-size: .5rem;
@@ -399,7 +385,7 @@ p.optionText {
 	position: fixed;
 	z-index: 10;
 	font-size: 1.5vw;
-	margin-top: -14.5%;
+	margin-top: -15.8%;
 	margin-left: 6%;
 	background-color: rgb(246,209,205);
 	background-size: cover;
