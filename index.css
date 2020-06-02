@@ -245,8 +245,9 @@ div.overlayText{
 	position: absolute;
 	top: 40%;
 	left: 50%;
-	width: 16vw;
-	height: 10vw;
+	width: auto;
+	height: auto;
+	padding: 1vw;
 	font-size: .5rem;
 	letter-spacing: 1.5px;
 	line-height: 1.25;
