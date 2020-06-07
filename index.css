@@ -434,6 +434,9 @@ div.photoContainer {
 		flex: 50%;
 		max-width: 50%;
 	}
+	body{
+		background-color: red;
+	}
 }
 @media screen and (max-width: 600px) {
 	.rexColumn {
