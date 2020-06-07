@@ -3,7 +3,7 @@
 	src: url(font.woff);
 }
 /*<----------------------------------------------Scaling Stuff---------------------------------------------->*/
-@media screen and (max-width: 800px) {
+@media screen and (max-aspect-ratio: 16/9) {
 	.rexColumn {
 		flex: 100%;
 		max-width: 100%;
@@ -15,7 +15,7 @@
 		width: 185%;
 	}
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-aspect-ratio: 16/9) {
 	.rexColumn {
 		flex: 100%;
 		max-width: 100%;
