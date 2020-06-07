@@ -37,7 +37,7 @@ html{
 	image-rendering: pixelated;
 	image-rendering: crisp-edges;
 	image-rendering: -moz-crisp-edges;
-	background-size: cover;
+	background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
