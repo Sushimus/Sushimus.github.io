@@ -2,7 +2,31 @@
 	font-family: Maker;
 	src: url(font.woff);
 }
-
+/*<----------------------------------------------Scaling Stuff---------------------------------------------->*/
+@media screen and (max-width: 800px) {
+	.rexColumn {
+		flex: 100%;
+		max-width: 100%;
+	}
+	html{
+		background-image: url(background2.png);
+	}
+	div.contactMe{
+		width: 185%;
+	}
+}
+@media screen and (min-width: 800px) {
+	.rexColumn {
+		flex: 100%;
+		max-width: 100%;
+	}
+	html{
+		background-image: url(background1.png);
+	}
+	div.contactMe{
+		width: 196%;
+	}
+}
 /*<----------------------------------------------General Items---------------------------------------------->*/
 html{
 	margin:0;
@@ -13,6 +37,9 @@ html{
 	image-rendering: pixelated;
 	image-rendering: crisp-edges;
 	image-rendering: -moz-crisp-edges;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 body{
 	margin: 0;
@@ -212,11 +239,10 @@ input.goBackButton:hover {
 }
 div.contactMe {
 	margin-top: .05rem;
-	float: left;
+	margin-right: .5rem;
 	position: fixed;
 	z-index: 7;
 	height: .8rem;
-	width: 196%;
 }
 input.contact {
 	height: .8rem;
@@ -428,21 +454,6 @@ div.photoContainer {
  	border-width: 1px;
 	border-style: solid;
 	border-color: rgb(98,68,56);
-}
-@media screen and (max-width: 800px) {
-	.rexColumn {
-		flex: 50%;
-		max-width: 50%;
-	}
-	body{
-		background-color: red;
-	}
-}
-@media screen and (max-width: 600px) {
-	.rexColumn {
-		flex: 100%;
-		max-width: 100%;
-	}
 }
 div.photoPadding{
 	width: 11%;
