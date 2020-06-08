@@ -14,6 +14,9 @@
 	div.contactMe{
 		width: 185%;
 	}
+	td.optionPreview{
+		padding-top: 5%;
+	}
 }
 @media screen and (min-aspect-ratio: 16/9) {
 	.rexColumn {
@@ -25,6 +28,9 @@
 	}
 	div.contactMe{
 		width: 196%;
+	}
+	td.optionPreview{
+		padding-top: 5%;
 	}
 }
 /*<----------------------------------------------General Items---------------------------------------------->*/
@@ -38,6 +44,9 @@ html{
 	image-rendering: crisp-edges;
 	image-rendering: -moz-crisp-edges;
 	background-size: 100vw 100vh;
+	-webkit-background-size: 100vw 100vh;
+	-moz-background-size: 100vw 100vh;
+	-o-background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -391,9 +400,6 @@ table.optionPreview{
 	width: 90vw;
 	padding-bottom: 5%;
 }
-td.optionPreview{
-	padding-top: 5%;
-}
 div.option{
 	padding: 0px;
 	cursor: pointer;
@@ -515,40 +521,26 @@ div.photoPadding{
 	background-size: 1vw;
 	background-clip: padding-box;
 }
-/*<----------------------------------------------Mods---------------------------------------------->*/
-div.rothReview{
-	z-index: 5;
-	position: absolute;
-	margin-top: 2.5rem;
-	margin-left: 9%;
-	margin-right: 10%;
-	margin-bottom: 1.5rem;
-	width: 80%;
-	background-color: rgba(48,33,27,.6);
-	background-clip: padding-box;
-	border: 33px solid transparent;
+/*<----------------------------------------------Game Reviews | Mods---------------------------------------------->*/
+table.info{
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+}
+td.infoData{
+	padding-top: 3vw;
+}
+td.infoImage{
+	background: url(flavourStick.png);
+	background-size: 21px;
+	background-repeat: no-repeat repeat;
+	background-position: center;
+}
+td.infoImage img{
+	border: 30px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 }
-div.rothReview img{
-	border-width: 1px;
-	border-style: solid;
-	border: url(dither.png), rgb(98,68,56);
-	margin: .5rem;
-}
-td.roth{
-	padding-top: 3vw;
-}
-p.rothWords{
-	background: url(dither.png), rgba(48,33,27,.8);
-	background-size: 1vw;
-	background-clip: padding-box;
-	margin-right: 1.5vw;
-	margin-left: 1.5vw;
-	padding: 10px;
-}
-/*<----------------------------------------------Game Reviews---------------------------------------------->*/
-div.gameReview{
+div.infoReview{
 	z-index: 5;
 	position: absolute;
 	margin-top: 2.5rem;
@@ -563,17 +555,10 @@ div.gameReview{
 	border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 }
-div.gameReview img{
-	border-width: 1px;
-	border-style: solid;
-	border-color: rgb(98,68,56);
-	margin: .5rem;
-}
-td.gameData{
-	padding-top: 3vw;
-}
-p.gameWords{
-	background-color: rgba(48,33,27,.6);
+p.infoWords{
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
+	background-clip: padding-box;
 	margin-right: 1.5vw;
 	margin-left: 1.5vw;
 	padding: 10px;
