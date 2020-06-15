@@ -3,7 +3,7 @@ var ideas = [
 	"<br>",
 	
 	"A plague that evolves humanity for the better."+"<br>"+
-	"The real question is how people react. .",
+	"<br>",
 	
 	"A horror game with no monster, only cute creatures."+"<br>"+
 	"The real monster turns out to be the player all along. .",
@@ -26,35 +26,35 @@ var ideas = [
 	"A city builder where you play as aliens slowly taking over earth"+"<br>"+
 	"<br>",
 	
-	"A creature collecting game where combat revolves around each creature having a 'deck'."+"<br>"+
-	"This deck gets added to or modified when the creature levels up",
+	"A creature collecting game where after each creature is defeated the winning creature takes a part of them."+"<br>"+
+	"<br>",
 	
-	"Idea 11"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A space adventure focused on wormholes through pocket dimensions"+"<br>"+
+	"<br>",
 	
-	"Idea 12"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A medieval rpg where magic is actually technology from humanity before their end"+"<br>"+
+	"<br>",
 	
-	"Idea 13"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A turn based racing game"+"<br>"+
+	"<br>",
 	
-	"Idea 14"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A strategy game where you play as plants trying to drive humans from the rainforest"+"<br>"+
+	"<br>",
 	
-	"Idea 15"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"An open world sandbox where monsters scale with how much you alter the world"+"<br>"+
+	"<br>",
 
-	"Idea 16"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"An FPS with base capturing, with each captured based spawning AI to defend it"+"<br>"+
+	"<br>",
 	
-	"Idea 17"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A train game focused on interstellar cargo shipment"+"<br>"+
+	"<br>",
 	
-	"Idea 18"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A god game where you control creatures, none of which are carnivores."+"<br>"+
+	"Might have to find interesting ways to substitute them. .",
 	
-	"Idea 19"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A spaceship mechanic simulator"+"<br>"+
+	"<br>",
 	
 	"Idea 20"+"<br>"+
 	"DECENT IDEA GOES HERE",
