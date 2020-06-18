@@ -56,98 +56,98 @@ var ideas = [
 	"A spaceship mechanic simulator"+"<br>"+
 	"<br>",
 	
-	"Idea 20"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"An action rpg set in a steampunk universe where luddites, the working class, and entrepreneurs' henchmen"+"<br>"+
+	"battle for control of technologic progression",
 	
-	"Idea 21"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A rouguelike where you need to lead baby slimes to safety"+"<br>"+
+	"<br>",
 	
-	"Idea 22"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A tactical rpg set in the future."+"<br>"+
+	"Your objective is to end the last monarchy",
 	
-	"Idea 23"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A sandbox rpg set in a literal sandbox."+"<br>"+
+	"The game is themed around a child's imagination, where random objects are seen as so much more. .",
 	
-	"Idea 24"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A first-person party-based rpg where you play as a slime."+"<br>"+
+	"When you take enough damage you split and your party size grows, but each new member is half as strong as the whole",
 	
-	"Idea 25"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A life sim based around technologically advanced dolphins"+"<br>"+
+	"<br>",
 
-	"Idea 26"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A vehicle sim based around piloting alien spacecraft with strange mechanics."+"<br>"+
+	"For added hecticness having friends help would be interesting",
 	
-	"Idea 27"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A 4X strategy where you play as parasites slowly consuming all life on earth"+"<br>"+
+	"<br>",
 	
-	"Idea 28"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"An rts where a sentient planet protests your escalated resource extraction."+"<br>"+
+	"As you extract more the planet tries harder to remove you",
 	
-	"Idea 29"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"An rtt where you play as politicions trying to secure people's votes"+"<br>"+
+	"<br>",
 	
-	"Idea 30"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"An artillery game that uses different types of lights and mirrors"+"<br>"+
+	"to drive away photophobic creatures",
 	
-	"Idea 31"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A tower defense set in the backyard during a bbq."+"<br>"+
+	"You play as pest control products repelling pests",
 	
-	"Idea 32"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A tbs where you play as an investigation team trying to catch"+"<br>"+
+	"a serial killer, or visa versa",
 	
-	"Idea 33"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A platformer that uses roll out carpets to get around"+"<br>"+
+	"<br>",
 	
-	"Idea 34"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A shooter where you play as aliens repelling human colonists"+"<br>"+
+	"<br>",
 	
-	"Idea 35"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A fighting game based around microbiology"+"<br>"+
+	"<br>",
 
-	"Idea 36"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A beat-em up where you play as an agry housewife upset"+"<br>"+
+	"at horrible insurance phone operators",
 	
-	"Idea 37"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A stealth game where you play as a small child"+"<br>"+
+	"trying to get late night snacks",
 	
-	"Idea 38"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A survival game set in prehistoric ireland,"+"<br>"+
+	"mythical creatures included",
 	
-	"Idea 39"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A rhythm game where you play as the lead triangle/tambourine of"+"<br>"+
+	"an up and coming indie metal band",
 	
-	"Idea 40"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A metroidvania set in a bureaucratic hellscape."+"<br>"+
+	"Your goal is to cut through all that stupid red tape",
 	
-	"Idea 41"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A text adventure with a core mechanic being the player needs"+"<br>"+
+	"to say verbs into a mic to make them happen",
 	
-	"Idea 42"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A point and click adventure set in deep space."+"<br>"+
+	"Also you're a sentient rock.",
 	
-	"Idea 43"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A visual novel detailing the struggle of male rape"+"<br>"+
+	"<br>",
 	
-	"Idea 44"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A real-time 3D where you play as monkeys driving an invasive"+"<br>"+
+	"new predator out of your home",
 	
-	"Idea 45"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A logic game set in the the near future, you play as hackers"+"<br>"+
+	"trying to defuse remote terrorist weapons",
 
-	"Idea 46"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A trivia game based around 14th century asia"+"<br>"+
+	"<br>",
 	
-	"Idea 47"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A board game with a core mechanic being the board itself folds"+"<br>"+
+	"as the game progresses to reveal new areas",
 	
-	"Idea 48"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"A card game where you play as electricians trying to wire up a robot correctly."+"<br>"+
+	"Each card would be a peice like a 5 kilo ohm resistor",
 	
-	"Idea 49"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"An idle game themed around growing new biomes on a planet"+"<br>"+
+	"<br>",
 	
-	"Idea 50"+"<br>"+
-	"DECENT IDEA GOES HERE",
+	"An art game detailing all the emotions of experiencing your first true love"+"<br>"+
+	"<br>",
 ]
 
 function getIdea() {
