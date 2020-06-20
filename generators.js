@@ -1,3 +1,5 @@
+//------------------------------------------------------------------------------------------------------Idea Generator Start Here------------------------------------------------------------------------------------------------------
+
 var ideas = [
 	"A post-apocalyptic game where you play as the pets left behind"+"<br>"+
 	"<br>",
@@ -163,4 +165,120 @@ function on() {
 
 function off() {
   document.getElementById("contactOverlay").style.display = "none";
+}
+
+//------------------------------------------------------------------------------------------------------Random Creature Start Here------------------------------------------------------------------------------------------------------
+
+var creatureAdjectives = [
+	"small",
+	"large",
+	"agressive",
+	"spiritual",
+	"mystic",
+	"albino",
+	"massive",
+	"gigantic",
+	"huge",
+	"miniscule",
+	"tiny",
+	"dwarf",
+]
+
+function getCreatureAdjective() {
+	var randomNumber = Math.floor(Math.random() * (creatureAdjectives.length));
+	document.getElementById('creatureAdjective').innerHTML = "featuring a(n)" + " " + creatureAdjectives[randomNumber];
+}
+
+var bodyAdjectives = [
+	"large-eyed",
+	"small-eyed",
+	"wide-eyed",
+	"narrow-eyed",
+	"one-eyed",
+	"two-eyed",
+	"three-eyed",
+	"four-eyed",
+	"five-eyed",
+	"six-eyed",
+	"seven-eyed",
+	"eight-eyed",
+	"large-limbed",
+	"small-limbed",
+	"wide-limbed",
+	"narrow-limbed",
+	"two-limbed",
+	"four-limbed",
+	"six-limbed",
+	"eight-limbed",
+	"large-eared",
+	"small-eared",
+	"wide-eared",
+	"narrow-eared",
+	"one-eared",
+	"two-eared",
+	"four-eared",
+	"six-eared",
+	"eight-eared",
+]
+
+function getBodyAdjective() {
+	var randomNumber = Math.floor(Math.random() * (bodyAdjectives.length));
+	document.getElementById('bodyAdjective').innerHTML = bodyAdjectives[randomNumber];
+}
+
+var creatures = [
+	"deer",
+	"moose",
+	"antelope",
+	"caribou",
+	"beaver",
+	"wolverine",
+	"muskrat",
+	"raccoon",
+	"prairie dog",
+	"bear",
+	"squirrel",
+	"bison",
+	"lynx",
+	"armadillo",
+	"alligator",
+	"coati",
+	"fox",
+	"coyote",
+	"opossum",
+	"robin",
+	"cardinal",
+	"eagle",
+	"finch",
+	"lark",
+]
+
+function getCreature() {
+	var randomNumber = Math.floor(Math.random() * (creatures.length));
+	document.getElementById('creature').innerHTML = creatures[randomNumber];
+}
+
+//------------------------------------------------------------------------------------------------------Random Setting Start Here------------------------------------------------------------------------------------------------------
+
+var settingAdjectives = [
+	"desolate",
+	"overgrown",
+	"barren",
+]
+
+function getSettingAdjective() {
+	var randomNumber = Math.floor(Math.random() * (settingAdjectives.length));
+	document.getElementById('settingAdjective').innerHTML = "set in a(n)" + " " + settingAdjectives[randomNumber];
+}
+
+var settings = [
+	"city",
+	"post-apocalyptic city",
+	"galaxy",
+	"post-apocalyptic galaxy",
+]
+
+function getSetting() {
+	var randomNumber = Math.floor(Math.random() * (settings.length));
+	document.getElementById('setting').innerHTML = settings[randomNumber];
 }

@@ -34,6 +34,7 @@
 </div>
 
 <div class= "content">
+
 <div class= "padding150"></div>
 
 <!------------------------------------------------------------------------------------------Introduction------------------------------------------------------------------------------------------>
@@ -42,8 +43,9 @@
 		Hey guys! Welcome to this website I cobbled together.<br>
 		Feel free to explore, I've probably hidden a few things somewhere around here...<br><br>
 		Also make sure you visit the Gallery of Rex if this is your first time visiting, it's worth the checking out.
-	<p>
+	</p>
 </div>
+
 <div class= "padding150"></div>
 
 <!------------------------------------------------------------------------------------------Monthly Idea------------------------------------------------------------------------------------------>
@@ -141,16 +143,30 @@
 		<a href= "gameIdeas.html" class="gameIdeas">Click me for previous ideas</a>
 	</p>
 </div>
+
 <div class= "padding150"></div>
 
 <!------------------------------------------------------------------------------------------Idea Generator------------------------------------------------------------------------------------------>
-<div class= "randomIdea">
+<div class= "random">
+<p><u>Mildly Useful Randomizers</u></p>
 <p id= "idea"></p>
 <mark class= "homeButton">
-<button onclick= "getIdea()">Click me for a random idea</button>
+<button onclick= "getIdea()">Click me for an idea</button>
+</mark>
+
+<p><mark class= "random" id= "creatureAdjective"></mark> <mark class= "random"id= "bodyAdjective"></mark> <mark class= "random" id= "creature"></mark></p>
+<mark class= "homeButton">
+<button onclick= "getCreatureAdjective();getBodyAdjective();getCreature();">Click me for a creature</button>
+</mark>
+
+<p><mark class= "random" id= "settingAdjective"></mark> <mark class= "random" id= "setting"></mark></p>
+<mark class= "homeButton">
+<button onclick= "getSettingAdjective();getSetting();">Click me for a setting</button>
 </mark>
 </div>
+
 <div class= "padding150"></div>
 
+</div>
 </body>
 </html>
