@@ -71,7 +71,7 @@ var ideas = [
 	"The game is themed around a child's imagination, where random objects are seen as so much more. .",
 	
 	"A first-person party-based rpg where you play as a slime."+"<br>"+
-	"When you take enough damage you split and your party size grows, but each new member is half as strong as the whole",
+	"When you take enough damage you split and your party size grows, but each new member is half as strong",
 	
 	"A life sim based around technologically advanced dolphins"+"<br>"+
 	"<br>",
@@ -150,6 +150,30 @@ var ideas = [
 	
 	"An art game detailing all the emotions of experiencing your first true love"+"<br>"+
 	"<br>",
+	
+	"A fast paced game where you play as hologram-like entities"+"<br>"+
+	"going through a city inspired by a computer motherboard",
+	
+	"A game about escaping indentured servitude"+"<br>"+
+	"<br>",
+	
+	"A cyberpunk western about breaking into cryptovaults and stealing bitcoin"+"<br>"+
+	"<br>",
+	
+	"A happy game about playing with unicorns that slowly devolves into"+"<br>"+
+	"a deranged person in therapy not recognising the world around them",
+	
+	"A puzzle game where you go around a sphrerical planet solving a rubic's cube inspired puzzle"+"<br>"+
+	"while making your way through bad guys",
+	
+	"A fairly realistic masonry simulator"+"<br>"+
+	"<br>",
+	
+	"A puzzle game where you need to use seemingly random objects to create cinematic scenes to take photos of"+"<br>"+
+	"<br>",
+	
+	"A circuitry simulator where you use various capacitors, resistors, etc. to create functioning devices"+"<br>"+
+	"<br>",
 ]
 
 function getIdea() {
@@ -171,17 +195,35 @@ function off() {
 
 var creatureAdjectives = [
 	"small",
-	"large",
-	"agressive",
-	"spiritual",
-	"mystic",
-	"albino",
-	"massive",
-	"gigantic",
-	"huge",
 	"miniscule",
 	"tiny",
 	"dwarf",
+	"large",
+	"massive",
+	"gigantic",
+	"huge",
+	"agressive",
+	"defensive",
+	"agile",
+	"tanky",
+	"meaty",
+	"spiritual",
+	"mystic",
+	"albino",
+	"red",
+	"orange",
+	"yellow",
+	"green",
+	"blue",
+	"indigo",
+	"violet",
+	"black",
+	"white",
+	"monochromatic",
+	"technicoloured",
+	"edible",
+	"poisonous",
+	"toxic",
 ]
 
 function getCreatureAdjective() {
