@@ -8,9 +8,9 @@
 		flex: 100%;
 		max-width: 100%;
 	}
-	html{
+	/*html{
 		background-image: url(background2.png);
-	}
+	}*/
 	div.contactMe{
 		width: 185%;
 	}
@@ -23,9 +23,9 @@
 		flex: 100%;
 		max-width: 100%;
 	}
-	html{
+	/*html{
 		background-image: url(background1.png);
-	}
+	}*/
 	div.contactMe{
 		width: 196%;
 	}

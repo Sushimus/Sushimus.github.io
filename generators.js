@@ -174,6 +174,9 @@ var ideas = [
 	
 	"A circuitry simulator where you use various capacitors, resistors, etc. to create functioning devices"+"<br>"+
 	"<br>",
+	
+	"A game where the core mechanic revolves around dynamically"+"<br>"+
+	"changing the screen size, resolution, and aspect ratio",
 ]
 
 function getIdea() {
@@ -323,4 +326,62 @@ var settings = [
 function getSetting() {
 	var randomNumber = Math.floor(Math.random() * (settings.length));
 	document.getElementById('setting').innerHTML = settings[randomNumber];
+}
+
+//------------------------------------------------------------------------------------------------------Random Character Start Here------------------------------------------------------------------------------------------------------
+
+var characterAdjectives = [
+	"word1",
+]
+
+function getCharacterAdjective() {
+	var randomNumber = Math.floor(Math.random() * (characterAdjectives.length));
+	document.getElementById('characterAdjective').innerHTML = characterAdjectives[randomNumber];	
+}
+
+var characters = [
+	"wordyword1",
+]
+
+function getCharacter() {
+	var randomNumber = Math.floor(Math.random() * (characters.length));
+	document.getElementById('character').innerHTML = characters[randomNumber];
+}
+
+var characterMotives = [
+	"VENGENCEEEEEE",
+]
+
+function getCharacterMotive() {
+	var randomNumber = Math.floor(Math.random() * (characterMotives.length));
+	document.getElementById('motive').innerHTML = characterMotives[randomNumber];
+}
+
+//------------------------------------------------------------------------------------------------------Change Background Start Here------------------------------------------------------------------------------------------------------
+
+window.onload = function backgroundShift() {
+	var currentTime = new Date().getHours();
+	var screenSize = window.matchMedia("(min-aspect-ratio: 16/9)");
+
+	if (7 <= currentTime && currentTime < 20) {
+		if (document.getElementById('body') && screenSize.matches) {
+			document.getElementById('body').style.background = "url('background1.png') no-repeat fixed";
+			document.getElementById('body').style.backgroundSize = "100vw 100vh";
+		}
+		else {
+			document.getElementById('body').style.background = "url('background2.png') no-repeat fixed";
+			document.getElementById('body').style.backgroundSize = "100vw 100vh";
+		}
+	}
+
+	else {
+		if (document.getElementById('body') && screenSize.matches) {
+			document.getElementById('body').style.background = "url('background3.png') no-repeat fixed";
+			document.getElementById('body').style.backgroundSize = "100vw 100vh";
+		}
+		else {
+			document.getElementById('body').style.background = "url('background4.png') no-repeat fixed";
+			document.getElementById('body').style.backgroundSize = "100vw 100vh";
+		}
+	}
 }

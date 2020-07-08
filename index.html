@@ -4,7 +4,7 @@
 <link rel= "stylesheet" type= "text/css" href= "index.css">
 <script src= "generators.js"></script>
 
-<body>
+<body id= "body">
 <div class= "banner">
 	<h1>
 		s u s h i m u s
@@ -152,6 +152,11 @@
 <p id= "idea"></p>
 <mark class= "homeButton">
 <button onclick= "getIdea()">Click me for an idea</button>
+</mark>
+
+<p><mark class= "random" id= "characterAdjective"></mark> <mark class= "random"id= "character"></mark> <mark class= "random" id= "motive"></mark></p>
+<mark class= "homeButton">
+<button onclick= "getCharacterAdjective();getCharacter();getCharacterMotive();">Click me for a character</button>
 </mark>
 
 <p><mark class= "random" id= "creatureAdjective"></mark> <mark class= "random"id= "bodyAdjective"></mark> <mark class= "random" id= "creature"></mark></p>
