@@ -49,7 +49,12 @@
 <div class= "padding150"></div>
 
 <!------------------------------------------------------------------------------------------Monthly Idea------------------------------------------------------------------------------------------>
-<div class= "monthlyIdea">
+<script>
+function expand() {
+	document.getElementById('monthlyIdea').style.height= 'auto';
+}
+</script>
+<div class= "monthlyIdea" id= "monthlyIdea" onclick= "expand()">
 	<p>
 		<u><b>Game Idea of the Month</u></b><br>
 			This month we'll be sort of continuing the strategy trend of last month, but from a different angle and theme.
@@ -143,6 +148,8 @@
 		<a href= "gameIdeas.html" class="gameIdeas">Click me for previous ideas</a>
 	</p>
 </div>
+
+<p id="help"></p>
 
 <div class= "padding150"></div>
 

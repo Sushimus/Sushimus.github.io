@@ -184,16 +184,6 @@ function getIdea() {
 	document.getElementById('idea').innerHTML = ideas[randomNumber];
 }
 
-//------------------------------------------------------------------------------------------------------Contact Overlay Start Here------------------------------------------------------------------------------------------------------
-
-function on() {
-  document.getElementById("contactOverlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("contactOverlay").style.display = "none";
-}
-
 //------------------------------------------------------------------------------------------------------Random Creature Start Here------------------------------------------------------------------------------------------------------
 
 var creatureAdjectives = [
@@ -357,6 +347,16 @@ function getCharacterMotive() {
 	document.getElementById('motive').innerHTML = characterMotives[randomNumber];
 }
 
+//------------------------------------------------------------------------------------------------------Contact Overlay Start Here------------------------------------------------------------------------------------------------------
+
+function on() {
+  document.getElementById("contactOverlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("contactOverlay").style.display = "none";
+}
+
 //------------------------------------------------------------------------------------------------------Change Background Start Here------------------------------------------------------------------------------------------------------
 
 window.onload = function backgroundShift() {
@@ -365,22 +365,22 @@ window.onload = function backgroundShift() {
 
 	if (7 <= currentTime && currentTime < 20) {
 		if (document.getElementById('body') && screenSize.matches) {
-			document.getElementById('body').style.background = "url('background1.png') no-repeat fixed";
+			document.getElementById('body').style.background = "url('background1.png') no-repeat fixed, url('../background1.png') no-repeat fixed";
 			document.getElementById('body').style.backgroundSize = "100vw 100vh";
 		}
 		else {
-			document.getElementById('body').style.background = "url('background2.png') no-repeat fixed";
+			document.getElementById('body').style.background = "url('background2.png') no-repeat fixed, url('../background2.png') no-repeat fixed";
 			document.getElementById('body').style.backgroundSize = "100vw 100vh";
 		}
 	}
 
 	else {
 		if (document.getElementById('body') && screenSize.matches) {
-			document.getElementById('body').style.background = "url('background3.png') no-repeat fixed";
+			document.getElementById('body').style.background = "url('background3.png') no-repeat fixed, url('../background3.png') no-repeat fixed";
 			document.getElementById('body').style.backgroundSize = "100vw 100vh";
 		}
 		else {
-			document.getElementById('body').style.background = "url('background4.png') no-repeat fixed";
+			document.getElementById('body').style.background = "url('background4.png') no-repeat fixed, url('../background4.png') no-repeat fixed";
 			document.getElementById('body').style.backgroundSize = "100vw 100vh";
 		}
 	}
