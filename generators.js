@@ -360,28 +360,182 @@ function off() {
 //------------------------------------------------------------------------------------------------------Change Background Start Here------------------------------------------------------------------------------------------------------
 
 window.onload = function backgroundShift() {
+	var date = new Date();
 	var currentTime = new Date().getHours();
 	var screenSize = window.matchMedia("(min-aspect-ratio: 16/9)");
-
-	if (7 <= currentTime && currentTime < 20) {
-		if (document.getElementById('body') && screenSize.matches) {
-			document.getElementById('body').style.background = "url('background1.png') no-repeat fixed, url('../background1.png') no-repeat fixed";
-			document.getElementById('body').style.backgroundSize = "100vw 100vh";
+	
+//----------------------------------------------------------------------------Sunday----------------------------------------------------------------------------
+	if (date = 0){
+		if (7 <= currentTime && currentTime < 20) {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('mondayDay1.png') no-repeat fixed, url('../mondayDay1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('mondayDay2.png') no-repeat fixed, url('../mondayDay2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
 		}
+
 		else {
-			document.getElementById('body').style.background = "url('background2.png') no-repeat fixed, url('../background2.png') no-repeat fixed";
-			document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('tuesdayNight1.png') no-repeat fixed, url('../tuesdayNight1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('tuesdayNight2.png') no-repeat fixed, url('../tuesdayNight2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
 		}
 	}
-
-	else {
-		if (document.getElementById('body') && screenSize.matches) {
-			document.getElementById('body').style.background = "url('background3.png') no-repeat fixed, url('../background3.png') no-repeat fixed";
-			document.getElementById('body').style.backgroundSize = "100vw 100vh";
+	
+//----------------------------------------------------------------------------Monday----------------------------------------------------------------------------
+	if (date = 1){
+		if (7 <= currentTime && currentTime < 20) {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('mondayDay1.png') no-repeat fixed, url('../mondayDay1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('mondayDay2.png') no-repeat fixed, url('../mondayDay2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
 		}
+
 		else {
-			document.getElementById('body').style.background = "url('background4.png') no-repeat fixed, url('../background4.png') no-repeat fixed";
-			document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('tuesdayNight1.png') no-repeat fixed, url('../tuesdayNight1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('tuesdayNight2.png') no-repeat fixed, url('../tuesdayNight2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+	}
+	
+//----------------------------------------------------------------------------Tuesday----------------------------------------------------------------------------
+	if (date = 2){
+		if (7 <= currentTime && currentTime < 20) {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('mondayDay1.png') no-repeat fixed, url('../mondayDay1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('mondayDay2.png') no-repeat fixed, url('../mondayDay2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+
+		else {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('tuesdayNight1.png') no-repeat fixed, url('../tuesdayNight1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('tuesdayNight2.png') no-repeat fixed, url('../tuesdayNight2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+	}
+	
+//----------------------------------------------------------------------------Wednesday----------------------------------------------------------------------------
+	if (date = 3){
+		if (7 <= currentTime && currentTime < 20) {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('mondayDay1.png') no-repeat fixed, url('../mondayDay1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('mondayDay2.png') no-repeat fixed, url('../mondayDay2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+
+		else {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('tuesdayNight1.png') no-repeat fixed, url('../tuesdayNight1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('tuesdayNight2.png') no-repeat fixed, url('../tuesdayNight2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+	}
+	
+//----------------------------------------------------------------------------Thursday----------------------------------------------------------------------------
+	if (date = 4){
+		if (7 <= currentTime && currentTime < 20) {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('mondayDay1.png') no-repeat fixed, url('../mondayDay1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('mondayDay2.png') no-repeat fixed, url('../mondayDay2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+
+		else {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('tuesdayNight1.png') no-repeat fixed, url('../tuesdayNight1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('tuesdayNight2.png') no-repeat fixed, url('../tuesdayNight2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+	}
+	
+//----------------------------------------------------------------------------Friday----------------------------------------------------------------------------
+	if (date = 5){
+		if (7 <= currentTime && currentTime < 20) {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('mondayDay1.png') no-repeat fixed, url('../mondayDay1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('mondayDay2.png') no-repeat fixed, url('../mondayDay2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+
+		else {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('tuesdayNight1.png') no-repeat fixed, url('../tuesdayNight1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('tuesdayNight2.png') no-repeat fixed, url('../tuesdayNight2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+	}
+	
+//----------------------------------------------------------------------------Saturday----------------------------------------------------------------------------
+	if (date = 6){
+		if (7 <= currentTime && currentTime < 20) {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('mondayDay1.png') no-repeat fixed, url('../mondayDay1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('mondayDay2.png') no-repeat fixed, url('../mondayDay2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+		}
+
+		else {
+			if (document.getElementById('body') && screenSize.matches) {
+				document.getElementById('body').style.background = "url('tuesdayNight1.png') no-repeat fixed, url('../tuesdayNight1.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
+			else {
+				document.getElementById('body').style.background = "url('tuesdayNight2.png') no-repeat fixed, url('../tuesdayNight2.png') no-repeat fixed";
+				document.getElementById('body').style.backgroundSize = "100vw 100vh";
+			}
 		}
 	}
 }
