@@ -4,33 +4,139 @@
 }
 /*<----------------------------------------------Scaling Stuff---------------------------------------------->*/
 @media screen and (max-aspect-ratio: 16/9) {
-	.rexColumn {
-		flex: 100%;
-		max-width: 100%;
-	}
-	/*html{
-		background-image: url(background2.png);
-	}*/
-	div.contactMe{
-		width: 185%;
-	}
 	td.optionPreview{
 		padding-top: 5%;
+	}
+	.rexColumn img:active {
+		transform: scale(3,3);
+	}
+	h1{
+		font-size: .6rem;
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+	div.dropdown{
+		margin-top: 0;
+		margin-left: .2rem;
+		position: fixed;
+		z-index: 10;
+	}
+	.dropdownbutton{
+		height: .6rem;
+		width: .6rem;
+		background-image: url(buttons/dropdownbutton.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(98,68,56);
+	}
+	div.goBack {
+		margin-top: 0;
+		margin-left: 1rem;
+		position: fixed;
+		z-index: 8;
+		height: .6rem;
+		width: .6rem;
+	}
+	input.goBackButton {
+		height: .6rem;
+		width: .6rem;
+		background-image: url(buttons/goBackButton.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(98,68,56);
+	}
+	div.contactMe{
+		width: 192%;
+		margin-top: 0;
+		margin-right: 0;
+		position: fixed;
+		z-index: 7;
+		height: .6rem;
+	}
+	input.contact {
+		height: .6rem;
+		width: .6rem;
+		background-image: url(buttons/contactMeButton.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(98,68,56);
+	}
+	div.photoContainer {
+		margin-left: 20%;
 	}
 }
 @media screen and (min-aspect-ratio: 16/9) {
-	.rexColumn {
-		flex: 100%;
-		max-width: 100%;
-	}
-	/*html{
-		background-image: url(background1.png);
-	}*/
-	div.contactMe{
-		width: 196%;
-	}
 	td.optionPreview{
 		padding-top: 5%;
+	}
+	.rexColumn img:active {
+		transform: scale(1.5,1.5);
+	}
+	h1 {
+		font-size: .8rem;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	div.dropdown{
+		margin-left: .5rem;
+		margin-top: .05rem;
+		position: fixed;
+		z-index: 10;
+	}
+	.dropdownbutton{
+		height: .8rem;
+		width: .8rem;
+		background-image: url(buttons/dropdownbutton.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(98,68,56);
+	}
+	div.goBack {
+		margin-left: 2rem;
+		margin-top: .05rem;
+		position: fixed;
+		z-index: 8;
+		height: .8rem;
+		width: .8rem;
+	}
+	input.goBackButton {
+		height: .8rem;
+		width: .8rem;
+		background-image: url(buttons/goBackButton.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(98,68,56);
+	}
+	div.contactMe{
+		width: 196%;
+		margin-top: .05rem;
+		margin-right: .5rem;
+		position: fixed;
+		z-index: 7;
+		height: .8rem;
+	}
+	input.contact {
+		height: .8rem;
+		width: .8rem;
+		background-image: url(buttons/contactMeButton.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(98,68,56);
+	}
+	div.photoContainer {
+		margin-left: 25%;
 	}
 }
 /*<----------------------------------------------General Items---------------------------------------------->*/
@@ -55,11 +161,9 @@ body{
 	height: 100%;
 }
 h1{
-	padding-top: 20px;
-	padding-bottom: 10px;
 	color: rgb(242,146,207);
-	font-size: .8rem;
 	letter-spacing: 3px;
+	text-align: center;
 	text-shadow:
 		1px 0px 2px rgb(100,66,56),
 		0px 1px 2px rgb(100,66,56),
@@ -182,22 +286,6 @@ div.banner {
 div.padding150{
 	padding-bottom: 150px;
 }
-div.dropdown{
-	margin-left: .5rem;
-	margin-top: .05rem;
-	position: fixed;
-	z-index: 10;
-}
-.dropdownbutton{
-	height: .8rem;
-	width: .8rem;
-	background-image: url(buttons/dropdownbutton.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-width: 1px;
-	border-style: solid;
-	border-color: rgb(98,68,56);
-}
 div.dropdowncontent{
 	display: none;
 	position: absolute;
@@ -225,43 +313,8 @@ div.dropdowncontent{
 .dropdown:hover .dropdownbutton{
 	background-color: none;
 }
-div.goBack {
-	margin-left: 2rem;
-	margin-top: .05rem;
-	position: fixed;
-	z-index: 8;
-	height: .8rem;
-	width: .8rem;
-}
-input.goBackButton {
-	height: .8rem;
-	width: .8rem;
-	background-image: url(buttons/goBackButton.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-width: 1px;
-	border-style: solid;
-	border-color: rgb(98,68,56);
-}
 input.goBackButton:hover {
 	cursor: pointer;
-}
-div.contactMe {
-	margin-top: .05rem;
-	margin-right: .5rem;
-	position: fixed;
-	z-index: 7;
-	height: .8rem;
-}
-input.contact {
-	height: .8rem;
-	width: .8rem;
-	background-image: url(buttons/contactMeButton.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-width: 1px;
-	border-style: solid;
-	border-color: rgb(98,68,56);
 }
 div.contactOverlay {
 	position: fixed;
@@ -466,9 +519,7 @@ p.optionText {
 /*<----------------------------------------------Gallery of Rex---------------------------------------------->*/
 div.photoContainer {
 	position: absolute;
-	width: 75%;
-	margin-left: 12%;
-	margin-right: 13%;
+	width: 50%;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 	border: 33px solid transparent;
@@ -484,9 +535,9 @@ div.photoContainer {
 	padding: 0 4px;
 }
 .rexColumn {
-	flex: 33%;
-	max-width: 25%;
-	padding: 0 4px;
+	padding: 4px;
+	flex: 1;
+	-ms-flex: 1;
 }
 .rexColumn img {
 	margin-top: 8px;
