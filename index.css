@@ -354,7 +354,10 @@ div.overlayText{
 	background-size: 1vw;
 	background-clip: padding-box;
 	border: 33px solid transparent;
-	border-image: url(contentborder2.png) 11 repeat;
+	border-image: url(contentborder1.png) 11 repeat;
+	-webkit-border-image: url(contentborder1.png) 11 repeat;
+	-moz-border-image: url(contentborder1.png) 11 repeat;
+	-o-border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
@@ -402,6 +405,9 @@ div.intro{
 	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder2.png) 11 repeat;
+	-webkit-border-image: url(contentborder2.png) 11 repeat;
+	-moz-border-image: url(contentborder2.png) 11 repeat;
+	-o-border-image: url(contentborder2.png) 11 repeat;
 	border-image-slice: 17;
 	padding-left: 1vw;
 	padding-right: 1vw;
@@ -419,6 +425,9 @@ div.monthlyIdea{
 	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
+	-webkit-border-image: url(contentborder1.png) 11 repeat;
+	-moz-border-image: url(contentborder1.png) 11 repeat;
+	-o-border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 	padding-left: 1vw;
 	padding-right: 1vw;
@@ -447,7 +456,10 @@ div.random{
 	background-size: 1vw;
 	background-clip: padding-box;
 	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
+	border-image: url(contentborder2.png) 11 repeat;
+	-webkit-border-image: url(contentborder2.png) 11 repeat;
+	-moz-border-image: url(contentborder2.png) 11 repeat;
+	-o-border-image: url(contentborder2.png) 11 repeat;
 	border-image-slice: 17;
 	padding-left: 1vw;
 	padding-right: 1vw;
@@ -496,6 +508,9 @@ div.option{
 	height: 27vw;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
+	-webkit-border-image: url(contentborder1.png) 11 repeat;
+	-moz-border-image: url(contentborder1.png) 11 repeat;
+	-o-border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 }
 div.option:hover{
@@ -523,7 +538,10 @@ div.photoContainer {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
+	border-image: url(contentborder2.png) 11 repeat;
+	-webkit-border-image: url(contentborder2.png) 11 repeat;
+	-moz-border-image: url(contentborder2.png) 11 repeat;
+	-o-border-image: url(contentborder2.png) 11 repeat;
 	border-image-slice: 17;
 	background-color: rgba(48,33,27,.6);
 	background-clip: padding-box;
@@ -601,6 +619,9 @@ div.photoPadding{
 	font-size: .5rem;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
+	-webkit-border-image: url(contentborder1.png) 11 repeat;
+	-moz-border-image: url(contentborder1.png) 11 repeat;
+	-o-border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 	z-index: 4;
 	background: url(dither.png), rgba(48,33,27,.8);
@@ -623,7 +644,10 @@ td.infoImage{
 }
 td.infoImage img{
 	border: 30px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
+	border-image: url(contentborder2.png) 11 repeat;
+	-webkit-border-image: url(contentborder2.png) 11 repeat;
+	-moz-border-image: url(contentborder2.png) 11 repeat;
+	-o-border-image: url(contentborder2.png) 11 repeat;
 	border-image-slice: 17;
 }
 div.infoReview{
@@ -639,6 +663,9 @@ div.infoReview{
 	background-clip: padding-box;
 	border: 33px solid transparent;
 	border-image: url(contentborder1.png) 11 repeat;
+	-webkit-border-image: url(contentborder1.png) 11 repeat;
+	-moz-border-image: url(contentborder1.png) 11 repeat;
+	-o-border-image: url(contentborder1.png) 11 repeat;
 	border-image-slice: 17;
 }
 p.infoWords{
@@ -662,7 +689,10 @@ div.gameIdea{
 	background-size: 1vw;
 	background-clip: padding-box;
 	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
+	border-image: url(contentborder2.png) 11 repeat;
+	-webkit-border-image: url(contentborder2.png) 11 repeat;
+	-moz-border-image: url(contentborder2.png) 11 repeat;
+	-o-border-image: url(contentborder2.png) 11 repeat;
 	border-image-slice: 17;
 }
 div.gameIdea p{
