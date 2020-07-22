@@ -163,6 +163,9 @@ body{
 h1{
 	color: rgb(242,146,207);
 	letter-spacing: 3px;
+	font-size: .8rem;
+	line-height: 30px;
+	margin-top: 46px;
 	text-align: center;
 	text-shadow:
 		1px 0px 2px rgb(100,66,56),
@@ -467,6 +470,14 @@ div.random{
 mark.random{
 	background: none;
 	color: inherit;
+}
+mark.smolText{
+	font-size: .36rem;
+	letter-spacing: 1px;
+	color: inherit;
+	background: transparent;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 a.gameIdeas{
 	padding-top: 12px;
