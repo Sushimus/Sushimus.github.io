@@ -162,10 +162,47 @@ body{
 }
 h1{
 	color: rgb(242,146,207);
+	letter-spacing: 3px;	
+	text-align: center;
+	text-shadow:
+		1px 0px 2px rgb(100,66,56),
+		0px 1px 2px rgb(100,66,56),
+		-1px 0px 2px rgb(100,66,56),
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
+	background: 
+		linear-gradient(
+		295deg,
+		rgba(0,0,0,0) 50%,
+		rgb(222,146,124) 50% 50.25%,
+		rgb(244,161,136) 50.25% 50.75%,
+		rgb(222,146,124) 50.75% 51%,
+		rgba(0,0,0,0) 51%),
+		
+		linear-gradient(
+		65deg,
+		rgba(244,161,136,.8) 30%,
+		rgba(244,161,136,.85) 30% 70%,
+		rgba(244,161,136,.8) 70%);
+	border-style: solid;
+	border-color: rgb(98,68,56);
+	border-bottom-width: 1px;
+	border-style: solid;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+}
+h2{
+	color: rgb(242,146,207);
 	letter-spacing: 3px;
 	font-size: .8rem;
 	line-height: 30px;
-	margin-top: 46px;
+	margin-top: 45px;
+	padding-top: 25px;
 	text-align: center;
 	text-shadow:
 		1px 0px 2px rgb(100,66,56),
