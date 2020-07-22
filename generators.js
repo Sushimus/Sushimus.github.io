@@ -426,22 +426,22 @@ window.onload = function backgroundShift() {
 	case 0:
 		if (7 <= currentTime && currentTime < 20) {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/0/day1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/0/day1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/0/day2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/0/day2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
 
 		else {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/0/night1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/0/night1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/0/night2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/0/night2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
@@ -451,22 +451,22 @@ window.onload = function backgroundShift() {
 	case 1:
 		if (7 <= currentTime && currentTime < 20) {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/1/day1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/1/day1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/1/day2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/1/day2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
 
 		else {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/1/night1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/1/night1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/1/night2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/1/night2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
@@ -476,22 +476,22 @@ window.onload = function backgroundShift() {
 	case 2:
 		if (7 <= currentTime && currentTime < 20) {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/2/day1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/2/day1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/2/day2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/2/day2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
 
 		else {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/2/night1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/2/night1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/2/night2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/2/night2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
@@ -501,22 +501,22 @@ window.onload = function backgroundShift() {
 	case 3:
 		if (7 <= currentTime && currentTime < 20) {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/3/day1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/3/day1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/3/day2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/3/day2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
 
 		else {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/3/night1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/3/night1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/3/night2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/3/night2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
@@ -526,22 +526,22 @@ window.onload = function backgroundShift() {
 	case 4:
 		if (7 <= currentTime && currentTime < 20) {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/4/day1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/4/day1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/4/day2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/4/day2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
 
 		else {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/4/night1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/4/night1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/4/night2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/4/night2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
@@ -551,22 +551,22 @@ window.onload = function backgroundShift() {
 	case 5:
 		if (7 <= currentTime && currentTime < 20) {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/5/day1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/5/day1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/5/day2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/5/day2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
 
 		else {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/5/night1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/5/night1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/5/night2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/5/night2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
@@ -576,22 +576,22 @@ window.onload = function backgroundShift() {
 	case 6:
 		if (7 <= currentTime && currentTime < 20) {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/6/day1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/6/day1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/6/day2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/6/day2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
 
 		else {
 			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../website/backgrounds/6/night1.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/6/night1.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 			else {
-				document.getElementById('body').style.background = "url('../website/backgrounds/6/night2.png') no-repeat fixed";
+				document.getElementById('body').style.background = "url('../backgrounds/6/night2.png') no-repeat fixed";
 				document.getElementById('body').style.backgroundSize = "100vw 100vh";
 			}
 		}
