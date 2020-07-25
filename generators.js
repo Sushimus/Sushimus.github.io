@@ -380,7 +380,8 @@ function getCreature() {
 				"coati",
 				"fox",
 				"coyote",
-				"opossum"
+				"opossum",
+				"mammal"
 			]
 			var mammalChoose = Math.floor(Math.random() * (mammals.length));
 			var creatureChosen = mammals[mammalChoose];
@@ -401,32 +402,37 @@ function getCreature() {
 				"six-eyed",
 				"seven-eyed",
 				"eight-eyed",
-				"large-limbed",
-				"small-limbed",
-				"wide-limbed",
-				"narrow-limbed",
-				"two-limbed",
-				"four-limbed",
-				"six-limbed",
-				"eight-limbed",
-				"large-eared",
-				"small-eared",
-				"wide-eared",
-				"narrow-eared",
-				"one-eared",
-				"two-eared",
-				"four-eared",
-				"six-eared",
-				"eight-eared",
+				"large-finned",
+				"small-finned",
+				"wide-finned",
+				"narrow-finned",
+				"one-finned",
+				"two-finned",
+				"three-finned",
+				"four-finned",
+				"five-finned",
+				"six-finned",
+				"seven-finned",
+				"eight-finned"
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (fishAdjectives.length));
 			var adjectiveChosen = fishAdjectives[adjectiveChoose];
 			
 			const fishs = [
-				"fish1",
-				"fish2",
-				"fish3",
-				"fish4"
+				"shark",
+				"catfish",
+				"loach",
+				"lamprey",
+				"ray",
+				"eel",
+				"minnow",
+				"angler",
+				"cod",
+				"lionfish",
+				"tropical fish",
+				"exotic fish",
+				"sunfish",
+				"fish"
 			]
 			var fishChoose = Math.floor(Math.random() * (fishs.length));
 			var creatureChosen = fishs[fishChoose];
@@ -469,10 +475,15 @@ function getCreature() {
 			var adjectiveChosen = reptileAdjectives[adjectiveChoose];
 			
 			const reptiles = [
-				"rep1",
-				"rep2",
-				"rep3",
-				"rep4"
+				"crocodile",
+				"lizard",
+				"turtle",
+				"tortoise",
+				"snake",
+				"cobra",
+				"serpent",
+				"anaconda",
+				"reptile"
 			]
 			var reptileChoose = Math.floor(Math.random() * (reptiles.length));
 			var creatureChosen = reptiles[reptileChoose];
@@ -549,24 +560,16 @@ function getCreature() {
 				"four-limbed",
 				"six-limbed",
 				"eight-limbed",
-				"large-eared",
-				"small-eared",
-				"wide-eared",
-				"narrow-eared",
-				"one-eared",
-				"two-eared",
-				"four-eared",
-				"six-eared",
-				"eight-eared",
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (amphibianAdjectives.length));
 			var adjectiveChosen = amphibianAdjectives[adjectiveChoose];
 			
 			const amphibians = [
-				"frog1",
-				"frog2",
-				"frog3",
-				"frog4"
+				"frog",
+				"axolotl",
+				"salamander",
+				"amphibian",
+				"toad"
 			]
 			var amphibianChoose = Math.floor(Math.random() * (amphibians.length));
 			var creatureChosen = amphibians[amphibianChoose];
