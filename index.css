@@ -13,6 +13,9 @@
 		padding-top: 30px;
 		padding-bottom: 10px;
 	}
+	div.padding {
+		padding-bottom: 100px;
+	}
 	div.dropdown{
 		margin-top: 0;
 		margin-left: .2rem;
@@ -68,6 +71,11 @@
 	div.intro {
 		border: 22px solid transparent;
 	}
+	iframe.selfPromo {
+		border: 22px solid transparent;
+		height: 50vh;
+		width: 60%;
+	}
 	div.monthlyIdea {
 		height: 50vh;
 		border: 22px solid transparent;
@@ -100,6 +108,9 @@
 		font-size: .8rem;
 		padding-top: 20px;
 		padding-bottom: 10px;
+	}
+	div.padding {
+		padding-bottom: 150px;
 	}
 	div.dropdown{
 		margin-left: .5rem;
@@ -155,6 +166,11 @@
 	}
 	div.intro {
 		border: 33px solid transparent;
+	}
+	iframe.selfPromo {
+		border: 33px solid transparent;
+		height: 40vh;
+		width: 40%;
 	}
 	div.monthlyIdea {
 		height: 40vh;
@@ -364,12 +380,6 @@ div.banner {
 	z-index: 7;
 	width: 100%;
 }
-div.padding150{
-	padding-bottom: 150px;
-}
-div.padding100{
-	padding-bottom: 100px;
-}
 div.dropdowncontent{
 	display: none;
 	position: absolute;
@@ -494,6 +504,20 @@ div.intro{
 	border-image-slice: 17;
 	padding-left: 1vw;
 	padding-right: 1vw;
+}
+iframe.selfPromo {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(dither.png), rgba(48,33,27,.8);
+	background-size: 1vw;
+	background-clip: padding-box;
+	border-image: url(contentborder2.png) 11 repeat;
+	-webkit-border-image: url(contentborder2.png) 11 repeat;
+	-moz-border-image: url(contentborder2.png) 11 repeat;
+	-o-border-image: url(contentborder2.png) 11 repeat;
+	border-image-slice: 17;
+	padding: 1vw;
 }
 div.monthlyIdea{
 	position: relative;
