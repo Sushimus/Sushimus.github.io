@@ -212,6 +212,7 @@ html{
 	-o-background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	overflow-x: hidden;
 }
 body{
 	margin: 0;
@@ -488,6 +489,34 @@ mark.homeButton{
 		-1px 1px 2px rgb(100,66,56),
 		1px -1px 2px rgb(100,66,56),
 		-1px -1px 2px rgb(100,66,56);
+}
+mark.welcome {
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	z-index: 11;
+	background: transparent;
+	color: rgb(242,146,207);
+	text-shadow:
+		1px 0px 2px rgb(100,66,56),
+		0px 1px 2px rgb(100,66,56),
+		-1px 0px 2px rgb(100,66,56),
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
+	transform: rotate(30deg);
+	float: right;
+	animation-name: welcome;
+	animation-duration: 4s;
+}
+@keyframes welcome {
+	0% {font-size: .5rem;}
+	25% {font-size: .55rem;}
+	50% {font-size: .5rem;}
+	75% {font-size: .55rem;} 
 }
 div.intro{
 	position: relative;

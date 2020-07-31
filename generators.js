@@ -6,7 +6,9 @@ function getIdea() {
 		"Second set",
 		"Third set",
 		"Fourth set",
-		"Fifth set"
+		"Fifth set",
+		"Sixth set",
+		"Seventh set"
 	]
 	var listChosen = Math.floor(Math.random() * (listSelections.length));
 
@@ -254,10 +256,82 @@ function getIdea() {
 				"<br>",
 				
 				"A cooking game where you need to poison certain customers in different ways"+"<br>"+
-				"just right so they die but do it far away from your store"
+				"just right so they die but do it far away from your store",
+				
+				"A delivery game where you build the roads so you can deliver"+"<br>"+
+				"<br>",
+				
+				"Game like papers please where you're screening for an increasingly complex and deadly virus"+"<br>"+
+				"<br>"
 			]
 			var fifthSetChoose = Math.floor(Math.random() * (fifthSet.length));
 			var ideaChosen = fifthSet[fifthSetChoose];
+			break;
+			
+		case 5: 
+			var sixthSet = [
+				"Game where you're rushing around a waiting room trying to politely tell boomers to stop being disruptive"+"<br>"+
+				"if done wrong they get mad",
+				
+				"Game where you explore the world from the perspective of a hamster in a roll ball"+"<br>"+
+				"<br>",
+				
+				"Shaving simulator with bad hand controls"+"<br>"+
+				"<br>",
+				
+				"Horror game about being stuck in a waiting room"+"<br>"+
+				"<br>",
+				
+				"Management game similar to prison architect about planning government offices,"+"<br>"+
+				"with incentives to be as inefficient as possible",
+				
+				"Game about being a vine trying to overgrow a building without being killed off"+"<br>"+
+				"<br>",
+				
+				"Nonsensical hacking game based on movie logic,"+"<br>"+
+				"where more keyboards and monitors makes you better",
+				
+				"Graphic design game where points are allocated based on colour preference of company,"+"<br>"+
+				"number of lines used, angle symmetry, etc",
+				
+				"Game about replacing outdated and ruined electrical and sprinkler systems,"+"<br>"+
+				"with the newspapers telling you when you screw up",
+				
+				"Competitive adhd behavior racing, who can bounce their leg the fastest? etc"+"<br>"+
+				"<br>",
+				
+				"A game about trying to automate production without machines"+"<br>"+
+				"<br>",
+				
+				"Intense laser war from the imagination of a kid playing laser tag"+"<br>"+
+				"<br>",
+				
+				"A world where competitive retired-dad golfing has become a mainstream attraction"+"<br>"+
+				"<br>",
+				
+				"Game about racing shopping carts and various other things through a grocery store,"+"<br>"+
+				"avoiding staff along the way",
+				
+				"A biblically accurate rapture, nonhuman angels included"+"<br>"+
+				"<br>"
+			]
+			var sixthSetChoose = Math.floor(Math.random() * (sixthSet.length));
+			var ideaChosen = sixthSet[sixthSetChoose];
+			break;
+		
+		case 6:
+			var seventhSet = [
+				"You've been cursed by an annoying witch, have fun trying not to have wardrobe malfunctions"+"<br>"+
+				"<br>",
+				
+				"A dystopian city planner where you need to plan enough slums, militarized police,"+"<br>"+
+				"and basic amenities to avoid an overwhelming revolt",
+				
+				"Basket designing simulator, with different use cases requiring different baskets"+"<br>"+
+				"(in the same vein as polybridge)",
+			]
+			var seventhSetChoose = Math.floor(Math.random() * (seventhSet.length));
+			var ideaChosen = seventhSet[seventhSetChoose];
 			break;
 			
 		default:
@@ -313,6 +387,8 @@ function getCreature() {
 		"edible",
 		"poisonous",
 		"toxic",
+		"foul smelling",
+		"hungry"
 	]
 	var creatureModifyerChoose = Math.floor(Math.random() * (creatureModifyers.length));
 	var creatureModifyerChosen = creatureModifyers[creatureModifyerChoose];
@@ -358,6 +434,11 @@ function getCreature() {
 				"four-eared",
 				"six-eared",
 				"eight-eared",
+				"hairless",
+				"thick furred",
+				"fluffy",
+				"mangy",
+				"aquatic"
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (mammalAdjectives.length));
 			var adjectiveChosen = mammalAdjectives[adjectiveChoose];
@@ -381,7 +462,21 @@ function getCreature() {
 				"fox",
 				"coyote",
 				"opossum",
-				"mammal"
+				"mammal",
+				"wolf",
+				"dog",
+				"cat",
+				"panther",
+				"lion",
+				"kangaroo",
+				"koala",
+				"tiger",
+				"horse",
+				"unicorn",
+				"manticore",
+				"sasquatch",
+				"werewolf",
+				
 			]
 			var mammalChoose = Math.floor(Math.random() * (mammals.length));
 			var creatureChosen = mammals[mammalChoose];
@@ -413,7 +508,8 @@ function getCreature() {
 				"five-finned",
 				"six-finned",
 				"seven-finned",
-				"eight-finned"
+				"eight-finned",
+				""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (fishAdjectives.length));
 			var adjectiveChosen = fishAdjectives[adjectiveChoose];
@@ -432,7 +528,9 @@ function getCreature() {
 				"tropical fish",
 				"exotic fish",
 				"sunfish",
-				"fish"
+				"fish",
+				"whale",
+				"bass"
 			]
 			var fishChoose = Math.floor(Math.random() * (fishs.length));
 			var creatureChosen = fishs[fishChoose];
@@ -470,6 +568,7 @@ function getCreature() {
 				"four-eared",
 				"six-eared",
 				"eight-eared",
+				""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (reptileAdjectives.length));
 			var adjectiveChosen = reptileAdjectives[adjectiveChoose];
@@ -512,6 +611,7 @@ function getCreature() {
 				"four-winged",
 				"six-winged",
 				"eight-winged",
+				""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (birbAdjectives.length));
 			var adjectiveChosen = birbAdjectives[adjectiveChoose];
@@ -522,7 +622,8 @@ function getCreature() {
 				"eagle",
 				"finch",
 				"lark",
-				"bird"
+				"bird",
+				"chicken"
 			]
 			var birbsChoose = Math.floor(Math.random() * (birbs.length));
 			var creatureChosen = birbs[birbsChoose];
@@ -551,6 +652,7 @@ function getCreature() {
 				"four-limbed",
 				"six-limbed",
 				"eight-limbed",
+				""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (amphibianAdjectives.length));
 			var adjectiveChosen = amphibianAdjectives[adjectiveChoose];
@@ -584,7 +686,7 @@ function getCreature() {
 			
 			break;
 	}
-	document.getElementById('describedCreature').innerHTML = creatureModifyerChosen + " " + adjectiveChosen + " " + creatureChosen;
+	document.getElementById('describedCreature').innerHTML = "featuring" + " " + "a(n)" + " " + creatureModifyerChosen + " " + adjectiveChosen + " " + creatureChosen;
 }
 
 //------------------------------------------------------------------------------------------------------Random Setting Start Here------------------------------------------------------------------------------------------------------
@@ -611,17 +713,24 @@ function getSetting() {
 		"galaxy",
 		"post-apocalyptic galaxy",
 		"temperate forest",
+		"pine forest",
 		"jungle",
 		"mesa",
 		"desert",
-		"swampland",
+		"swamp",
 		"bog",
-		"island"
+		"island",
+		"mountains",
+		"beach",
+		"tundra",
+		"savanna",
+		"taiga",
+		"mesa"
 	]
 	var settingChoose = Math.floor(Math.random() * (settings.length));
 	var settingChosen = settings[settingChoose]
 	
-	document.getElementById('setting').innerHTML = settingAdjectiveChosen + " " + settingChosen;
+	document.getElementById('setting').innerHTML = "set" + " " + "in" + " " + "a(n)" + " " + settingAdjectiveChosen + " " + settingChosen;
 }
 
 //------------------------------------------------------------------------------------------------------Random Character Start Here------------------------------------------------------------------------------------------------------
@@ -658,6 +767,28 @@ function on() {
 
 function off() {
   document.getElementById("contactOverlay").style.display = "none";
+}
+
+//------------------------------------------------------------------------------------------------------Welcome Message Start Here------------------------------------------------------------------------------------------------------
+
+var isNotWelcomed = true;
+
+function welcomeMessage() {
+	if (isNotWelcomed){
+		isNotWelcomed = false;
+		
+		var messages = [
+			"Now Featuring Flying Whales",
+			"Coming to a Platform Near You",
+			"Now with 15 New Ideas",
+			"Shy, a Guy, and Ready to Die"
+		]
+		var messageChoose = Math.floor(Math.random() * (messages.length));
+		var messageChosen = messages[messageChoose];
+		
+		document.getElementById('welcome').innerHTML = messageChosen;
+	}
+	
 }
 
 //------------------------------------------------------------------------------------------------------Change Background Start Here------------------------------------------------------------------------------------------------------
