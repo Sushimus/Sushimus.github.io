@@ -780,8 +780,13 @@ function welcomeMessage() {
 		var messages = [
 			"Now Featuring Flying Whales",
 			"Coming to a Platform Near You",
-			"Now with 15 New Ideas",
-			"Shy, a Guy, and Ready to Die"
+			"Now with New Ideas",
+			"Shy, a Guy, and Ready to Die",
+			"More Creative than Ever!",
+			"Now Owns Their Own Coffee Machine",
+			"Sleep is for the Weak",
+			"Cooler than Double-sided Tape",
+			"More Reviews Soon!"
 		]
 		var messageChoose = Math.floor(Math.random() * (messages.length));
 		var messageChosen = messages[messageChoose];
