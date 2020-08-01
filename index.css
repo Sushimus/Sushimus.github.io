@@ -58,6 +58,9 @@
 		z-index: 7;
 		height: .6rem;
 	}
+	mark.welcome{
+		display: none;
+	}
 	input.contact {
 		height: .6rem;
 		width: .6rem;
@@ -101,6 +104,9 @@
 }
 /*Desktop*/
 @media screen and (min-aspect-ratio: 16/9) {
+	html{
+		overflow-x: hidden;
+	}
 	.rexColumn img:active {
 		transform: scale(1.5,1.5);
 	}
@@ -153,6 +159,28 @@
 		position: fixed;
 		z-index: 7;
 		height: .8rem;
+	}
+	mark.welcome{
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	z-index: 11;
+	background: transparent;
+	color: rgb(242,146,207);
+	text-shadow:
+		1px 0px 2px rgb(100,66,56),
+		0px 1px 2px rgb(100,66,56),
+		-1px 0px 2px rgb(100,66,56),
+		0px -1px 2px rgb(100,66,56),
+		
+		1px 1px 2px rgb(100,66,56),
+		-1px 1px 2px rgb(100,66,56),
+		1px -1px 2px rgb(100,66,56),
+		-1px -1px 2px rgb(100,66,56);
+	transform: rotate(30deg);
+	float: right;
+	animation-name: welcome;
+	animation-duration: 4s;
 	}
 	input.contact {
 		height: .8rem;
@@ -488,28 +516,6 @@ mark.homeButton{
 		-1px 1px 2px rgb(100,66,56),
 		1px -1px 2px rgb(100,66,56),
 		-1px -1px 2px rgb(100,66,56);
-}
-mark.welcome {
-	position: absolute;
-	width: 100%;
-	margin: 0;
-	z-index: 11;
-	background: transparent;
-	color: rgb(242,146,207);
-	text-shadow:
-		1px 0px 2px rgb(100,66,56),
-		0px 1px 2px rgb(100,66,56),
-		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56),
-		
-		1px 1px 2px rgb(100,66,56),
-		-1px 1px 2px rgb(100,66,56),
-		1px -1px 2px rgb(100,66,56),
-		-1px -1px 2px rgb(100,66,56);
-	transform: rotate(30deg);
-	float: right;
-	animation-name: welcome;
-	animation-duration: 4s;
 }
 @keyframes welcome {
 	0% {font-size: .5rem;}
