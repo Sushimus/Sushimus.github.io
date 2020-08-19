@@ -72,30 +72,30 @@
 		border-color: rgb(98,68,56);
 	}
 	div.intro {
-		border: 22px solid transparent;
+		border: 27px solid transparent;
 	}
 	iframe.selfPromo {
-		border: 22px solid transparent;
+		border: 27px solid transparent;
 		height: 50vh;
 		width: 60%;
 	}
 	div.monthlyIdea {
 		height: 50vh;
-		border: 22px solid transparent;
+		border: 27px solid transparent;
 	}
 	div.random {
-		border: 22px solid transparent;
+		border: 27px solid transparent;
 	}
 	div.option{
-		width: 36.045vh;
-		height: 40.5vh;
+		width: 32vh;
+		height: 35.955vh;
 		margin-top: 10vw;
 		margin-left: auto;
 		margin-right: auto;
-		border: 22px solid transparent;
+		border: 27px solid transparent;
 	}
 	div.option input{
-		height: 40.5vh;
+		height: 35.955vh;
 		width: 100%;
 	}
 	div.photoContainer {
