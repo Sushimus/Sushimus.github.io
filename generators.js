@@ -329,6 +329,15 @@ function getIdea() {
 				
 				"Basket designing simulator, with different use cases requiring different baskets"+"<br>"+
 				"(in the same vein as polybridge)",
+				
+				"A roguelike where artifacts are rare, kept between deaths, and shape the enemies,"+"<br>"+
+				"bosses, and events encountered",
+				
+				"A roguelike where you choose the effects and side-effects"+"<br>"+
+				"of artifacts as you gain them",
+				
+				"Strategy game where AI mechanic involves military packs and spies revealing the types of units you have,"+"<br>"+
+				"then when planning to invade they build counter-units and units that stack decently against yours" 
 			]
 			var seventhSetChoose = Math.floor(Math.random() * (seventhSet.length));
 			var ideaChosen = seventhSet[seventhSetChoose];
@@ -398,7 +407,8 @@ function getCreature() {
 		"fishs",
 		"reptiles",
 		"birbs",
-		"amphibians"
+		"amphibians",
+		"insects"
 	]
 	var typeChosen = Math.floor(Math.random() * (creatureTypes.length));
 	
@@ -438,7 +448,8 @@ function getCreature() {
 				"thick furred",
 				"fluffy",
 				"mangy",
-				"aquatic"
+				"aquatic",
+				""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (mammalAdjectives.length));
 			var adjectiveChosen = mammalAdjectives[adjectiveChoose];
@@ -669,6 +680,92 @@ function getCreature() {
 			break;
 			
 			
+		case 5:
+			var insectAdjectives = [
+				"large-eyed",
+				"small-eyed",
+				"wide-eyed",
+				"narrow-eyed",
+				"one-eyed",
+				"two-eyed",
+				"three-eyed",
+				"four-eyed",
+				"five-eyed",
+				"six-eyed",
+				"seven-eyed",
+				"eight-eyed",
+				"large-limbed",
+				"small-limbed",
+				"wide-limbed",
+				"narrow-limbed",
+				"two-limbed",
+				"four-limbed",
+				"six-limbed",
+				"eight-limbed",
+				"large-eared",
+				"small-eared",
+				"wide-eared",
+				"narrow-eared",
+				"one-eared",
+				"two-eared",
+				"four-eared",
+				"six-eared",
+				"eight-eared",
+				"hairless",
+				"thick furred",
+				"fluffy",
+				"mangy",
+				"aquatic",
+				""
+			]
+			var adjectiveChoose = Math.floor(Math.random() * (insectAdjectives.length));
+			var adjectiveChosen = insectAdjectives[adjectiveChoose];
+			
+			var insects = [
+				"bee",
+				"wasp",
+				"ant",
+				"termite",
+				"mantis",
+				"moth",
+				"butterfly",
+				"stick bug",
+				"leaf bug",
+				"stink bug",
+				"lady bug",
+				"beetle",
+				"rhino beetle",
+				"spider",
+				"orb weaver",
+				"wolf spider",
+				"tarantula",
+				"fly",
+				"mosquito",
+				"dragon fly",
+				"centipede",
+				"millipede",
+				"assassin bug",
+				"scorpion",
+				"grasshopper",
+				"cater strider",
+				"cockroach",
+				"caterpillar",
+				"tick",
+				"grub",
+				"flea",
+				"firefly",
+				"earwig",
+				"silverfish",
+				"treehopper",
+				"twig spider",
+				"thorn bug",
+				"moth"
+			]
+			var insectChoose = Math.floor(Math.random() * (insects.length));
+			var creatureChosen = insects[insectChoose];
+			break;
+			
+			
 		default:
 			var whoops = [
 				"oh no!",
@@ -786,7 +883,11 @@ function welcomeMessage() {
 			"Now Owns Their Own Coffee Machine",
 			"Sleep is for the Weak",
 			"Cooler than Double-sided Tape",
-			"More Reviews Soon!"
+			"More Reviews Soon!",
+			"Cooler than Room Temperature",
+			"Sweeter than Black Coffee",
+			"Taken with a Grain of Rice",
+			"Now Ripping Off Minecraft"
 		]
 		var messageChoose = Math.floor(Math.random() * (messages.length));
 		var messageChosen = messages[messageChoose];
