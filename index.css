@@ -469,7 +469,7 @@ div.contactOverlay {
 	right: 0;
 	bottom: 0;
 	background-color: rgba(24,14,21,.8);
-	z-index: 10;
+	z-index: 20;
 	cursor: pointer;
 }
 div.overlayText{
