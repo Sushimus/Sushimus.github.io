@@ -6,7 +6,10 @@
 /*Phones*/
 @media screen and (max-aspect-ratio: 16/9) {
 	.rexColumn img:active {
-		transform: scale(3,3);
+		transform: scale(4,4);
+	}
+	div.rexColumn{
+	width: 100%
 	}
 	h1{
 		font-size: .6rem;
@@ -26,24 +29,6 @@
 		height: .6rem;
 		width: .6rem;
 		background-image: url(buttons/dropdownbutton.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-		border-width: 1px;
-		border-style: solid;
-		border-color: rgb(98,68,56);
-	}
-	div.goBack {
-		margin-top: 0;
-		margin-left: 1rem;
-		position: fixed;
-		z-index: 8;
-		height: .6rem;
-		width: .6rem;
-	}
-	input.goBackButton {
-		height: .6rem;
-		width: .6rem;
-		background-image: url(buttons/goBackButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -138,24 +123,6 @@
 		height: .8rem;
 		width: .8rem;
 		background-image: url(buttons/dropdownbutton.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-		border-width: 1px;
-		border-style: solid;
-		border-color: rgb(98,68,56);
-	}
-	div.goBack {
-		margin-left: 2rem;
-		margin-top: .05rem;
-		position: fixed;
-		z-index: 8;
-		height: .8rem;
-		width: .8rem;
-	}
-	input.goBackButton {
-		height: .8rem;
-		width: .8rem;
-		background-image: url(buttons/goBackButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;

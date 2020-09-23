@@ -337,7 +337,10 @@ function getIdea() {
 				"of artifacts as you gain them",
 				
 				"Strategy game where AI mechanic involves military packs and spies revealing the types of units you have,"+"<br>"+
-				"then when planning to invade they build counter-units and units that stack decently against yours" 
+				"then when planning to invade they build counter-units and units that stack decently against yours",
+				
+				"Prison Architect, only with SCPs"+"<br>"+
+				""
 			]
 			var seventhSetChoose = Math.floor(Math.random() * (seventhSet.length));
 			var ideaChosen = seventhSet[seventhSetChoose];
@@ -375,7 +378,7 @@ function getCreature() {
 		"gigantic",
 		"huge",
 		"agressive",
-		"defensive",
+/*10*/  "defensive",
 		"agile",
 		"tanky",
 		"meaty",
@@ -385,7 +388,7 @@ function getCreature() {
 		"red",
 		"orange",
 		"yellow",
-		"green",
+/*20*/	"green",
 		"blue",
 		"indigo",
 		"violet",
@@ -395,9 +398,17 @@ function getCreature() {
 		"technicoloured",
 		"edible",
 		"poisonous",
-		"toxic",
+/*30*/	"toxic",
 		"foul smelling",
-		"hungry"
+		"hungry",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+/*40*/	""
 	]
 	var creatureModifyerChoose = Math.floor(Math.random() * (creatureModifyers.length));
 	var creatureModifyerChosen = creatureModifyers[creatureModifyerChoose];
@@ -408,7 +419,8 @@ function getCreature() {
 		"reptiles",
 		"birbs",
 		"amphibians",
-		"insects"
+		"insects",
+		"oddlySpecific"
 	]
 	var typeChosen = Math.floor(Math.random() * (creatureTypes.length));
 	
@@ -424,7 +436,7 @@ function getCreature() {
 				"three-eyed",
 				"four-eyed",
 				"five-eyed",
-				"six-eyed",
+		/*10*/	"six-eyed",
 				"seven-eyed",
 				"eight-eyed",
 				"large-limbed",
@@ -434,7 +446,7 @@ function getCreature() {
 				"two-limbed",
 				"four-limbed",
 				"six-limbed",
-				"eight-limbed",
+		/*20*/	"eight-limbed",
 				"large-eared",
 				"small-eared",
 				"wide-eared",
@@ -464,7 +476,7 @@ function getCreature() {
 				"muskrat",
 				"raccoon",
 				"prairie dog",
-				"bear",
+		/*10*/	"bear",
 				"squirrel",
 				"bison",
 				"lynx",
@@ -474,7 +486,7 @@ function getCreature() {
 				"coyote",
 				"opossum",
 				"mammal",
-				"wolf",
+		/*20*/	"wolf",
 				"dog",
 				"cat",
 				"panther",
@@ -484,10 +496,27 @@ function getCreature() {
 				"tiger",
 				"horse",
 				"unicorn",
-				"manticore",
+		/*30*/	"manticore",
 				"sasquatch",
 				"werewolf",
-				
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*40*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*50*/	""
 			]
 			var mammalChoose = Math.floor(Math.random() * (mammals.length));
 			var creatureChosen = mammals[mammalChoose];
@@ -505,7 +534,7 @@ function getCreature() {
 				"three-eyed",
 				"four-eyed",
 				"five-eyed",
-				"six-eyed",
+		/*10*/	"six-eyed",
 				"seven-eyed",
 				"eight-eyed",
 				"large-finned",
@@ -515,7 +544,7 @@ function getCreature() {
 				"one-finned",
 				"two-finned",
 				"three-finned",
-				"four-finned",
+		/*20*/	"four-finned",
 				"five-finned",
 				"six-finned",
 				"seven-finned",
@@ -535,13 +564,48 @@ function getCreature() {
 				"minnow",
 				"angler",
 				"cod",
-				"lionfish",
+		/*10*/	"lionfish",
 				"tropical fish",
 				"exotic fish",
 				"sunfish",
 				"fish",
 				"whale",
-				"bass"
+				"bass",
+				"seahorse",
+				"pupperfish",
+				"betta",
+		/*20*/	"gulbi",
+				"discus",
+				"mandarin fish",
+				"anglerfish",
+				"icefish",
+				"sailfish",
+				"swordfish",
+				"whaleshark",
+				"goldfish",
+				"hammerhead",
+		/*30*/	"frilled shark",
+				"saw shark",
+				"perch",
+				"burbot",
+				"sturgeon",
+				"Tigerfish",
+				"grayling",
+				"bluegill",
+				"alligator gar",
+				"sheepshead wrasse",
+				"carp",
+		/*40*/	"gourami",
+				"trumpetfish",
+				"pipefish",
+				"cornetfish",
+				"flounder",
+				"coelacanth",
+				"fringehead",
+				"pelican eel",
+				"helicoprion",
+				"doryaspis",
+		/*50*/	"dunkleosteus"
 			]
 			var fishChoose = Math.floor(Math.random() * (fishs.length));
 			var creatureChosen = fishs[fishChoose];
@@ -559,7 +623,7 @@ function getCreature() {
 				"three-eyed",
 				"four-eyed",
 				"five-eyed",
-				"six-eyed",
+		/*10*/	"six-eyed",
 				"seven-eyed",
 				"eight-eyed",
 				"large-limbed",
@@ -569,7 +633,7 @@ function getCreature() {
 				"two-limbed",
 				"four-limbed",
 				"six-limbed",
-				"eight-limbed",
+		/*20*/	"eight-limbed",
 				"large-eared",
 				"small-eared",
 				"wide-eared",
@@ -593,7 +657,49 @@ function getCreature() {
 				"cobra",
 				"serpent",
 				"anaconda",
-				"reptile"
+				"reptile",
+		/*10*/	"snake-necked turtle",
+				"chameleon",
+				"gharial",
+				"agama",
+				"chamaro",
+				"belize lizard",
+				"basilisk lizard",
+				"frilled neck lizard",
+				"mata mata",
+				"basilisk",
+		/*20*/	"mexican alligator lizard",
+				"gecko",
+				"sea turtle",
+				"blind snake",
+				"satanic leaf-tailed gecko",
+				"burtons legless lizard",
+				"longisquama",
+				"pachycephalosaurus",
+				"spinosaurus",
+				"pelycosaur",
+				"stegosaurus",
+		/*30*/	"ankylosaurus",
+				"nigersaurus",
+				"hydra",
+				"dragon",
+				"scylla",
+				"drake",
+				"",
+				"",
+				"",
+				"",
+		/*40*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*50*/	""
 			]
 			var reptileChoose = Math.floor(Math.random() * (reptiles.length));
 			var creatureChosen = reptiles[reptileChoose];
@@ -611,7 +717,7 @@ function getCreature() {
 				"three-eyed",
 				"four-eyed",
 				"five-eyed",
-				"six-eyed",
+		/*10*/	"six-eyed",
 				"seven-eyed",
 				"eight-eyed",
 				"large-winged",
@@ -621,7 +727,7 @@ function getCreature() {
 				"two-winged",
 				"four-winged",
 				"six-winged",
-				"eight-winged",
+		/*20*/	"eight-winged",
 				""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (birbAdjectives.length));
@@ -634,7 +740,50 @@ function getCreature() {
 				"finch",
 				"lark",
 				"bird",
-				"chicken"
+				"chicken",
+				"",
+				"",
+		/*10*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*20*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*30*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*40*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*50*/	""
 			]
 			var birbsChoose = Math.floor(Math.random() * (birbs.length));
 			var creatureChosen = birbs[birbsChoose];
@@ -652,7 +801,7 @@ function getCreature() {
 				"three-eyed",
 				"four-eyed",
 				"five-eyed",
-				"six-eyed",
+		/*10*/	"six-eyed",
 				"seven-eyed",
 				"eight-eyed",
 				"large-limbed",
@@ -662,7 +811,7 @@ function getCreature() {
 				"two-limbed",
 				"four-limbed",
 				"six-limbed",
-				"eight-limbed",
+		/*20*/	"eight-limbed",
 				""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (amphibianAdjectives.length));
@@ -673,7 +822,52 @@ function getCreature() {
 				"axolotl",
 				"salamander",
 				"amphibian",
-				"toad"
+				"toad",
+				"",
+				"",
+				"",
+				"",
+		/*10*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*20*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*30*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*40*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*50*/	""
 			]
 			var amphibianChoose = Math.floor(Math.random() * (amphibians.length));
 			var creatureChosen = amphibians[amphibianChoose];
@@ -691,7 +885,7 @@ function getCreature() {
 				"three-eyed",
 				"four-eyed",
 				"five-eyed",
-				"six-eyed",
+		/*10*/	"six-eyed",
 				"seven-eyed",
 				"eight-eyed",
 				"large-limbed",
@@ -700,22 +894,13 @@ function getCreature() {
 				"narrow-limbed",
 				"two-limbed",
 				"four-limbed",
-				"six-limbed",
 				"eight-limbed",
-				"large-eared",
-				"small-eared",
-				"wide-eared",
-				"narrow-eared",
-				"one-eared",
-				"two-eared",
-				"four-eared",
-				"six-eared",
-				"eight-eared",
-				"hairless",
+		/*20*/	"ten-limbed",
 				"thick furred",
 				"fluffy",
-				"mangy",
 				"aquatic",
+				"spiney",
+				"squishy",
 				""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (insectAdjectives.length));
@@ -731,7 +916,7 @@ function getCreature() {
 				"butterfly",
 				"stick bug",
 				"leaf bug",
-				"stink bug",
+		/*10*/	"stink bug",
 				"lady bug",
 				"beetle",
 				"rhino beetle",
@@ -741,7 +926,7 @@ function getCreature() {
 				"tarantula",
 				"fly",
 				"mosquito",
-				"dragon fly",
+		/*20*/	"dragon fly",
 				"centipede",
 				"millipede",
 				"assassin bug",
@@ -751,7 +936,7 @@ function getCreature() {
 				"cockroach",
 				"caterpillar",
 				"tick",
-				"grub",
+		/*30*/	"grub",
 				"flea",
 				"firefly",
 				"earwig",
@@ -759,11 +944,57 @@ function getCreature() {
 				"treehopper",
 				"twig spider",
 				"thorn bug",
-				"moth"
+				"moth",
+				"",
+		/*40*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*50*/	""
 			]
 			var insectChoose = Math.floor(Math.random() * (insects.length));
 			var creatureChosen = insects[insectChoose];
 			break;
+			
+		case 6:
+			var oddlySpecific = [
+				"spider duck",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*10*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*20*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*30*/	""
+			]
 			
 			
 		default:
@@ -899,187 +1130,35 @@ function welcomeMessage() {
 
 //------------------------------------------------------------------------------------------------------Change Background Start Here------------------------------------------------------------------------------------------------------
 window.onload = function backgroundShift() {
-	var date = new Date();
-	var day = date.getDay();
-	var currentTime = date.getHours();
-	var screenSize = window.matchMedia("(min-aspect-ratio: 16/9)");
-	
-	switch(day){
-//----------------------------------------------------------------------------Sunday----------------------------------------------------------------------------
-	case 0:
-		if (7 <= currentTime && currentTime < 20) {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/0/day1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/0/day2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
+//Assigning const based on user environment
+const now = new Date()
+const day = now.getDay()
+const days = ['0', '1', '2', '3', '4', '5', '6'];
+const date = new Date();
+const hours = now.getHours()
+const screenSize = window.matchMedia("(min-aspect-ratio: 16/9)");
 
-		else {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/0/night1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/0/night2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-	break;
-	
-//----------------------------------------------------------------------------Monday----------------------------------------------------------------------------
-	case 1:
-		if (7 <= currentTime && currentTime < 20) {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/1/day1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/1/day2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
+const getWallpaperPath = (day, hours) => {
+  return hours < 18 
+    ? `../backgrounds/${day}/day1.png`
+    : `../backgrounds/${day}/night1.png`
+}
+const getWallpaperPathSmall = (day, hours) => {
+  return hours < 18 
+    ? `../backgrounds/${day}/day2.png`
+    : `../backgrounds/${day}/night2.png`
+}
 
-		else {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/1/night1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/1/night2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-	break;
-	
-//----------------------------------------------------------------------------Tuesday----------------------------------------------------------------------------
-	case 2:
-		if (7 <= currentTime && currentTime < 20) {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/2/day1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/2/day2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
 
-		else {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/2/night1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/2/night2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-	break;
 
-//----------------------------------------------------------------------------Wednesday----------------------------------------------------------------------------
-	case 3:
-		if (7 <= currentTime && currentTime < 20) {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/3/day1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/3/day2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-
-		else {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/3/night1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/3/night2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-	break;
-	
-//----------------------------------------------------------------------------Thursday----------------------------------------------------------------------------
-	case 4:
-		if (7 <= currentTime && currentTime < 20) {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/4/day1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/4/day2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-
-		else {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/4/night1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/4/night2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-	break;
-	
-//----------------------------------------------------------------------------Friday----------------------------------------------------------------------------
-	case 5:
-		if (7 <= currentTime && currentTime < 20) {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/5/day1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/5/day2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-
-		else {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/5/night1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/5/night2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-	break;
-	
-//----------------------------------------------------------------------------Saturday----------------------------------------------------------------------------
-	case 6:
-		if (7 <= currentTime && currentTime < 20) {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/6/day1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/6/day2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-
-		else {
-			if (document.getElementById('body') && screenSize.matches) {
-				document.getElementById('body').style.background = "url('../backgrounds/6/night1.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-			else {
-				document.getElementById('body').style.background = "url('../backgrounds/6/night2.png') no-repeat fixed";
-				document.getElementById('body').style.backgroundSize = "100vw 100vh";
-			}
-		}
-	break;
-	
-	default: document.getElementById('body').style.background = "url('test1.png) no-repeat fixed, url('../test1.png') no-repeat fixed"
-	}
+//Setting background based on results
+if (document.getElementById('body') && screenSize.matches){
+	document.getElementById('body').style.backgroundImage = "url(\"" + `${getWallpaperPath(days[date.getDay()], date.getHours())}` + "\")";
+}
+else{
+	document.getElementById('body').style.backgroundImage = "url(\"" + `${getWallpaperPathSmall(days[date.getDay()], date.getHours())}` + "\")";
+}
+document.getElementById('body').style.backgroundRepeat = "no-repeat";
+document.getElementById('body').style.backgroundAttachment = "fixed";
+document.getElementById('body').style.backgroundSize = "100vw 100vh";
 }
