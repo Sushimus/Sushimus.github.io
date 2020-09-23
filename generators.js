@@ -1140,13 +1140,13 @@ const screenSize = window.matchMedia("(min-aspect-ratio: 16/9)");
 
 const getWallpaperPath = (day, hours) => {
   return hours < 18 
-    ? `../website/backgrounds/${day}/day1.png`
-    : `../website/backgrounds/${day}/night1.png`
+    ? `../backgrounds/${day}/day1.png`
+    : `../backgrounds/${day}/night1.png`
 }
 const getWallpaperPathSmall = (day, hours) => {
   return hours < 18 
-    ? `../website/backgrounds/${day}/day2.png`
-    : `../website/backgrounds/${day}/night2.png`
+    ? `../backgrounds/${day}/day2.png`
+    : `../backgrounds/${day}/night2.png`
 }
 
 
