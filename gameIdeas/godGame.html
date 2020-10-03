@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<link rel= "stylesheet" type= "text/css" href= "../index.css">
+<script src= "../generators.js"></script>
+<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+
+<body id= "body">
+<div class= "banner">
+	<h1>
+		p a s s i v e l y<mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>a g g r e s s i v e
+	</h1>
+</div>
+
+<div class= "dropdown">
+	<input class= "dropdownbutton" type= "button"></input>
+	<div class= "dropdowncontent">
+		<a href="../index.html">Home</a>
+		<a href="../galleries.html">Galleries</a>
+		<!-- <a href="../classes.html">Classes</a> -->
+		<a href="../mods.html">Mods</a>
+		<a href="../gameReviews.html">Reviews</a>
+	</div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------Content Starts Here-------------------------------------------------------------------------------------------------------------------->
+<div class="gameIdea">
+	<p>
+		<u><b>Game Idea, August 2020</u></b><br>
+			What do I have cooking up this month? 
+			Well some might describe it as godly. 
+			This month you’ll be tasked with creating life itself, or at least trying to. 
+			So let me break down how this would work and why this god sim is at least different enough to take into an interesting idea. 
+			Firstly, the world. Worlds would be randomly generated and most likely a single terrestrial biome for simplicities sake. 
+			Random generation is kool and all but I mean it’s ALL random, even the distance to their star(s). 
+			Next let’s build on this base. 
+			Every good god game is about flexing creative muscle, but most seem to be too unlimited. Here all the animals and plants would need to be designed in ways specific to the world and to each other in a careful tapestry. 
+			Let’s also throw in ways to alter the world, but indirectly. 
+			Remember you can only control the life on the rock not the rock itself. 
+			Last let’s throw in weather patterns. 
+			Sound at least mildly worth a read? Let’s get into it.<br><br>
+
+			
+			<u>World Mechanics</u><br>
+			Starting with the world. 
+			Everything would be randomized (within constraints in the settings) but what is everything? 
+			The size would be a start. 
+			Gravity plays a large role in the way a creature can be built and should be reflected in constraints given to the player. 
+			Gravity can be represented in many complex ways but in the scope of this game would be best as a movement speed debuff as well as a weight limit based on number of bones. 
+			Remember the fun of this game should derive from the player working withing the restraints to create something unique to their problem solving skills. 
+			Next, planet distance and the number of stars. 
+			This would effect the amount of light received which then directly effects plants and indirectly effects fauna. 
+			We can also think about things like terrain and elevations, or lack there of. 
+			This might play a role into how the player designs animal joints and movement mechanics. 
+			Let’s also not forget the amount of water on the planet. 
+			How far animals can go into the inner continent might be directly effected by water level as well as amount of plants sustained.<br><br>
+			
+			<u>Animals</u><br>
+			So then moving into the animals a player might create, a lot of factors come into play here. 
+			By far the largest issue would be energy for the animal to not die. 
+			There are a number of ways to go about this but for scope’s sake I believe the best way to implement a food system would be based on number of muscles and their size. 
+			This makes smaller animals less food dependent while larger ones require more food but can more effectively alter the terrain. Which brings the next point, terrain altering. 
+			Remember: the player cannot alter the terrain directly however they can be creative an engineer animals that would shape the land via burrows, dams, mounds, etc. 
+			This allows the player a small amount of control to slowly shape the world over time and keeps the game world more dynamic as it progresses. 
+			The animals also would need to be designed to live in the world already there. 
+			Mountainous regions might favour slender creatures with stronger legs while a forest might encourage nimble, smaller creatures. 
+			The ability of a creature to adapt the world around them should be limited by the constraints of the land already there. 
+			There are also of course more basic, but key dynamics to cover- but seeing as they’re self-explanatory I’ll just list them for consideration: breeding rate, movement speed, climbing modifiers (claws, specialized limbs, etc.), diet, swimming modifiers (webbed feet, special oils, etc.), aggressiveness, and colour scheme (camouflage/warning of toxins). 
+			One thing not listed however is genetic mutations. 
+			In what I’m picturing mutations would only hurt the game, both performance wise and scope wise. 
+			The game is about the player creating a world they envision and flexing their creative solving skills, mutations would undermine this.<br><br>
+			
+			<u>Plants</u><br>
+			We also need to consider my favourite part of this, the plants. 
+			Plants serve as food pump to keep everything else alive and as such are very important to the game. 
+			Our first consideration is how leafy they are. 
+			More leaves allow more sunlight (food) but also mean more water loss from evaporation (making the plant need increased water). 
+			They also serve as food for herbivores and omnivores, this could be modeled so that the volume of leaf eaten is the amount of food given. 
+			We won’t need to get into certain leaves being better or worse because that leaves the scope of our project (ba-da-tss). 
+			We also need to think about the sun being blocked by terrain and other plants, which would effect the shape and design of smaller plants. 
+			I believe this would be best represented by a flat 50%~ less food to plants being denied sunlight by the plants hanging directly over them. 
+			This rate is easy to digest for the player and the directly above nature also allows for easier planning and less intensive calculations needed if it were based on shadow casting. 
+			So then given the massive debuff the player might then start to design carnivorous plants, plants that imitate fungus, etc so that the world is being very efficient with its food use. 
+			As a side note, on the topic of shadow casting I believe there should be no day/night cycle. 
+			When there is a very clear passage of time it makes things like movement speeds feel unrealistic, lifespans to feel wrong, and would require unnecessary update calculations to things like shadows the player wouldn’t need to enjoy the game. 
+			Back on topic, we need to consider other unique plants attributes like toxins as well. 
+			I think toxins should work so that based on the type of stomach the animal has the toxins work more or less. 
+			This allows for a simple yet workable system where you can have several different types of stomachs for each kind of animal (herbivore, omnivore, and carnivore) the determine exactly what their diet can consist of. 
+			This toxin system could also be applied to animals too. 
+			Last major consideration would be roots. 
+			Where can and can’t a plant live? 
+			Roots would take a similar form as the stomach system where there are several different types of roots based on various biomes (one ‘biome’ might even be growing on the side of another plant! 
+			With the downside being it getting a sunlight debuff as its underneath it).<br><br>
+			
+			<u>Weather</u><br>
+			Finally our last big consideration is weather, more specifically how it relates to terrain. 
+			I think weather can be best mapped as a sort of radius for water level as it goes inland. 
+			The further inland it goes the less water is available. 
+			Things like mountains and hills might block this, with mountains blocking it completely and hills past a threshold reducing the water past that point by a flat percentage. 
+			This makes the weather system easy enough to understand as a player while keeping the complexity of it fairly minimal. 
+			So then how does weather change? 
+			As animals do things like burrow into rivers and alter the flow or dam things up this would effect the placement of the water on the world- which by extension effects the ‘weather’ as weather is a radius around water sources.
+	</p>
+</div>
+</body>
+</html>
