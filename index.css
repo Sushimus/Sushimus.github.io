@@ -36,7 +36,7 @@
 		border-color: rgb(98,68,56);
 	}
 	div.contacts{
-		width: 190%;
+		width: 180%;
 		margin-top: 0;
 		margin-left: 0;
 		position: fixed;
@@ -47,6 +47,26 @@
 		height: .6rem;
 		width: .6rem;
 		background-image: url(buttons/twitchButton.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(98,68,56);
+	}
+	input.youtubeLink{
+		height: .6rem;
+		width: .6rem;
+		background-image: url(buttons/youtubeButton.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(98,68,56);
+	}
+	input.instaLink{
+		height: .6rem;
+		width: .6rem;
+		background-image: url(buttons/instaButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
