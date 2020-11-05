@@ -368,7 +368,8 @@ function getIdea() {
 
 //------------------------------------------------------------------------------------------------------Random Creature Start Here------------------------------------------------------------------------------------------------------
 function getCreature() {
-	var creatureModifyers = [
+	//mood, body, etc.
+	var behaviorModifyers = [
 		"small",
 		"miniscule",
 		"tiny",
@@ -378,40 +379,72 @@ function getCreature() {
 		"gigantic",
 		"huge",
 		"agressive",
-/*10*/  "defensive",
+/*10*/	"defensive",
 		"agile",
 		"tanky",
 		"meaty",
 		"spiritual",
+		"poisonous",
+		"hungry",
+		"chubby",
+		"",
+		"",
+/*20*/	""
+	]
+	var behaviorModifyerChoose = Math.floor(Math.random() * (behaviorModifyers.length));
+	var behaviorModifyerChosen = behaviorModifyers[behaviorModifyerChoose];
+	
+	//colour, aesthetics, etc.
+	var appearanceModifyers = [
+		"blue",
 		"mystic",
 		"albino",
 		"red",
 		"orange",
 		"yellow",
-/*20*/	"green",
-		"blue",
+    	"green",
 		"indigo",
 		"violet",
-		"black",
+/*10*/	"black",
 		"white",
 		"monochromatic",
 		"technicoloured",
 		"edible",
-		"poisonous",
-/*30*/	"toxic",
+    	"toxic",
 		"foul smelling",
-		"hungry",
-		"chubby",
 		"exotic",
 		"hypnotic",
+		"leucistic",
+/*20*/	"starving"
+	]
+	var appearanceModifyerChoose = Math.floor(Math.random() * (appearanceModifyers.length));
+	var appearanceModifyerChosen = appearanceModifyers[appearanceModifyerChoose];
+	
+	//what it's made of
+	var materialModifyers = [
 		"crystalline",
 		"clay",
 		"wooden",
-		"leucistic",
-/*40*/	""
+		"cardboard",
+		"glass",
+		"metallic",
+		"ceramic",
+		"plastic",
+		"cloth",
+/*10*/	"yarn",
+		"electronic",
+		"wax",
+		"paper",
+		"glass",
+		"rubber",
+		"",
+		"",
+		"",
+		"",
+/*20*/	""
 	]
-	var creatureModifyerChoose = Math.floor(Math.random() * (creatureModifyers.length));
-	var creatureModifyerChosen = creatureModifyers[creatureModifyerChoose];
+	var materialModifyerChoose = Math.floor(Math.random() * (materialModifyers.length));
+	var materialModifyerChosen = materialModifyers[materialModifyerChoose];
 	
 	var creatureTypes = [
 		"mammals",
@@ -428,42 +461,39 @@ function getCreature() {
 			var mammalAdjectives = [
 				"large-eyed",
 				"small-eyed",
-				"wide-eyed",
-				"narrow-eyed",
 				"one-eyed",
-				"two-eyed",
 				"three-eyed",
 				"four-eyed",
-				"five-eyed",
-		/*10*/	"six-eyed",
-				"seven-eyed",
-				"eight-eyed",
-				"large-limbed",
-				"small-limbed",
-				"wide-limbed",
-				"narrow-limbed",
+				"six-eyed",
+				"long-limbed",
+				"stubby-limbed",
 				"two-limbed",
-				"four-limbed",
-				"six-limbed",
-		/*20*/	"eight-limbed",
+		/*10*/	"six-limbed",
+				"eight-limbed",
 				"large-eared",
 				"small-eared",
-				"wide-eared",
-				"narrow-eared",
-				"one-eared",
-				"two-eared",
 				"four-eared",
-				"six-eared",
-				"eight-eared",
 				"hairless",
-				"thick furred",
+				"thick-furred",
 				"fluffy",
 				"mangy",
 				"aquatic",
-				""
+		/*20*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*30*/  ""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (mammalAdjectives.length));
 			var adjectiveChosen = mammalAdjectives[adjectiveChoose];
+			var secondAdjectiveChoose = Math.floor(Math.random() * (mammalAdjectives.length));
+			var secondAdjectiveChosen = mammalAdjectives[adjectiveChoose];
 			
 			var mammals = [
 				"water deer",
@@ -526,32 +556,39 @@ function getCreature() {
 			var fishAdjectives = [
 				"large-eyed",
 				"small-eyed",
-				"wide-eyed",
-				"narrow-eyed",
 				"one-eyed",
-				"two-eyed",
 				"three-eyed",
 				"four-eyed",
-				"five-eyed",
-		/*10*/	"six-eyed",
-				"seven-eyed",
-				"eight-eyed",
-				"large-finned",
-				"small-finned",
-				"wide-finned",
-				"narrow-finned",
-				"one-finned",
+				"six-eyed",
+				"long-finned",
+				"stubby-finned",
 				"two-finned",
-				"three-finned",
-		/*20*/	"four-finned",
-				"five-finned",
-				"six-finned",
-				"seven-finned",
+		/*10*/	"six-finned",
 				"eight-finned",
-				""
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*20*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*30*/  ""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (fishAdjectives.length));
 			var adjectiveChosen = fishAdjectives[adjectiveChoose];
+			var secondAdjectiveChoose = Math.floor(Math.random() * (fishAdjectives.length));
+			var secondAdjectiveChosen = fishAdjectives[adjectiveChoose];
 			
 			const fishs = [
 				"shark",
@@ -615,37 +652,39 @@ function getCreature() {
 			var reptileAdjectives = [
 				"large-eyed",
 				"small-eyed",
-				"wide-eyed",
-				"narrow-eyed",
 				"one-eyed",
-				"two-eyed",
 				"three-eyed",
 				"four-eyed",
-				"five-eyed",
-		/*10*/	"six-eyed",
-				"seven-eyed",
-				"eight-eyed",
-				"large-limbed",
-				"small-limbed",
-				"wide-limbed",
-				"narrow-limbed",
+				"six-eyed",
+				"long-limbed",
+				"stubby-limbed",
 				"two-limbed",
-				"four-limbed",
-				"six-limbed",
-		/*20*/	"eight-limbed",
-				"large-eared",
-				"small-eared",
-				"wide-eared",
-				"narrow-eared",
-				"one-eared",
-				"two-eared",
-				"four-eared",
-				"six-eared",
-				"eight-eared",
-				""
+		/*10*/	"six-limbed",
+				"eight-limbed",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*20*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*30*/  ""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (reptileAdjectives.length));
 			var adjectiveChosen = reptileAdjectives[adjectiveChoose];
+			var secondAdjectiveChoose = Math.floor(Math.random() * (reptileAdjectives.length));
+			var secondAdjectiveChosen = reptileAdjectives[adjectiveChoose];
 			
 			const reptiles = [
 				"crocodile",
@@ -694,28 +733,39 @@ function getCreature() {
 			var birbAdjectives = [
 				"large-eyed",
 				"small-eyed",
-				"wide-eyed",
-				"narrow-eyed",
 				"one-eyed",
-				"two-eyed",
 				"three-eyed",
 				"four-eyed",
-				"five-eyed",
-		/*10*/	"six-eyed",
-				"seven-eyed",
-				"eight-eyed",
-				"large-winged",
-				"small-winged",
-				"wide-winged",
-				"narrow-winged",
-				"two-winged",
+				"six-eyed",
+				"long-winged",
+				"stubby-winged",
 				"four-winged",
-				"six-winged",
-		/*20*/	"eight-winged",
-				""
+		/*10*/	"six-winged",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*20*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*30*/  ""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (birbAdjectives.length));
 			var adjectiveChosen = birbAdjectives[adjectiveChoose];
+			var secondAdjectiveChoose = Math.floor(Math.random() * (birbAdjectives.length));
+			var secondAdjectiveChosen = birbAdjectives[adjectiveChoose];
 			
 			const birbs = [
 				"robin",
@@ -778,28 +828,39 @@ function getCreature() {
 			var amphibianAdjectives = [
 				"large-eyed",
 				"small-eyed",
-				"wide-eyed",
-				"narrow-eyed",
 				"one-eyed",
-				"two-eyed",
 				"three-eyed",
 				"four-eyed",
-				"five-eyed",
-		/*10*/	"six-eyed",
-				"seven-eyed",
-				"eight-eyed",
-				"large-limbed",
-				"small-limbed",
-				"wide-limbed",
-				"narrow-limbed",
+				"six-eyed",
+				"long-limbed",
+				"stubby-limbed",
 				"two-limbed",
-				"four-limbed",
-				"six-limbed",
-		/*20*/	"eight-limbed",
-				""
+		/*10*/	"six-limbed",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*20*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*30*/  ""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (amphibianAdjectives.length));
 			var adjectiveChosen = amphibianAdjectives[adjectiveChoose];
+			var secondAdjectiveChoose = Math.floor(Math.random() * (amphibianAdjectives.length));
+			var secondAdjectiveChosen = amphibianAdjectives[adjectiveChoose];
 			
 			const amphibians = [
 				"frog",
@@ -842,33 +903,39 @@ function getCreature() {
 			var insectAdjectives = [
 				"large-eyed",
 				"small-eyed",
-				"wide-eyed",
-				"narrow-eyed",
 				"one-eyed",
-				"two-eyed",
 				"three-eyed",
 				"four-eyed",
-				"five-eyed",
-		/*10*/	"six-eyed",
-				"seven-eyed",
-				"eight-eyed",
-				"large-limbed",
-				"small-limbed",
-				"wide-limbed",
-				"narrow-limbed",
+				"six-eyed",
+				"long-limbed",
+				"stubby-limbed",
 				"two-limbed",
-				"four-limbed",
-				"eight-limbed",
-		/*20*/	"ten-limbed",
-				"thick furred",
+		/*10*/	"four-limbed",
+				"ten-limbed",
 				"fluffy",
-				"aquatic",
 				"spiney",
 				"squishy",
-				""
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*20*/	"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+		/*30*/  ""
 			]
 			var adjectiveChoose = Math.floor(Math.random() * (insectAdjectives.length));
 			var adjectiveChosen = insectAdjectives[adjectiveChoose];
+			var secondAdjectiveChoose = Math.floor(Math.random() * (insectAdjectives.length));
+			var secondAdjectiveChosen = insectAdjectives[adjectiveChoose];
 			
 			var insects = [
 				"bumble bee",
@@ -944,7 +1011,21 @@ function getCreature() {
 			
 			break;
 	}
-	document.getElementById('describedCreature').innerHTML = "featuring" + " " + "a(n)" + " " + creatureModifyerChosen + " " + adjectiveChosen + " " + creatureChosen;
+	
+	var templates = [
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + adjectiveChosen + " " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + behaviorModifyerChosen + " " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + behaviorModifyerChosen + " " + adjectiveChosen + " " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + behaviorModifyerChosen + " " + appearanceModifyerChosen + " " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + behaviorModifyerChosen + " " + materialModifyerChosen + " " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + appearanceModifyerChosen + " " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + appearanceModifyerChosen + " " + adjectiveChosen + " " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + appearanceModifyerChosen + " " + materialModifyerChosen + " " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + materialModifyerChosen + " " + creatureChosen,
+	document.getElementById('describedCreature').innerHTML = "featuring a(n) " + materialModifyerChosen + " " + adjectiveChosen + " " + creatureChosen
+	]
+	var templateChosen = Math.floor(Math.random() * (templates.length));
 }
 
 //------------------------------------------------------------------------------------------------------Random Setting Start Here------------------------------------------------------------------------------------------------------
@@ -1015,16 +1096,6 @@ function getCharacterMotive() {
 	]
 	var randomNumber = Math.floor(Math.random() * (characterMotives.length));
 	document.getElementById('motive').innerHTML = characterMotives[randomNumber];
-}
-
-//------------------------------------------------------------------------------------------------------Contact Overlay Start Here------------------------------------------------------------------------------------------------------
-
-function on() {
-  document.getElementById("contactOverlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("contactOverlay").style.display = "none";
 }
 
 //------------------------------------------------------------------------------------------------------Welcome Message Start Here------------------------------------------------------------------------------------------------------
