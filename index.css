@@ -466,52 +466,6 @@ div.dropdowncontent{
 input.goBackButton:hover {
 	cursor: pointer;
 }
-div.contactOverlay {
-	position: fixed;
-	display: none;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(24,14,21,.8);
-	z-index: 20;
-	cursor: pointer;
-}
-div.overlayText{
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	width: auto;
-	height: auto;
-	padding: 1vw;
-	font-size: .5rem;
-	letter-spacing: 1.5px;
-	line-height: 1.25;
-	color: rgb(255,186,167);
-	text-shadow:
-		1px 0px 2px rgb(100,66,56),
-		0px 1px 2px rgb(100,66,56),
-		-1px 0px 2px rgb(100,66,56),
-		0px -1px 2px rgb(100,66,56),
-		
-		1px 1px 2px rgb(100,66,56),
-		-1px 1px 2px rgb(100,66,56),
-		1px -1px 2px rgb(100,66,56),
-		-1px -1px 2px rgb(100,66,56);
-	background: url(dither.png), rgba(48,33,27,.8);
-	background-size: 1vw;
-	background-clip: padding-box;
-	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	-webkit-border-image: url(contentborder1.png) 11 repeat;
-	-moz-border-image: url(contentborder1.png) 11 repeat;
-	-o-border-image: url(contentborder1.png) 11 repeat;
-	border-image-slice: 17;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-}	
 html::-webkit-scrollbar{
 	width: 0px;
 }
@@ -861,4 +815,18 @@ div.gameIdea img{
 	border-style: solid;
 	border-color: rgb(98,68,56);
 	margin: .5rem;
+}
+/*<----------------------------------------------Colour Gen---------------------------------------------->*/
+table.colourPallet{
+	margin-left: 5%;
+	width: 90vw;
+	height: 792vh;
+}
+tr.colour{
+	height: 33vh;
+	width: 100vw;
+}
+td.colourTile{
+	width: 20vw;
+	background-color: red;
 }
