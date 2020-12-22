@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<link rel= "stylesheet" type= "text/css" href= "../index.css">
+<script src= "../logik/generators.js"></script>
+<script src= "colourGen.js"></script>
+<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+
+<body id= "body">
+<div class= "banner">
+	<h1>
+		g o<mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>s e e<mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>r e x
+	</h1>
+</div>
+
+<div class= "dropdown">
+	<input class= "dropdownbutton" type= "button"></input>
+	<div class= "dropdowncontent">
+		<a href="../index.html">Home</a>
+		<a href= "../mainPages/galleries.html">Galleries</a>
+		<!-- <a href="../classes.html">Classes</a> -->
+		<!-- <a href="mods.html">Mods</a> -->
+		<!-- <a href="gameReviews.html">Reviews</a> -->
+	</div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------Content Starts Here-------------------------------------------------------------------------------------------------------------------->
+<div class = "padding"></div>
+<p>
+Please enter starting colour.<br><br>
+R:<input class= "rgbInput" type= "text" id= "redInput" required maxlength= "3"> G:</input><input class= "rgbInput" type= "text" id= "greenInput" required maxlength= "3"></input> B:<input class= "rgbInput" type= "text" id= "blueInput" required maxlength= "3"></input><br><br>
+HEX:<input class= "hexInput" type= "text" id= "hexInput" required maxlength= "6"><br><br>
+</p>
+<table class= "colourPallet">
+<!---------PRIMARY_COLOURS--------->
+<tr id= "red" class= "colour">
+<td id= "red-set1" class= "colourTile"></td>
+<td id= "red-set2" class= "colourTile"></td>
+<td id= "red-set3" class= "colourTile"></td>
+<td id= "red-set4" class= "colourTile"></td>
+<td id= "red-set5" class= "colourTile"></td>
+</tr>
+<tr id= "green" class= "colour">
+<td id= "green-set1" class= "colourTile"></td>
+<td id= "green-set2" class= "colourTile"></td>
+<td id= "green-set3" class= "colourTile"></td>
+<td id= "green-set4" class= "colourTile"></td>
+<td id= "green-set5" class= "colourTile"></td>
+</tr>
+<tr id= "blue" class= "colour">
+<td id= "blue-set1" class= "colourTile"></td>
+<td id= "blue-set2" class= "colourTile"></td>
+<td id= "blue-set3" class= "colourTile"></td>
+<td id= "blue-set4" class= "colourTile"></td>
+<td id= "blue-set5" class= "colourTile"></td>
+</tr>
+<!---------SECONDARY_COLOURS--------->
+<tr id= "red-green" class= "colour">
+<td id= "red-green-set1" class= "colourTile"></td>
+<td id= "red-green-set2" class= "colourTile"></td>
+<td id= "red-green-set3" class= "colourTile"></td>
+<td id= "red-green-set4" class= "colourTile"></td>
+<td id= "red-green-set5" class= "colourTile"></td>
+</tr>
+<tr id= "red-blue" class= "colour">
+<td id= "red-blue-set1" class= "colourTile"></td>
+<td id= "red-blue-set2" class= "colourTile"></td>
+<td id= "red-blue-set3" class= "colourTile"></td>
+<td id= "red-blue-set4" class= "colourTile"></td>
+<td id= "red-blue-set5" class= "colourTile"></td>
+</tr>
+<tr id= "green-red" class= "colour">
+<td id= "green-red-set1" class= "colourTile"></td>
+<td id= "green-red-set2" class= "colourTile"></td>
+<td id= "green-red-set3" class= "colourTile"></td>
+<td id= "green-red-set4" class= "colourTile"></td>
+<td id= "green-red-set5" class= "colourTile"></td>
+</tr>
+<tr id= "green-blue" class= "colour">
+<td id= "green-blue-set1" class= "colourTile"></td>
+<td id= "green-blue-set2" class= "colourTile"></td>
+<td id= "green-blue-set3" class= "colourTile"></td>
+<td id= "green-blue-set4" class= "colourTile"></td>
+<td id= "green-blue-set5" class= "colourTile"></td>
+</tr>
+<tr id= "blue-red" class= "colour">
+<td id= "blue-red-set1" class= "colourTile"></td>
+<td id= "blue-red-set2" class= "colourTile"></td>
+<td id= "blue-red-set3" class= "colourTile"></td>
+<td id= "blue-red-set4" class= "colourTile"></td>
+<td id= "blue-red-set5" class= "colourTile"></td>
+</tr>
+<tr id= "blue-green" class= "colour">
+<td id= "blue-green-set1" class= "colourTile"></td>
+<td id= "blue-green-set2" class= "colourTile"></td>
+<td id= "blue-green-set3" class= "colourTile"></td>
+<td id= "blue-green-set4" class= "colourTile"></td>
+<td id= "blue-green-set5" class= "colourTile"></td>
+</tr>
+<!---------TERTIARY_COLOURS--------->
+<tr id= "red-red-green" class= "colour">
+<td id= "red-red-green-set1" class= "colourTile"></td>
+<td id= "red-red-green-set2" class= "colourTile"></td>
+<td id= "red-red-green-set3" class= "colourTile"></td>
+<td id= "red-red-green-set4" class= "colourTile"></td>
+<td id= "red-red-green-set5" class= "colourTile"></td>
+</tr>
+<tr id= "red-red-blue" class= "colour">
+<td id= "red-red-blue-set1" class= "colourTile"></td>
+<td id= "red-red-blue-set2" class= "colourTile"></td>
+<td id= "red-red-blue-set3" class= "colourTile"></td>
+<td id= "red-red-blue-set4" class= "colourTile"></td>
+<td id= "red-red-blue-set5" class= "colourTile"></td>
+</tr>
+<tr id= "green-green-red" class= "colour">
+<td id= "green-green-red-set1" class= "colourTile"></td>
+<td id= "green-green-red-set2" class= "colourTile"></td>
+<td id= "green-green-red-set3" class= "colourTile"></td>
+<td id= "green-green-red-set4" class= "colourTile"></td>
+<td id= "green-green-red-set5" class= "colourTile"></td>
+</tr>
+<tr id= "green-green-blue" class= "colour">
+<td id= "green-green-blue-set1" class= "colourTile"></td>
+<td id= "green-green-blue-set2" class= "colourTile"></td>
+<td id= "green-green-blue-set3" class= "colourTile"></td>
+<td id= "green-green-blue-set4" class= "colourTile"></td>
+<td id= "green-green-blue-set5" class= "colourTile"></td>
+</tr>
+<tr id= "blue-blue-red" class= "colour">
+<td id= "blue-blue-red-set1" class= "colourTile"></td>
+<td id= "blue-blue-red-set2" class= "colourTile"></td>
+<td id= "blue-blue-red-set3" class= "colourTile"></td>
+<td id= "blue-blue-red-set4" class= "colourTile"></td>
+<td id= "blue-blue-red-set5" class= "colourTile"></td>
+</tr>
+<tr id= "blue-blue-green" class= "colour">
+<td id= "blue-blue-green-set1" class= "colourTile"></td>
+<td id= "blue-blue-green-set2" class= "colourTile"></td>
+<td id= "blue-blue-green-set3" class= "colourTile"></td>
+<td id= "blue-blue-green-set4" class= "colourTile"></td>
+<td id= "blue-blue-green-set5" class= "colourTile"></td>
+</tr>
+<!---------QUADRARY_COLOURS--------->
+<tr id= "true-red-green" class= "colour">
+<td id= "true-red-green-set1" class= "colourTile"></td>
+<td id= "true-red-green-set2" class= "colourTile"></td>
+<td id= "true-red-green-set3" class= "colourTile"></td>
+<td id= "true-red-green-set4" class= "colourTile"></td>
+<td id= "true-red-green-set5" class= "colourTile"></td>
+</tr>
+<tr id= "true-red-blue" class= "colour">
+<td id= "true-red-blue-set1" class= "colourTile"></td>
+<td id= "true-red-blue-set2" class= "colourTile"></td>
+<td id= "true-red-blue-set3" class= "colourTile"></td>
+<td id= "true-red-blue-set4" class= "colourTile"></td>
+<td id= "true-red-blue-set5" class= "colourTile"></td>
+</tr>
+<tr id= "true-green-blue" class= "colour">
+<td id= "true-green-blue-set1" class= "colourTile"></td>
+<td id= "true-green-blue-set2" class= "colourTile"></td>
+<td id= "true-green-blue-set3" class= "colourTile"></td>
+<td id= "true-green-blue-set4" class= "colourTile"></td>
+<td id= "true-green-blue-set5" class= "colourTile"></td>
+</tr>
+<!---------GREY_COLOURS--------->
+<tr id= "red-grey1" class= "colour">
+<td id= "red-grey1-set1" class= "colourTile"></td>
+<td id= "red-grey1-set2" class= "colourTile"></td>
+<td id= "red-grey1-set3" class= "colourTile"></td>
+<td id= "red-grey1-set4" class= "colourTile"></td>
+<td id= "red-grey1-set5" class= "colourTile"></td>
+</tr>
+<tr id= "green-grey1" class= "colour">
+<td id= "green-grey1-set1" class= "colourTile"></td>
+<td id= "green-grey1-set2" class= "colourTile"></td>
+<td id= "green-grey1-set3" class= "colourTile"></td>
+<td id= "green-grey1-set4" class= "colourTile"></td>
+<td id= "green-grey1-set5" class= "colourTile"></td>
+</tr>
+<tr id= "blue-grey1" class= "colour">
+<td id= "blue-grey1-set1" class= "colourTile"></td>
+<td id= "blue-grey1-set2" class= "colourTile"></td>
+<td id= "blue-grey1-set3" class= "colourTile"></td>
+<td id= "blue-grey1-set4" class= "colourTile"></td>
+<td id= "blue-grey1-set5" class= "colourTile"></td>
+</tr>
+<tr id= "red-grey2" class= "colour">
+<td id= "red-grey2-set1" class= "colourTile"></td>
+<td id= "red-grey2-set2" class= "colourTile"></td>
+<td id= "red-grey2-set3" class= "colourTile"></td>
+<td id= "red-grey2-set4" class= "colourTile"></td>
+<td id= "red-grey2-set5" class= "colourTile"></td>
+</tr>
+<tr id= "green-grey2" class= "colour">
+<td id= "green-grey2-set1" class= "colourTile"></td>
+<td id= "green-grey2-set2" class= "colourTile"></td>
+<td id= "green-grey2-set3" class= "colourTile"></td>
+<td id= "green-grey2-set4" class= "colourTile"></td>
+<td id= "green-grey2-set5" class= "colourTile"></td>
+</tr>
+<tr id= "blue-grey2" class= "colour">
+<td id= "blue-grey2-set1" class= "colourTile"></td>
+<td id= "blue-grey2-set2" class= "colourTile"></td>
+<td id= "blue-grey2-set3" class= "colourTile"></td>
+<td id= "blue-grey2-set4" class= "colourTile"></td>
+<td id= "blue-grey2-set5" class= "colourTile"></td>
+</tr>
+</table>
+<div class = "padding"></div>
+</body>
+</html>
