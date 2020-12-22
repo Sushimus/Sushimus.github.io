@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Maker;
-	src: url(font.woff);
+	src: url(assets/font.woff);
 }
 /*<----------------------------------------------Scaling Stuff---------------------------------------------->*/
 /*Phones*/
@@ -28,7 +28,7 @@
 	.dropdownbutton{
 		height: .6rem;
 		width: .6rem;
-		background-image: url(buttons/dropdownbutton.png);
+		background-image: url(assets/dropdownbutton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -46,7 +46,7 @@
 	input.twitchLink{
 		height: .6rem;
 		width: .6rem;
-		background-image: url(buttons/twitchButton.png);
+		background-image: url(assets/twitchButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -56,7 +56,7 @@
 	input.youtubeLink{
 		height: .6rem;
 		width: .6rem;
-		background-image: url(buttons/youtubeButton.png);
+		background-image: url(assets/youtubeButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -66,7 +66,7 @@
 	input.instaLink{
 		height: .6rem;
 		width: .6rem;
-		background-image: url(buttons/instaButton.png);
+		background-image: url(assets/instaButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -76,7 +76,7 @@
 	input.contact {
 		height: .6rem;
 		width: .6rem;
-		background-image: url(buttons/contactMeButton.png);
+		background-image: url(assets/contactMeButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -142,7 +142,7 @@
 	.dropdownbutton{
 		height: .8rem;
 		width: .8rem;
-		background-image: url(buttons/dropdownbutton.png);
+		background-image: url(assets/dropdownbutton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -160,7 +160,7 @@
 	input.twitchLink{
 		height: .8rem;
 		width: .8rem;
-		background-image: url(buttons/twitchButton.png);
+		background-image: url(assets/twitchButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -170,7 +170,7 @@
 	input.youtubeLink{
 		height: .8rem;
 		width: .8rem;
-		background-image: url(buttons/youtubeButton.png);
+		background-image: url(assets/youtubeButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -180,7 +180,7 @@
 	input.instaLink{
 		height: .8rem;
 		width: .8rem;
-		background-image: url(buttons/instaButton.png);
+		background-image: url(assets/instaButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -190,7 +190,7 @@
 	input.contact {
 		height: .8rem;
 		width: .8rem;
-		background-image: url(buttons/contactMeButton.png);
+		background-image: url(assets/contactMeButton.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-width: 1px;
@@ -510,13 +510,13 @@ div.intro{
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	background: url(dither.png), rgba(48,33,27,.8);
+	background: url(assets/dither.png), rgba(48,33,27,.8);
 	background-size: 1vw;
 	background-clip: padding-box;
-	border-image: url(contentborder2.png) 11 repeat;
-	-webkit-border-image: url(contentborder2.png) 11 repeat;
-	-moz-border-image: url(contentborder2.png) 11 repeat;
-	-o-border-image: url(contentborder2.png) 11 repeat;
+	border-image: url(assets/contentBorder2.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder2.png) 11 repeat;
 	border-image-slice: 17;
 	padding-left: 1vw;
 	padding-right: 1vw;
@@ -525,13 +525,13 @@ iframe.selfPromo {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	background: url(dither.png), rgba(48,33,27,.8);
+	background: url(assets/dither.png), rgba(48,33,27,.8);
 	background-size: 1vw;
 	background-clip: padding-box;
-	border-image: url(contentborder2.png) 11 repeat;
-	-webkit-border-image: url(contentborder2.png) 11 repeat;
-	-moz-border-image: url(contentborder2.png) 11 repeat;
-	-o-border-image: url(contentborder2.png) 11 repeat;
+	border-image: url(assets/contentBorder2.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder2.png) 11 repeat;
 	border-image-slice: 17;
 	padding: 1vw;
 }
@@ -542,13 +542,13 @@ div.monthlyIdea{
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	background: url(dither.png), rgba(48,33,27,.8);
+	background: url(assets/dither.png), rgba(48,33,27,.8);
 	background-size: 1vw;
 	background-clip: padding-box;
-	border-image: url(contentborder1.png) 11 repeat;
-	-webkit-border-image: url(contentborder1.png) 11 repeat;
-	-moz-border-image: url(contentborder1.png) 11 repeat;
-	-o-border-image: url(contentborder1.png) 11 repeat;
+	border-image: url(assets/contentBorder1.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder1.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder1.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder1.png) 11 repeat;
 	border-image-slice: 17;
 	padding-left: 1vw;
 	padding-right: 1vw;
@@ -573,13 +573,13 @@ div.random{
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	background: url(dither.png), rgba(48,33,27,.8);
+	background: url(assets/dither.png), rgba(48,33,27,.8);
 	background-size: 1vw;
 	background-clip: padding-box;
-	border-image: url(contentborder2.png) 11 repeat;
-	-webkit-border-image: url(contentborder2.png) 11 repeat;
-	-moz-border-image: url(contentborder2.png) 11 repeat;
-	-o-border-image: url(contentborder2.png) 11 repeat;
+	border-image: url(assets/contentBorder2.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder2.png) 11 repeat;
 	border-image-slice: 17;
 	padding-left: 1vw;
 	padding-right: 1vw;
@@ -632,10 +632,10 @@ div.option{
 	padding: 0px;
 	cursor: pointer;
 	position: relative;
-	border-image: url(contentborder1.png) 11 repeat;
-	-webkit-border-image: url(contentborder1.png) 11 repeat;
-	-moz-border-image: url(contentborder1.png) 11 repeat;
-	-o-border-image: url(contentborder1.png) 11 repeat;
+	border-image: url(assets/contentBorder1.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder1.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder1.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder1.png) 11 repeat;
 	border-image-slice: 17;
 }
 div.option:hover {
@@ -649,10 +649,10 @@ div.photoContainer {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 	border: 33px solid transparent;
-	border-image: url(contentborder2.png) 11 repeat;
-	-webkit-border-image: url(contentborder2.png) 11 repeat;
-	-moz-border-image: url(contentborder2.png) 11 repeat;
-	-o-border-image: url(contentborder2.png) 11 repeat;
+	border-image: url(assets/contentBorder2.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder2.png) 11 repeat;
 	border-image-slice: 17;
 	background-color: rgba(48,33,27,.6);
 	background-clip: padding-box;
@@ -729,13 +729,13 @@ div.photoPadding{
 		-1px -1px 2px rgb(100,66,56);
 	font-size: .5rem;
 	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	-webkit-border-image: url(contentborder1.png) 11 repeat;
-	-moz-border-image: url(contentborder1.png) 11 repeat;
-	-o-border-image: url(contentborder1.png) 11 repeat;
+	border-image: url(assets/contentBorder1.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder1.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder1.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder1.png) 11 repeat;
 	border-image-slice: 17;
 	z-index: 4;
-	background: url(dither.png), rgba(48,33,27,.8);
+	background: url(assets/dither.png), rgba(48,33,27,.8);
 	background-size: 1vw;
 	background-clip: padding-box;
 }
@@ -755,10 +755,10 @@ td.infoImage{
 }
 td.infoImage img{
 	border: 30px solid transparent;
-	border-image: url(contentborder2.png) 11 repeat;
-	-webkit-border-image: url(contentborder2.png) 11 repeat;
-	-moz-border-image: url(contentborder2.png) 11 repeat;
-	-o-border-image: url(contentborder2.png) 11 repeat;
+	border-image: url(assets/contentBorder2.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder2.png) 11 repeat;
 	border-image-slice: 17;
 }
 div.infoReview{
@@ -769,18 +769,18 @@ div.infoReview{
 	margin-right: 10%;
 	margin-bottom: 1.5rem;
 	width: 80%;
-	background: url(dither.png), rgba(48,33,27,.8);
+	background: url(assets/dither.png), rgba(48,33,27,.8);
 	background-size: 1vw;
 	background-clip: padding-box;
 	border: 33px solid transparent;
-	border-image: url(contentborder1.png) 11 repeat;
-	-webkit-border-image: url(contentborder1.png) 11 repeat;
-	-moz-border-image: url(contentborder1.png) 11 repeat;
-	-o-border-image: url(contentborder1.png) 11 repeat;
+	border-image: url(assets/contentBorder1.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder1.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder1.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder1.png) 11 repeat;
 	border-image-slice: 17;
 }
 p.infoWords{
-	background: url(dither.png), rgba(48,33,27,.8);
+	background: url(assets/dither.png), rgba(48,33,27,.8);
 	background-size: 1vw;
 	background-clip: padding-box;
 	margin-right: 1.5vw;
@@ -796,14 +796,14 @@ div.gameIdea{
 	margin-right: 10%;
 	margin-bottom: 1.5rem;
 	width: 80%;
-	background: url(dither.png), rgba(48,33,27,.8);
+	background: url(assets/dither.png), rgba(48,33,27,.8);
 	background-size: 1vw;
 	background-clip: padding-box;
 	border: 33px solid transparent;
-	border-image: url(contentborder2.png) 11 repeat;
-	-webkit-border-image: url(contentborder2.png) 11 repeat;
-	-moz-border-image: url(contentborder2.png) 11 repeat;
-	-o-border-image: url(contentborder2.png) 11 repeat;
+	border-image: url(assets/contentBorder2.png) 11 repeat;
+	-webkit-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-moz-border-image: url(assets/contentBorder2.png) 11 repeat;
+	-o-border-image: url(assets/contentBorder2.png) 11 repeat;
 	border-image-slice: 17;
 }
 div.gameIdea p{
@@ -817,6 +817,24 @@ div.gameIdea img{
 	margin: .5rem;
 }
 /*<----------------------------------------------Colour Gen---------------------------------------------->*/
+input.rgbInput{
+	width: 2.25%;
+	margin-top: -.5%;
+	padding-top: .5%;
+	padding-left: .25%;
+	margin-bottom: -.25%;
+	text-align: center;
+	border-radius: 25%;
+}
+input.hexInput{
+	width: 5%;
+	margin-top: -.5%;
+	padding-top: .5%;
+	padding-left: .25%;
+	margin-bottom: -.25%;
+	text-align: center;
+	border-radius: 25%;
+}
 table.colourPallet{
 	margin-left: 5%;
 	width: 90vw;
