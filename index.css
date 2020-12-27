@@ -117,7 +117,7 @@
 		margin-left: 20%;
 	}
 }
-/*Desktop*/
+/*Desktop 16/9*/
 @media screen and (min-aspect-ratio: 16/9) {
 	html{
 		overflow-x: hidden;
@@ -249,6 +249,17 @@
 	}
 	div.photoContainer {
 		margin-left: 25%;
+	}
+}
+/*Desktop 16/10*/
+@media screen and (min-aspect-ratio: 16/10) {
+	div.contacts{
+		width: 100%;
+		margin-top: .3%;
+		margin-left: 42.8%;
+		position: fixed;
+		z-index: 7;
+		height: .8rem;
 	}
 }
 /*<----------------------------------------------General Items---------------------------------------------->*/
