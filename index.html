@@ -2,7 +2,9 @@
 <html>
 <meta name=”viewport” content=”width=device-width, initial-scale=1″>
 <link rel= "stylesheet" type= "text/css" href= "index.css">
+<script src= "logik/welcome.js"></script>
 <script src= "logik/generators.js"></script>
+<script src= "logik/background.js"></script>
 
 <body id= "body">
 <div class= "banner">
@@ -13,7 +15,7 @@
 </div>
 
 <div class= "dropdown">
-	<input class= "dropdownbutton" type= "button"></input>
+	<input class= "button dropdownbutton" type= "button"></input>
 	<div class= "dropdowncontent">
 		<a href= "mainPages/galleries.html">Galleries</a>
 		<a href= "mainPages/colourGen.html">ColourGen</a>
@@ -24,10 +26,10 @@
 </div>
 
 <div class= "contacts">
-	<input id= "twitch" class= "twitchLink" type= "button" onclick= "location.href= 'https://www.twitch.tv/sushimus';"></input>
-	<input id= "youtube" class= "youtubeLink" type= "button" onclick= "location.href= 'https://www.youtube.com/channel/UC_uBuGtdaCbfg91U0YnvKvg';"></input>
-	<input id= "insta" class= "instaLink" type= "button" onclick= "location.href= 'https://www.instagram.com/real.sushimus/';"></input>
-	<input id= "contactMe" class= "contact" type= "button" onclick="location.href= 'mailto:real.sushimus@gmail.com'"></input>
+	<input id= "twitch" class= "button twitchLink" type= "button" onclick= "location.href= 'https://www.twitch.tv/sushimus';"></input>
+	<input id= "youtube" class= "button youtubeLink" type= "button" onclick= "location.href= 'https://www.youtube.com/channel/UC_uBuGtdaCbfg91U0YnvKvg';"></input>
+	<input id= "insta" class= "button instaLink" type= "button" onclick= "location.href= 'https://www.instagram.com/real.sushimus/';"></input>
+	<input id= "contactMe" class= "button contact" type= "button" onclick="location.href= 'mailto:real.sushimus@gmail.com'"></input>
 </div>
 
 <div class= "content" onmouseover= "welcomeMessage()">
@@ -35,7 +37,7 @@
 <div class = "padding"></div>
 
 <!------------------------------------------------------------------------------------------Introduction------------------------------------------------------------------------------------------>
-<div class= "intro">
+<div class= "paragraph intro">
 	<p><b>
 		<mark class= "welcome" id= "welcome"></mark>
 	</b></p>
@@ -50,7 +52,7 @@
 <div class = "padding"></div>
 
 <!------------------------------------------------------------------------------------------Introduction------------------------------------------------------------------------------------------>
-<!-- <iframe class= "selfPromo" src= "https://www.youtube.com/channel/UC_uBuGtdaCbfg91U0YnvKvg?view_as=subscriber"></iframe>
+<!-- <iframe class= "paragraph selfPromo" src= "https://www.youtube.com/channel/UC_uBuGtdaCbfg91U0YnvKvg?view_as=subscriber"></iframe>
 
 <div class = "padding"></div> -->
 
@@ -60,7 +62,7 @@ function expand() {
 	document.getElementById('monthlyIdea').style.height= 'auto';
 }
 </script>
-<div class= "monthlyIdea" id= "monthlyIdea" onclick= "expand()">
+<div class= "paragraph monthlyIdea" id= "monthlyIdea" onclick= "expand()">
 	<p>
 		<u><b>Game Idea of the Month</u></b><br>
 			Strap in this month because we’re on a rogue mission to space, or rather we’ll be roguelike in space. 
@@ -146,7 +148,7 @@ function expand() {
 <div class = "padding"></div>
 
 <!------------------------------------------------------------------------------------------Idea Generator------------------------------------------------------------------------------------------>
-<div class= "random">
+<div class= "paragraph random">
 <p><u>Mildly Useful Randomizers</u></p>
 <p id= "idea">These are meant as a base for you to spin your own direction</p>
 <mark class= "homeButton">
