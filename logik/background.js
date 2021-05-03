@@ -9,49 +9,14 @@ const hours = now.getHours()
 const screenSize = window.matchMedia("(min-aspect-ratio: 16/9)");
 
 const getWallpaperPath = (day, hours) => {
-	if(hours < 18){
-		return `assets/backgrounds/${day}/day1.png`
-	}
-	else{
-		return `assets/backgrounds/${day}/night1.png`
-	}
-
-	if(hours < 18){
-		return `../assets/backgrounds/${day}/day1.png`
-	}
-	else{
-		return `../assets/backgrounds/${day}/night1.png`
-	}
-
-	if(hours < 18){
-		return `../../assets/backgrounds/${day}/day1.png`
-	}
-	else{
-		return `../../assets/backgrounds/${day}/night1.png`
-	}
-
+  return hours < 18 
+    ? `https://sushimus.github.io/assets/backgrounds/${day}/day1.png`
+    : `https://sushimus.github.io/assets/backgrounds/${day}/night1.png`
 }
 const getWallpaperPathSmall = (day, hours) => {
-	if(hours < 18){
-		return `assets/backgrounds/${day}/day2.png`
-	}
-	else{
-		return `assets/backgrounds/${day}/night2.png`
-	}
-
-	if(hours < 18){
-		return `../assets/backgrounds/${day}/day2.png`
-	}
-	else{
-		return `../assets/backgrounds/${day}/night2.png`
-	}
-
-	if(hours < 18){
-		return `../../assets/backgrounds/${day}/day2.png`
-	}
-	else{
-		return `../../assets/backgrounds/${day}/night2.png`
-	}
+  return hours < 18 
+    ? `https://sushimus.github.io/assets/backgrounds/${day}/day2.png`
+    : `https://sushimus.github.io/assets/backgrounds/${day}/night2.png`
 }
 
 
