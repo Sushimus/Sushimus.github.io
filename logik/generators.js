@@ -1,5 +1,4 @@
 //------------------------------------------------------------------------------------------------------Idea Generator Start Here------------------------------------------------------------------------------------------------------
-
 function getIdea() {
 	var listSelections = [
 		"First set",
@@ -367,6 +366,7 @@ function getIdea() {
 }
 
 //------------------------------------------------------------------------------------------------------Random Creature Start Here------------------------------------------------------------------------------------------------------
+//Sea bunnies are kool, add them.
 function getCreature() {
 	//mood, body, etc.
 	var behaviorModifyers = [
@@ -1005,7 +1005,8 @@ function getCreature() {
 				"inchworm",
 				"giant shield bug",
 				"camel spider",
-		/*50*/	"water beetle"
+		/*50*/	"water beetle",
+				"sabellidae"
 			]
 			var insectChoose = Math.floor(Math.random() * (insects.length));
 			var creatureChosen = insects[insectChoose];
@@ -1096,7 +1097,6 @@ function getSetting() {
 }
 
 //------------------------------------------------------------------------------------------------------Random Character Start Here------------------------------------------------------------------------------------------------------
-
 function getCharacterAdjective() {
 	var characterAdjectives = [
 		"word1",
@@ -1119,70 +1119,4 @@ function getCharacterMotive() {
 	]
 	var randomNumber = Math.floor(Math.random() * (characterMotives.length));
 	document.getElementById('motive').innerHTML = characterMotives[randomNumber];
-}
-
-//------------------------------------------------------------------------------------------------------Welcome Message Start Here------------------------------------------------------------------------------------------------------
-
-var isNotWelcomed = true;
-
-function welcomeMessage() {
-	if (isNotWelcomed){
-		isNotWelcomed = false;
-		
-		var messages = [
-			"Now Featuring Flying Whales",
-			"Coming to a Platform Near You",
-			"Now with New Ideas",
-			"Shy, a Guy, and Ready to Die",
-			"More Creative than Ever!",
-			"Now Owns Their Own Coffee Machine",
-			"Sleep is for the Weak",
-			"Cooler than Double-sided Tape",
-			"More Reviews Soon!",
-			"Cooler than Room Temperature",
-			"Sweeter than Black Coffee",
-			"Taken with a Grain of Rice",
-			"Now Ripping Off Minecraft"
-		]
-		var messageChoose = Math.floor(Math.random() * (messages.length));
-		var messageChosen = messages[messageChoose];
-		
-		document.getElementById('welcome').innerHTML = messageChosen;
-	}
-	
-}
-
-//------------------------------------------------------------------------------------------------------Change Background Start Here------------------------------------------------------------------------------------------------------
-window.onload = function backgroundShift() {
-//Assigning const based on user environment
-const now = new Date()
-const day = now.getDay()
-const days = ['0', '1', '2', '3', '4', '5', '6'];
-const date = new Date();
-const hours = now.getHours()
-const screenSize = window.matchMedia("(min-aspect-ratio: 16/9)");
-
-const getWallpaperPath = (day, hours) => {
-  return hours < 18 
-    ? `https://sushimus.github.io/assets/backgrounds/${day}/day1.png`
-    : `https://sushimus.github.io/assets/backgrounds/${day}/night1.png`
-}
-const getWallpaperPathSmall = (day, hours) => {
-  return hours < 18 
-    ? `https://sushimus.github.io/assets/backgrounds/${day}/day2.png`
-    : `https://sushimus.github.io/assets/backgrounds/${day}/night2.png`
-}
-
-
-
-//Setting background based on results
-if (document.getElementById('body') && screenSize.matches){
-	document.getElementById('body').style.backgroundImage = "url(\"" + `${getWallpaperPath(days[date.getDay()], date.getHours())}` + "\")";
-}
-else{
-	document.getElementById('body').style.backgroundImage = "url(\"" + `${getWallpaperPathSmall(days[date.getDay()], date.getHours())}` + "\")";
-}
-document.getElementById('body').style.backgroundRepeat = "no-repeat";
-document.getElementById('body').style.backgroundAttachment = "fixed";
-document.getElementById('body').style.backgroundSize = "100vw 100vh";
 }
