@@ -8,6 +8,7 @@
 	--phoneBorder: 27px solid transparent;
 	--desktopUnit: 0.8rem;
 	--desktopBorder: 33px solid transparent;
+	--titleColour: #f292cf;
 	--textColour: #ffbaa7;
 	--textShadowColour: #644238;
 	--textShadow: 1px 0px 2px var(--textShadowColour),
@@ -112,18 +113,6 @@ div.infograph{
 		z-index: 7;
 		height: var(--phoneUnit);
 	}
-	input.twitchLink{
-		background-image: url(assets/twitchButton.png);
-	}
-	input.youtubeLink{
-		background-image: url(assets/youtubeButton.png);
-	}
-	input.instaLink{
-		background-image: url(assets/instaButton.png);
-	}
-	input.contact {
-		background-image: url(assets/contactMeButton.png);
-	}
 	mark.welcome{
 		display: none;
 	}
@@ -200,25 +189,13 @@ div.infograph{
 		z-index: 7;
 		height: var(--desktopUnit);
 	}
-	input.twitchLink{
-		background-image: url(assets/twitchButton.png);
-	}
-	input.youtubeLink{
-		background-image: url(assets/youtubeButton.png);
-	}
-	input.instaLink{
-		background-image: url(assets/instaButton.png);
-	}
-	input.contact {
-		background-image: url(assets/contactMeButton.png);
-	}
 	mark.welcome{
 	position: absolute;
 	width: 100%;
 	margin: 0;
 	z-index: 11;
 	background: transparent;
-	color: rgb(242,146,207);
+	color: var(--titleColour);
 	text-shadow: var(--textShadow);
 	transform: rotate(30deg);
 	float: right;
@@ -290,7 +267,7 @@ body{
 	height: 100%;
 }
 h1{
-	color: rgb(242,146,207);
+	color: var(--titleColour);
 	letter-spacing: 3px;	
 	text-align: center;
 	text-shadow: var(--textShadow);
@@ -304,7 +281,7 @@ h1{
 	border-right: none;
 }
 h2{
-	color: rgb(242,146,207);
+	color: var(--titleColour);
 	letter-spacing: 3px;
 	font-size: var(--desktopUnit);
 	line-height: 30px;
@@ -335,7 +312,7 @@ a{
 	font-size: .7rem;
 	letter-spacing: 1.75px;
 	line-height: 45px;
-	color: rgb(242,146,207);
+	color: var(--titleColour);
 	text-shadow: var(--textShadow);
 	padding: .1rem;
 	border-width: var(--borderWidth);
@@ -372,6 +349,21 @@ div.banner {
 	position: fixed;
 	z-index: 7;
 	width: 100%;
+}
+input.twitchLink{
+	background-image: url(assets/twitchButton.png);
+}
+input.youtubeLink{
+	background-image: url(assets/youtubeButton.png);
+}
+input.instaLink{
+	background-image: url(assets/instaButton.png);
+}
+input.twitterLink{
+	background-image: url(assets/twitterButton.png);
+}
+input.contact {
+	background-image: url(assets/contactMeButton.png);
 }
 div.dropdowncontent{
 	display: none;
