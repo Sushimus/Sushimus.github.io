@@ -119,8 +119,10 @@ div.infograph{
 	div.intro {
 		border: var(--phoneBorder);
 	}
-	iframe.selfPromo {
+	div.selfPromo {
+		cursor: pointer;
 		border: var(--phoneBorder);
+		background-image: url(assets/PromoMobile.png);
 		height: 50vh;
 		width: 60%;
 	}
@@ -205,8 +207,10 @@ div.infograph{
 	div.intro {
 		border: var(--desktopBorder);
 	}
-	iframe.selfPromo {
+	div.selfPromo {
+		cursor: pointer;
 		border: var(--desktopBorder);
+		background-image: url(assets/Promo.png);
 		height: 40vh;
 		width: 40%;
 	}
@@ -365,6 +369,10 @@ input.twitterLink{
 input.contact {
 	background-image: url(assets/contactMeButton.png);
 }
+input.gdcLink {
+	margin-left: 10%;
+	background-image: url(assets/gdcButton.png);
+}
 div.dropdowncontent{
 	display: none;
 	position: absolute;
@@ -382,9 +390,6 @@ div.dropdowncontent{
 }
 .dropdown:hover .dropdownbutton{
 	background-color: none;
-}
-input.goBackButton:hover {
-	cursor: pointer;
 }
 html::-webkit-scrollbar{
 	width: 0px;
@@ -423,12 +428,14 @@ div.intro{
 	-o-border-image: var(--borderImg2);
 	border-image-slice: 17;
 }
-iframe.selfPromo {
+div.selfPromo {
 	border-image: var(--borderImg2);
 	-webkit-border-image: var(--borderImg2);
 	-moz-border-image: var(--borderImg2);
 	-o-border-image: var(--borderImg2);
 	border-image-slice: 17;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 div.monthlyIdea{
 	overflow-y: scroll;
