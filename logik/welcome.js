@@ -38,7 +38,19 @@ function welcomeMessage() {
 			"SPACE IS KOOL!!",
 			"Providing Dad-Energy Since 19",
 			"Command Hooks are Great",
-			"Now Ripping Off Minecraft"
+			"Now Ripping Off Minecraft",
+			"Carl is waiting.",
+			"Now moderately useful!",
+			"Go binge GDC",
+			"Next Confinement episode when??",
+			"Snails are mollusk cows.",
+			"Cows are mammal snails.",
+			"Watch out for Big Condiment",
+			"SLIME RANCHER 2 2022!!",
+			"Plorp is a good egg",
+			"All my homies hate trig",
+			"Whale onsie penguins are so 2019",
+			"Now adding suffering"
 		]
 		var messageChoose = Math.floor(Math.random() * (messages.length));
 		var messageChosen = messages[messageChoose];
