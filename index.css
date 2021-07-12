@@ -123,7 +123,7 @@ div.infograph{
 		cursor: pointer;
 		border: var(--phoneBorder);
 		background-image: url(assets/PromoMobile.png);
-		height: 50vh;
+		height: 30vh;
 		width: 60%;
 	}
 	div.monthlyIdea {
