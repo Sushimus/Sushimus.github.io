@@ -96,14 +96,6 @@ div.infograph{
 	.button{
 		height: var(--phoneUnit);
 		width: var(--phoneUnit);
-		background-size: cover;
-		background-repeat: no-repeat;
-		border-width: var(--borderWidth);
-		border-style: solid;
-		border-color: var(--borderColour);
-	}
-	.dropdownbutton{
-		background-image: url(assets/dropdownbutton.png);
 	}
 	div.contacts{
 		width: 175%;
@@ -124,7 +116,7 @@ div.infograph{
 		border: var(--phoneBorder);
 		background-image: url(assets/PromoMobile.png);
 		height: 30vh;
-		width: 30vh;
+		width: 60%;
 	}
 	div.monthlyIdea {
 		height: 50vh;
@@ -174,14 +166,6 @@ div.infograph{
 	.button{
 		height: var(--desktopUnit);
 		width: var(--desktopUnit);
-		background-size: cover;
-		background-repeat: no-repeat;
-		border-width: var(--borderWidth);
-		border-style: solid;
-		border-color: var(--borderColour);
-	}
-	.dropdownbutton{
-		background-image: url(assets/dropdownbutton.png);
 	}
 	div.contacts{
 		width: 100%;
@@ -354,24 +338,35 @@ div.banner {
 	z-index: 7;
 	width: 100%;
 }
+.button{
+	background-size: 300% 300%;
+	background-repeat: no-repeat;
+	background-image: url(assets/ButtonSprites.png);
+	border-width: var(--borderWidth);
+	border-style: solid;
+	border-color: var(--borderColour);
+}
 input.twitchLink{
-	background-image: url(assets/twitchButton.png);
+	background-position: 50% 0%;
 }
 input.youtubeLink{
-	background-image: url(assets/youtubeButton.png);
+	background-position: 0% 50%;
 }
 input.instaLink{
-	background-image: url(assets/instaButton.png);
+	background-position: 100% 0%;
 }
 input.twitterLink{
-	background-image: url(assets/twitterButton.png);
+	background-position: 50% 50%;
 }
 input.contact {
-	background-image: url(assets/contactMeButton.png);
+	background-position: 0% 100%;
 }
 input.gdcLink {
 	margin-left: 10%;
-	background-image: url(assets/gdcButton.png);
+	background-position: 100% 50%;
+}
+input.dropdownbutton{
+	background-position: 0% 0%;
 }
 div.dropdowncontent{
 	display: none;
