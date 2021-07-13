@@ -140,6 +140,9 @@ div.infograph{
 	div.photoContainer {
 		margin-left: 20%;
 	}
+	table.colourPallet{
+		height: 360%;
+	}
 }
 /*Desktop 16/9*/
 @media screen and (min-aspect-ratio: 16/9) {
@@ -220,6 +223,9 @@ div.infograph{
 	}
 	div.photoContainer {
 		margin-left: 25%;
+	}
+	table.colourPallet{
+		height: 720%;
 	}
 }
 	/*Desktop 16/10*/
@@ -657,15 +663,12 @@ input.hexInput{
 	width: 5%;
 }
 table.colourPallet{
-	margin-left: 5%;
-	width: 90vw;
-	height: 792vh;
+	margin-left: 10%;
+	width: 80%;
 }
-tr.colour{
-	height: 33vh;
-	width: 100vw;
-}
-td.colourTile{
-	width: 20vw;
-	background-color: red;
+input.colour{
+	width: 100%;
+	height: 100%;
+	padding: 0%;
+	display: none;
 }
