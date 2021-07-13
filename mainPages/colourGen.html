@@ -7,7 +7,7 @@
 <body id= "body">
 <div class= "banner">
 	<h1>
-		g o<mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>s e e<mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>r e x
+		l e a v e<mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>e m p t y<mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>f o r<mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>r a n d o m
 	</h1>
 </div>
 
@@ -25,183 +25,189 @@
 <!--------------------------------------------------------------------------------------------------------------------Content Starts Here-------------------------------------------------------------------------------------------------------------------->
 <div class = "padding"></div>
 <p>
-Please enter starting colour.<br><br>
-R:<input class= "input rgbInput" type= "text" id= "redInput" required maxlength= "3"> G:</input><input class= "rgbInput" type= "text" id= "greenInput" required maxlength= "3"></input> B:<input class= "rgbInput" type= "text" id= "blueInput" required maxlength= "3"></input><br><br>
-HEX:<input class= "input hexInput" type= "text" id= "hexInput" required maxlength= "6"><br><br>
+Until I learn clipboard API stuff you'll need to copy colours you want manually<br><br>
+R:<input class= "rgbInput" type= "text" id= "redInput" required maxlength= "3"> G:</input><input class= "rgbInput" type= "text" id= "greenInput" required maxlength= "3"></input> B:<input class= "rgbInput" type= "text" id= "blueInput" required maxlength= "3"></input><br><br>
+HEX:<input class= "hexInput" type= "text" id= "hexInput" required maxlength= "6"><br>
 </p>
+
+<p><mark class= "random" id= "storyGenerated"></mark></p>
+<mark class= "homeButton">
+<button onclick= "GenerateColours()">GENERATE</button>
+</mark><br>
+
 <table class= "colourPallet">
 <!---------PRIMARY_COLOURS--------->
-<tr id= "red" class= "colour">
-<td id= "red-set1" class= "colourTile"></td>
-<td id= "red-set2" class= "colourTile"></td>
-<td id= "red-set3" class= "colourTile"></td>
-<td id= "red-set4" class= "colourTile"></td>
-<td id= "red-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "r0"></input></td>
+<td><input class= "colour" type= "text" id= "r1"></input></td>
+<td><input class= "colour" type= "text" id= "r2"></input></td>
+<td><input class= "colour" type= "text" id= "r3"></input></td>
+<td><input class= "colour" type= "text" id= "r4"></input></td>
 </tr>
-<tr id= "green" class= "colour">
-<td id= "green-set1" class= "colourTile"></td>
-<td id= "green-set2" class= "colourTile"></td>
-<td id= "green-set3" class= "colourTile"></td>
-<td id= "green-set4" class= "colourTile"></td>
-<td id= "green-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "g0"></input></td>
+<td><input class= "colour" type= "text" id= "g1"></input></td>
+<td><input class= "colour" type= "text" id= "g2"></input></td>
+<td><input class= "colour" type= "text" id= "g3"></input></td>
+<td><input class= "colour" type= "text" id= "g4"></input></td>
 </tr>
-<tr id= "blue" class= "colour">
-<td id= "blue-set1" class= "colourTile"></td>
-<td id= "blue-set2" class= "colourTile"></td>
-<td id= "blue-set3" class= "colourTile"></td>
-<td id= "blue-set4" class= "colourTile"></td>
-<td id= "blue-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "b0"></input></td>
+<td><input class= "colour" type= "text" id= "b1"></input></td>
+<td><input class= "colour" type= "text" id= "b2"></input></td>
+<td><input class= "colour" type= "text" id= "b3"></input></td>
+<td><input class= "colour" type= "text" id= "b4"></input></td>
 </tr>
 <!---------SECONDARY_COLOURS--------->
-<tr id= "red-green" class= "colour">
-<td id= "red-green-set1" class= "colourTile"></td>
-<td id= "red-green-set2" class= "colourTile"></td>
-<td id= "red-green-set3" class= "colourTile"></td>
-<td id= "red-green-set4" class= "colourTile"></td>
-<td id= "red-green-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "rg0"></input></td>
+<td><input class= "colour" type= "text" id= "rg1"></input></td>
+<td><input class= "colour" type= "text" id= "rg2"></input></td>
+<td><input class= "colour" type= "text" id= "rg3"></input></td>
+<td><input class= "colour" type= "text" id= "rg4"></input></td>
 </tr>
-<tr id= "red-blue" class= "colour">
-<td id= "red-blue-set1" class= "colourTile"></td>
-<td id= "red-blue-set2" class= "colourTile"></td>
-<td id= "red-blue-set3" class= "colourTile"></td>
-<td id= "red-blue-set4" class= "colourTile"></td>
-<td id= "red-blue-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "rb0"></input></td>
+<td><input class= "colour" type= "text" id= "rb1"></input></td>
+<td><input class= "colour" type= "text" id= "rb2"></input></td>
+<td><input class= "colour" type= "text" id= "rb3"></input></td>
+<td><input class= "colour" type= "text" id= "rb4"></input></td>
 </tr>
-<tr id= "green-red" class= "colour">
-<td id= "green-red-set1" class= "colourTile"></td>
-<td id= "green-red-set2" class= "colourTile"></td>
-<td id= "green-red-set3" class= "colourTile"></td>
-<td id= "green-red-set4" class= "colourTile"></td>
-<td id= "green-red-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "gr0"></input></td>
+<td><input class= "colour" type= "text" id= "gr1"></input></td>
+<td><input class= "colour" type= "text" id= "gr2"></input></td>
+<td><input class= "colour" type= "text" id= "gr3"></input></td>
+<td><input class= "colour" type= "text" id= "gr4"></input></td>
 </tr>
-<tr id= "green-blue" class= "colour">
-<td id= "green-blue-set1" class= "colourTile"></td>
-<td id= "green-blue-set2" class= "colourTile"></td>
-<td id= "green-blue-set3" class= "colourTile"></td>
-<td id= "green-blue-set4" class= "colourTile"></td>
-<td id= "green-blue-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "gb0"></input></td>
+<td><input class= "colour" type= "text" id= "gb1"></input></td>
+<td><input class= "colour" type= "text" id= "gb2"></input></td>
+<td><input class= "colour" type= "text" id= "gb3"></input></td>
+<td><input class= "colour" type= "text" id= "gb4"></input></td>
 </tr>
-<tr id= "blue-red" class= "colour">
-<td id= "blue-red-set1" class= "colourTile"></td>
-<td id= "blue-red-set2" class= "colourTile"></td>
-<td id= "blue-red-set3" class= "colourTile"></td>
-<td id= "blue-red-set4" class= "colourTile"></td>
-<td id= "blue-red-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "br0"></input></td>
+<td><input class= "colour" type= "text" id= "br1"></input></td>
+<td><input class= "colour" type= "text" id= "br2"></input></td>
+<td><input class= "colour" type= "text" id= "br3"></input></td>
+<td><input class= "colour" type= "text" id= "br4"></input></td>
 </tr>
-<tr id= "blue-green" class= "colour">
-<td id= "blue-green-set1" class= "colourTile"></td>
-<td id= "blue-green-set2" class= "colourTile"></td>
-<td id= "blue-green-set3" class= "colourTile"></td>
-<td id= "blue-green-set4" class= "colourTile"></td>
-<td id= "blue-green-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "bg0"></input></td>
+<td><input class= "colour" type= "text" id= "bg1"></input></td>
+<td><input class= "colour" type= "text" id= "bg2"></input></td>
+<td><input class= "colour" type= "text" id= "bg3"></input></td>
+<td><input class= "colour" type= "text" id= "bg4"></input></td>
 </tr>
 <!---------TERTIARY_COLOURS--------->
-<tr id= "red-red-green" class= "colour">
-<td id= "red-red-green-set1" class= "colourTile"></td>
-<td id= "red-red-green-set2" class= "colourTile"></td>
-<td id= "red-red-green-set3" class= "colourTile"></td>
-<td id= "red-red-green-set4" class= "colourTile"></td>
-<td id= "red-red-green-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "rrg0"></input></td>
+<td><input class= "colour" type= "text" id= "rrg1"></input></td>
+<td><input class= "colour" type= "text" id= "rrg2"></input></td>
+<td><input class= "colour" type= "text" id= "rrg3"></input></td>
+<td><input class= "colour" type= "text" id= "rrg4"></input></td>
 </tr>
-<tr id= "red-red-blue" class= "colour">
-<td id= "red-red-blue-set1" class= "colourTile"></td>
-<td id= "red-red-blue-set2" class= "colourTile"></td>
-<td id= "red-red-blue-set3" class= "colourTile"></td>
-<td id= "red-red-blue-set4" class= "colourTile"></td>
-<td id= "red-red-blue-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "rrb0"></input></td>
+<td><input class= "colour" type= "text" id= "rrb1"></input></td>
+<td><input class= "colour" type= "text" id= "rrb2"></input></td>
+<td><input class= "colour" type= "text" id= "rrb3"></input></td>
+<td><input class= "colour" type= "text" id= "rrb4"></input></td>
 </tr>
-<tr id= "green-green-red" class= "colour">
-<td id= "green-green-red-set1" class= "colourTile"></td>
-<td id= "green-green-red-set2" class= "colourTile"></td>
-<td id= "green-green-red-set3" class= "colourTile"></td>
-<td id= "green-green-red-set4" class= "colourTile"></td>
-<td id= "green-green-red-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "ggr0"></input></td>
+<td><input class= "colour" type= "text" id= "ggr1"></input></td>
+<td><input class= "colour" type= "text" id= "ggr2"></input></td>
+<td><input class= "colour" type= "text" id= "ggr3"></input></td>
+<td><input class= "colour" type= "text" id= "ggr4"></input></td>
 </tr>
-<tr id= "green-green-blue" class= "colour">
-<td id= "green-green-blue-set1" class= "colourTile"></td>
-<td id= "green-green-blue-set2" class= "colourTile"></td>
-<td id= "green-green-blue-set3" class= "colourTile"></td>
-<td id= "green-green-blue-set4" class= "colourTile"></td>
-<td id= "green-green-blue-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "ggb0"></input></td>
+<td><input class= "colour" type= "text" id= "ggb1"></input></td>
+<td><input class= "colour" type= "text" id= "ggb2"></input></td>
+<td><input class= "colour" type= "text" id= "ggb3"></input></td>
+<td><input class= "colour" type= "text" id= "ggb4"></input></td>
 </tr>
-<tr id= "blue-blue-red" class= "colour">
-<td id= "blue-blue-red-set1" class= "colourTile"></td>
-<td id= "blue-blue-red-set2" class= "colourTile"></td>
-<td id= "blue-blue-red-set3" class= "colourTile"></td>
-<td id= "blue-blue-red-set4" class= "colourTile"></td>
-<td id= "blue-blue-red-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "bbr0"></input></td>
+<td><input class= "colour" type= "text" id= "bbr1"></input></td>
+<td><input class= "colour" type= "text" id= "bbr2"></input></td>
+<td><input class= "colour" type= "text" id= "bbr3"></input></td>
+<td><input class= "colour" type= "text" id= "bbr4"></input></td>
 </tr>
-<tr id= "blue-blue-green" class= "colour">
-<td id= "blue-blue-green-set1" class= "colourTile"></td>
-<td id= "blue-blue-green-set2" class= "colourTile"></td>
-<td id= "blue-blue-green-set3" class= "colourTile"></td>
-<td id= "blue-blue-green-set4" class= "colourTile"></td>
-<td id= "blue-blue-green-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "bbg0"></input></td>
+<td><input class= "colour" type= "text" id= "bbg1"></input></td>
+<td><input class= "colour" type= "text" id= "bbg2"></input></td>
+<td><input class= "colour" type= "text" id= "bbg3"></input></td>
+<td><input class= "colour" type= "text" id= "bbg4"></input></td>
 </tr>
 <!---------QUADRARY_COLOURS--------->
-<tr id= "true-red-green" class= "colour">
-<td id= "true-red-green-set1" class= "colourTile"></td>
-<td id= "true-red-green-set2" class= "colourTile"></td>
-<td id= "true-red-green-set3" class= "colourTile"></td>
-<td id= "true-red-green-set4" class= "colourTile"></td>
-<td id= "true-red-green-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "trg0"></input></td>
+<td><input class= "colour" type= "text" id= "trg1"></input></td>
+<td><input class= "colour" type= "text" id= "trg2"></input></td>
+<td><input class= "colour" type= "text" id= "trg3"></input></td>
+<td><input class= "colour" type= "text" id= "trg4"></input></td>
 </tr>
-<tr id= "true-red-blue" class= "colour">
-<td id= "true-red-blue-set1" class= "colourTile"></td>
-<td id= "true-red-blue-set2" class= "colourTile"></td>
-<td id= "true-red-blue-set3" class= "colourTile"></td>
-<td id= "true-red-blue-set4" class= "colourTile"></td>
-<td id= "true-red-blue-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "trb0"></input></td>
+<td><input class= "colour" type= "text" id= "trb1"></input></td>
+<td><input class= "colour" type= "text" id= "trb2"></input></td>
+<td><input class= "colour" type= "text" id= "trb3"></input></td>
+<td><input class= "colour" type= "text" id= "trb4"></input></td>
 </tr>
-<tr id= "true-green-blue" class= "colour">
-<td id= "true-green-blue-set1" class= "colourTile"></td>
-<td id= "true-green-blue-set2" class= "colourTile"></td>
-<td id= "true-green-blue-set3" class= "colourTile"></td>
-<td id= "true-green-blue-set4" class= "colourTile"></td>
-<td id= "true-green-blue-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "tgb0"></input></td>
+<td><input class= "colour" type= "text" id= "tgb1"></input></td>
+<td><input class= "colour" type= "text" id= "tgb2"></input></td>
+<td><input class= "colour" type= "text" id= "tgb3"></input></td>
+<td><input class= "colour" type= "text" id= "tgb4"></input></td>
 </tr>
 <!---------GREY_COLOURS--------->
-<tr id= "red-grey1" class= "colour">
-<td id= "red-grey1-set1" class= "colourTile"></td>
-<td id= "red-grey1-set2" class= "colourTile"></td>
-<td id= "red-grey1-set3" class= "colourTile"></td>
-<td id= "red-grey1-set4" class= "colourTile"></td>
-<td id= "red-grey1-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "rg10"></input></td>
+<td><input class= "colour" type= "text" id= "rg11"></input></td>
+<td><input class= "colour" type= "text" id= "rg12"></input></td>
+<td><input class= "colour" type= "text" id= "rg13"></input></td>
+<td><input class= "colour" type= "text" id= "rg14"></input></td>
 </tr>
-<tr id= "green-grey1" class= "colour">
-<td id= "green-grey1-set1" class= "colourTile"></td>
-<td id= "green-grey1-set2" class= "colourTile"></td>
-<td id= "green-grey1-set3" class= "colourTile"></td>
-<td id= "green-grey1-set4" class= "colourTile"></td>
-<td id= "green-grey1-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "gg10"></input></td>
+<td><input class= "colour" type= "text" id= "gg11"></input></td>
+<td><input class= "colour" type= "text" id= "gg12"></input></td>
+<td><input class= "colour" type= "text" id= "gg13"></input></td>
+<td><input class= "colour" type= "text" id= "gg14"></input></td>
 </tr>
-<tr id= "blue-grey1" class= "colour">
-<td id= "blue-grey1-set1" class= "colourTile"></td>
-<td id= "blue-grey1-set2" class= "colourTile"></td>
-<td id= "blue-grey1-set3" class= "colourTile"></td>
-<td id= "blue-grey1-set4" class= "colourTile"></td>
-<td id= "blue-grey1-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "bg10"></input></td>
+<td><input class= "colour" type= "text" id= "bg11"></input></td>
+<td><input class= "colour" type= "text" id= "bg12"></input></td>
+<td><input class= "colour" type= "text" id= "bg13"></input></td>
+<td><input class= "colour" type= "text" id= "bg14"></input></td>
 </tr>
-<tr id= "red-grey2" class= "colour">
-<td id= "red-grey2-set1" class= "colourTile"></td>
-<td id= "red-grey2-set2" class= "colourTile"></td>
-<td id= "red-grey2-set3" class= "colourTile"></td>
-<td id= "red-grey2-set4" class= "colourTile"></td>
-<td id= "red-grey2-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "rg20"></input></td>
+<td><input class= "colour" type= "text" id= "rg21"></input></td>
+<td><input class= "colour" type= "text" id= "rg22"></input></td>
+<td><input class= "colour" type= "text" id= "rg23"></input></td>
+<td><input class= "colour" type= "text" id= "rg24"></input></td>
 </tr>
-<tr id= "green-grey2" class= "colour">
-<td id= "green-grey2-set1" class= "colourTile"></td>
-<td id= "green-grey2-set2" class= "colourTile"></td>
-<td id= "green-grey2-set3" class= "colourTile"></td>
-<td id= "green-grey2-set4" class= "colourTile"></td>
-<td id= "green-grey2-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "gg20"></input></td>
+<td><input class= "colour" type= "text" id= "gg21"></input></td>
+<td><input class= "colour" type= "text" id= "gg22"></input></td>
+<td><input class= "colour" type= "text" id= "gg23"></input></td>
+<td><input class= "colour" type= "text" id= "gg24"></input></td>
 </tr>
-<tr id= "blue-grey2" class= "colour">
-<td id= "blue-grey2-set1" class= "colourTile"></td>
-<td id= "blue-grey2-set2" class= "colourTile"></td>
-<td id= "blue-grey2-set3" class= "colourTile"></td>
-<td id= "blue-grey2-set4" class= "colourTile"></td>
-<td id= "blue-grey2-set5" class= "colourTile"></td>
+<tr>
+<td><input class= "colour" type= "text" id= "bg20"></input></td>
+<td><input class= "colour" type= "text" id= "bg21"></input></td>
+<td><input class= "colour" type= "text" id= "bg22"></input></td>
+<td><input class= "colour" type= "text" id= "bg23"></input></td>
+<td><input class= "colour" type= "text" id= "bg24"></input></td>
 </tr>
 </table>
 <div class = "padding"></div>
