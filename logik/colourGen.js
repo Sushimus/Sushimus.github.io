@@ -1,388 +1,518 @@
-//whole values
+//User Inputs
+var red;
+var green;
+var blue;
+var hex;
+
+var greyscale = false;
+var displayType;//Sets pattern
+
+//Math Stuff
 var max;
 var max2;
 var mid;
 var mid2;
 var min;
+var notMax;
+var notMid;
 var sum;
-var increment;
-//ratio values
-var maxRat;
-var midRat;
-var minRat;
+var increment = 0;
+var inputType;
 
-function colourGen(){    
-    //Getting inputs
-    System.out.println("Please enter max value: ");
-    colours.setMax(input.nextInt());
-    System.out.println("Please enter mid value: ");
-    colours.setMid(input.nextInt());
-    System.out.println("Please enter min value: ");
-    colours.setMin(input.nextInt());
-     
-    //Setting values to math against
-    colours.setSum();
-    colours.calcRatio();
-       
-    //Mathing and displaying output
-    math();
-    display();
-    math();
-    display();
-    math();
-    display();
-    math();
-    display();
-    math();
-    display();
-}
+var maxRat = 0.5;
+var midRat = 0.35;
+var minRat = 0.15;
 
-//------------------------------------------------------------------------------------------------------------------------------
-//------------------------------------------------------INTENSE_BASIC_MATH------------------------------------------------------
-function math(){
-    roundSum();
-    calcSet();
-    calcMax2();
-    calcMid2();
-}
-    
-function calcRatio(){
-    var max = max;
-    var mid = mid;
-    var min = min;
-    var sum = sum;
-        
-    maxRat = (max / sum).toFixed(2);
-    midRat = (mid / sum).toFixed(2);
-    minRat = (min / sum).toFixed(2);
-}
-    
-function calcSet(){
-    if(increment == 0){
-        if((sum * maxRat < 255) && !((sum * maxRat) + 10 > 255)){
-            while((sum * maxRat < 255) && !((sum + 10) * maxRat > 255)){
-                sum = sum + 10;
-            }
-            max = sum * maxRat;
-            mid = sum * midRat;
-            min = sum * minRat;
-            increment = increment + 1;
-        }
-        else{
-            System.out.println("FIRST_SET_FAILURE");
-        }
-    }
-    else if(increment == 1){
-        max = (sum - 80) * maxRat;
-        mid = (sum - 80) * midRat;
-        min = (sum - 80) * minRat;
-        increment = increment + 1;
-    }
-    else if(increment == 2){
-        max = (sum - 160) * maxRat;
-        mid = (sum - 160) * midRat;
-        min = (sum - 160) * minRat;
-        increment = increment + 1;
-    }
-    else if(increment == 3){
-        max = (sum - 240) * maxRat;
-        mid = (sum - 240) * midRat;
-        min = (sum - 240) * minRat;
-        increment = increment + 1;
-    }
-    else if(increment == 4){
-        max = (sum - 320) * maxRat;
-        mid = (sum - 320) * midRat;
-        min = (sum - 320) * minRat;
-        increment = increment + 1;
-    }
-    else{
-    }
-}
-    
-function calcMax2(){
-        max2 = (max + mid) / 2;
-}
-    
-function calcMid2(){
-        mid2 = (mid + min) / 2;
-}
-    
-function roundSum(){
-	var sum = this.sum;
-    if(sum < 100){
-        sum = sum / 100;
-        sum = sum.toFixed(2);
-        sum = sum * 100;
-        this.sum = sum;
-    }
-    else{
-        sum = sum / 1000;
-        sum = sum.toFixed(2);
-        sum = sum * 1000;
-        this.sum = sum;
-    }
-}
-    
-function hex(rgbVal){
-    var hex;
-    var firstHex = hexVal(calcFirstHex(rgbVal));
-    var secondHex = hexVal(calcSecondHex(rgbVal));
-        
-    hex = firstHex + secondHex;
-
-    return hex;
-}
-    
-function calcFirstHex(rgbVal){
-     var firstHexCalc;
-      
-     firstHexCalc = rgbVal / 16;
-        
-     return firstHexCalc;
-}
-    
-function calcSecondHex(rgbVal){
-    var secondHexCalc;
-
-    secondHexCalc = ((rgbVal % 16) / 16) * 16;
-     
-    return secondHexCalc;
-}
-    
-function hexVal(hexDigit){
-    var hexVal;
-        
-    if(hexDigit == 0){
-        hexVal = "0";
-        return hexVal;
-    }
-    else if(hexDigit == 1){
-        hexVal = "1";
-        return hexVal;
-    }
-    else if(hexDigit == 2){
-        hexVal = "2";
-        return hexVal;
-    }
-    else if(hexDigit == 3){
-        hexVal = "3";
-        return hexVal;
-    }
-    else if(hexDigit == 4){
-        hexVal = "4";
-        return hexVal;
-    }
-    else if(hexDigit == 5){
-        hexVal = "5";
-        return hexVal;
-    }
-    else if(hexDigit == 6){
-        hexVal = "6";
-        return hexVal;
-    }
-    else if(hexDigit == 7){
-        hexVal = "7";
-        return hexVal;
-    }
-    else if(hexDigit == 8){
-        hexVal = "8";
-        return hexVal;
-    }
-    else if(hexDigit == 9){
-        hexVal = "9";
-        return hexVal;
-    }
-    else if(hexDigit == 10){
-        hexVal = "A";
-        return hexVal;
-    }
-    else if(hexDigit == 11){
-        hexVal = "B";
-        return hexVal;
-    }
-    else if(hexDigit == 12){
-        hexVal = "C";
-        return hexVal;
-    }
-    else if(hexDigit == 13){
-        hexVal = "D";
-        return hexVal;
-    }
-    else if(hexDigit == 14){
-        hexVal = "E";
-        return hexVal;
-    }
-    else if(hexDigit == 15){
-        hexVal = "F";
-        return hexVal;
-    }
-     
-    hexVal = "X";
-    return hexVal;
+function GenerateColours(){
+	SetInput();
+	Init();
+	
+	DoMath();
+	Display();
+	DoMath();
+	Display();
+	DoMath();
+	Display();
+	DoMath();
+	Display();
+	DoMath();
+	Display();
+	
+	increment = 0;
 }
 
 //-----------------------------------------------------------------------------------------------------------------------------
-//------------------------------------------------------GETTERS_&_SETTERS------------------------------------------------------
-    
-function setMax(max){
-    //max = document.getElementById('redInput').value;
-	max = 100;
-    while(max > 255){
-        System.out.println("Please enter value between 0 - 255: ");
-        max = input.nextInt();
+//------------------------------------------------------INPUT_HANDLING------------------------------------------------------
+function SetInput(){
+	var randomRange = 20;
+	
+	if(document.getElementById('hexInput').value == ""){
+		if(document.getElementById('redInput').value != ""){
+			red = parseInt(document.getElementById('redInput').value);
+		}
+		else{
+			red = Math.floor(Math.random() * 200) + 55;
+		}
+		if(document.getElementById('greenInput').value != ""){
+			green = parseInt(document.getElementById('greenInput').value);
+		}
+		else{
+			green = Math.floor(Math.random() * 200) + 55;
+			
+			while(green == red || (green >= red - randomRange && green <= red + randomRange) || green > 255){
+				green = Math.floor(Math.random() * 200) + 55;
+			}
+		}
+		if(document.getElementById('blueInput').value != ""){
+			blue = parseInt(document.getElementById('blueInput').value);
+		}
+		else{
+			blue =Math.floor(Math.random() * 200) + 55;
+			
+            while((blue == red || blue == green) || ((blue >= red - randomRange && blue <= red + randomRange)) || ((blue >= green - randomRange && blue <= green + randomRange)) || blue > 255){
+                blue = Math.floor(Math.random() * 200) + 55;
+            }
+		}
+	}
+	else{
+		hex = document.getElementById('hexInput').value.toUpperCase();
+		ToRGB();
+	}
+}
+
+function Init(){
+    SetInputType();
+    ReshuffleInputs();
+    SetSum();
+    SetRatio();
+    SetDisplayType();//NEEDS IMPLEMENTATION
+}
+
+function SetInputType(){
+    //if one colour is largest, one colour is middle, and one colour is smallest
+    if((((red > green) && (red > blue)) && ((blue > green) || (green > blue))) ||
+        (((green > red) && (green > blue)) && ((red > blue) || (blue > red))) ||
+        (((blue > red) && (blue > green)) && ((red > green) || (green > red)))){
+        inputType = 0;
     }
-    this.max = max;
-}
-    
-function setMid(mid){
-	mid = 100;
-    while(min > 255){
-        System.out.println("Please enter value between 0 - 255: ");
-        mid = input.nextInt();
+    //if two colours are equal
+    else if(((red == green || red == blue) && !(blue == green)) || 
+            ((green == red || green == blue) && !(red == blue)) || 
+            ((blue == red || blue == green) && !(red == green))){
+        //Scanner input = new Scanner(System.in); ADD GREYSCALE TOGGLE
+        //System.out.println("Enable greyscale? [Y/N]");
+        //String greyCheck = input.nextLine();
+        //if(greyCheck.equalsIgnoreCase("Y")){
+        //    greyscale = true;
+        //}
+        inputType = 1;
     }
-    this.mid = mid;
-}
-    
-    
-function setMin(min){
-	min = 100;
-    while(min > 255){
-        System.out.println("Please enter value between 0 - 255: ");
-        min = input.nextInt();
+    //if they're all the same
+    else if((red == green) && (green == blue)){
+        inputType = 2;
     }
-    this.min = min;
+    else{
+        inputType = 3;
+    }
 }
-    
-function setSum(){
-    sum = max + mid + min;
+
+function ReshuffleInputs(){
+    if(inputType == 0){
+        //set max
+        if((red > green) && (red > blue)){
+            max = red;
+        }
+        else if((green > red) && (green > blue)){
+            max = green;
+        }
+        else if((blue > red) && (blue > green)){
+            max = blue;
+        }
+        else{
+            console.log("RESHUFFLE_ERROR: iT-0-0");
+        }
+        //set mid
+        if(((red > green) && (red < blue)) || ((red > blue) && (red < green))){
+            mid = red;
+        }
+        else if(((green > red) && (green < blue)) || ((green > blue) && (green < red))){
+            mid = green;
+        }
+        else if(((blue > red) && (blue < green)) || ((blue > green) && (blue < red))){
+            mid = blue;
+        }
+        else{
+            console.log("RESHUFFLE_ERROR: iT-0-1");
+        }
+        //set min
+        if((red < green) && (red < blue)){
+            min = red;
+        }
+        else if((green < red) && (green < blue)){
+            min = green;
+        }
+        else if((blue < red) && (blue < green)){
+            min = blue;
+        }
+        else{
+            console.log("RESHUFFLE_ERROR: iT-0-2");
+        }
+    }
+    else if(inputType == 1){
+        //if both are smaller than max
+        if(((red > green) && (green == blue)) || ((green > red) && (red == blue)) || ((blue > red) && (red == green))){
+            if(red > green){
+                if(greyscale == true){
+                    max = red;
+                    mid = green;
+                    min = blue;
+                    notMin = blue;
+                }
+                else{
+                    max = red;
+                    mid = green;
+                    min = blue;
+                    notMin = blue;
+                }
+            }
+            else if(green > red){
+                max = green;
+                mid = red;
+                min = blue;
+                notMin = blue;
+            }
+            else if(blue > red){
+                max = blue;
+                mid = green;
+                min = red;
+                notMin = red;
+            }
+            else{
+                console.log("RESHUFFLE_ERROR: iT-1-0");
+            }
+        }
+        //if both are larger than min
+        else if(((red < green) && (green == blue)) || ((green < red) && (red == blue)) || ((blue < red) && (red == green))){
+            if(red < green){
+                max = blue;
+                mid = green;
+                min = red;
+                notMax = green;
+                inputType = 2;
+            }
+            else if(green < red){
+                max = red;
+                mid = blue;
+                min = green;
+                notMax = blue;
+                inputType = 2;
+            }
+            else if(blue < red){
+                max = red;
+                mid = green;
+                min = blue;
+                notMax = green;
+                inputType = 2;
+            }
+            else{
+                console.log("RESHUFFLE_ERROR: iT-1-1");
+            }
+        }
+        else{
+            console.log("RESHUFFLE_ERROR: iT-1-2");
+        }
+    }
+    else if(inputType == 3){
+        console.log("Why are you using my tool for shades of grey?");
+    }
+    else{
+        console.log("RESHUFFLE_ERROR: iT-4");
+    }
 }
-    
-function setIncrement(){
-    max = max - 80;
+
+function SetSum(){
+	sum = max + mid + min;
+}
+
+function SetRatio(){
+    var setMax = max;
+    var setMid = mid;
+    var setMin = min;
+    var setSum = sum;
+     
+    var notMinRat;
+    var notMaxRat;
+    var notMaxRat2;
+    var loopCount = 0;
+        
+    //if all different
+    if(inputType == 0){
+        maxRat = Math.round(((setMax / setSum) + Number.EPSILON) * 100) / 100;
+        midRat = Math.round(((setMid / setSum) + Number.EPSILON) * 100) / 100;
+        minRat = Math.round(((setMin / setSum) + Number.EPSILON) * 100) / 100;
+    }
+    //if two are same and smaller
+    else if(inputType == 1){
+        if(greyscale == true){
+            notMinRat = Math.round(((((setMax - setMin) / 2) * 0.001) + Number.EPSILON) * 100) / 100;
+            notMinRat = notMinRat * 1000;
+            setMid = notMinRat + mid;
+
+            setSum = setMax + setMid + setMin;
+
+			maxRat = Math.round(((setMax / setSum) + Number.EPSILON) * 100) / 100;
+			midRat = Math.round(((setMid / setSum) + Number.EPSILON) * 100) / 100;
+			minRat = Math.round(((setMin / setSum) + Number.EPSILON) * 100) / 100;
+        }
+        else{
+			midRat = Math.round(((notMin * 1.25) + Number.EPSILON) * 100) / 100;
+			minRat = Math.round(((notMin * 0.75) + Number.EPSILON) * 100) / 100;
+                
+			maxRat = Math.round(((setMax / setSum) + Number.EPSILON) * 100) / 100;
+			midRat = Math.round(((setMid / setSum) + Number.EPSILON) * 100) / 100;
+			minRat = Math.round(((setMin / setSum) + Number.EPSILON) * 100) / 100;
+        }
+    }
+    //if two are same and larger
+    else if(inputType == 2){
+        if(greyscale == true){
+            //finds intital flawed ratio
+			maxRat = Math.round(((setMax / setSum) + Number.EPSILON) * 100) / 100;
+			midRat = Math.round(((setMid / setSum) + Number.EPSILON) * 100) / 100;
+			minRat = Math.round(((setMin / setSum) + Number.EPSILON) * 100) / 100;
+
+            //settles on ratio differential
+            notMaxRat = maxRat - minRat;
+            notMaxRat2 = Math.round(((notMaxRat / 2) + Number.EPSILON) * 100) / 100;
+            while((notMaxRat - notMaxRat2) >= .01){
+                notMaxRat = Round(notMaxRat - .01);
+                notMaxRat2 = Round(notMaxRat2 + .01);
+                loopCount = loopCount + 1;
+            }
+
+            //applies differential to output ratio
+            minRat = minRat;
+            midRat = Math.round(((minRat + notMaxRat2) + Number.EPSILON) * 100) / 100;
+            maxRat = Math.round((((midRat + notMaxRat) - (loopCount * .01)) + Number.EPSILON) * 100) / 100;
+        }
+        else{
+            setMax = Math.round(((notMax * 1.25) + Number.EPSILON) * 100) / 100;
+            setMid = Math.round(((notMax * 0.75) + Number.EPSILON) * 100) / 100;
+             
+            if(setMax > 255){
+                setMax = Math.round(((setMax * 0.9) + Number.EPSILON) * 100) / 100;
+                setMid = Math.round(((setMid * 0.9) + Number.EPSILON) * 100) / 100;
+                setMin = Math.round(((setMin * 0.9) + Number.EPSILON) * 100) / 100;
+            }
+                
+			maxRat = Math.round(((setMax / setSum) + Number.EPSILON) * 100) / 100;
+			midRat = Math.round(((setMid / setSum) + Number.EPSILON) * 100) / 100;
+			minRat = Math.round(((setMin / setSum) + Number.EPSILON) * 100) / 100;
+        }
+    }
+    else if(inputType == 3){
+        console.log("RESHUFFLE_ERROR: iT-3");
+    }
+      
+    if(1 < (maxRat + midRat + minRat)){
+		minRat = minRat - 0.01;
+    }
+}
+
+function ToRGB(){
+	//Breaking hex into seperate values
+    var hex0 = hex.charAt(0);
+    var hex1 = hex.charAt(1);
+    var hex2 = hex.charAt(2);
+    var hex3 = hex.charAt(3);
+    var hex4 = hex.charAt(4);
+    var hex5 = hex.charAt(5);
+	
+	//Converting seperate values into rgb values
+    hex0 = RGBVal(hex0);
+    hex1 = RGBVal(hex1);
+    hex2 = RGBVal(hex2);
+    hex3 = RGBVal(hex3);
+    hex4 = RGBVal(hex4);
+    hex5 = RGBVal(hex5);
+	
+	//Recombining & assigning hexes as cohesive rgb values
+    red = (parseInt(hex0) * 16) + (parseInt(hex1));
+    green = (parseInt(hex2) * 16) + (parseInt(hex3));
+    blue = (parseInt(hex4) * 16) + (parseInt(hex5));
+}
+
+function RGBVal(hexToConvert){
+	let rgbMap = new Map();
+	
+	rgbMap.set("0", 0);
+	rgbMap.set("1", 1);
+	rgbMap.set("2", 2);
+	rgbMap.set("3", 3);
+	rgbMap.set("4", 4);
+	rgbMap.set("5", 5);
+	rgbMap.set("6", 6);
+	rgbMap.set("7", 7);
+	rgbMap.set("8", 8);
+	rgbMap.set("9", 9);
+	rgbMap.set("A", 10);
+	rgbMap.set("B", 11);
+	rgbMap.set("C", 12);
+	rgbMap.set("D", 13);
+	rgbMap.set("E", 14);
+	rgbMap.set("F", 15);
+	
+	return rgbMap.get(hexToConvert);
+}
+
+function SetDisplayType(){
+	//Handles pattern displayed
 }
 
 //--------------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------DISPLAYS------------------------------------------------------
-function display(){
-    displaySetName();
-    displayPrimary();
-    displaySecondary();
-    displayTertiary();
-    displayQuadrary();
-    displayGreys();
+function Display(){//Fuck me this is a big one. Try for looping.
+	//PRIMARY
+	document.getElementById('r' + increment).style.background = `rgb(${max}, ${min}, ${min})`;
+	document.getElementById('r' + increment).style.display = 'inherit';
+	document.getElementById('r' + increment).value = `rgb(${max}, ${min}, ${min})`;
+	document.getElementById('g' + increment).style.background = `rgb(${min}, ${max}, ${min})`;
+	document.getElementById('g' + increment).style.display = 'inherit';
+	document.getElementById('g' + increment).value = `rgb(${min}, ${max}, ${min})`;
+	document.getElementById('b' + increment).style.background = `rgb(${min}, ${min}, ${max})`;
+	document.getElementById('b' + increment).style.display = 'inherit';
+	document.getElementById('b' + increment).value = `rgb(${min}, ${min}, ${max})`;
+	//SECONDARY
+	document.getElementById('rg' + increment).style.background = `rgb(${max}, ${mid}, ${min})`;
+	document.getElementById('rg' + increment).style.display = 'inherit';
+	document.getElementById('rg' + increment).value = `rgb(${max}, ${mid}, ${min})`;
+	document.getElementById('rb' + increment).style.background = `rgb(${max}, ${min}, ${mid})`;
+	document.getElementById('rb' + increment).style.display = 'inherit';
+	document.getElementById('rb' + increment).value = `rgb(${max}, ${min}, ${mid})`;
+	document.getElementById('gr' + increment).style.background = `rgb(${mid}, ${max}, ${min})`;
+	document.getElementById('gr' + increment).style.display = 'inherit';
+	document.getElementById('gr' + increment).value = `rgb(${mid}, ${max}, ${min})`;
+	document.getElementById('gb' + increment).style.background = `rgb(${min}, ${max}, ${mid})`;
+	document.getElementById('gb' + increment).style.display = 'inherit';
+	document.getElementById('gb' + increment).value = `rgb(${min}, ${max}, ${mid})`;
+	document.getElementById('br' + increment).style.background = `rgb(${mid}, ${min}, ${max})`;
+	document.getElementById('br' + increment).style.display = 'inherit';
+	document.getElementById('br' + increment).value = `rgb(${mid}, ${min}, ${max})`;
+	document.getElementById('bg' + increment).style.background = `rgb(${min}, ${mid}, ${max})`;
+	document.getElementById('bg' + increment).style.display = 'inherit';
+	document.getElementById('bg' + increment).value = `rgb(${min}, ${mid}, ${max})`;
+	//TERTIARY
+	document.getElementById('rrg' + increment).style.background = `rgb(${max}, ${mid2}, ${min})`;
+	document.getElementById('rrg' + increment).style.display = 'inherit';
+	document.getElementById('rrg' + increment).value = `rgb(${max}, ${mid2}, ${min})`;
+	document.getElementById('rrb' + increment).style.background = `rgb(${max}, ${min}, ${mid2})`;
+	document.getElementById('rrb' + increment).style.display = 'inherit';
+	document.getElementById('rrb' + increment).value = `rgb(${max}, ${min}, ${mid2})`;
+	document.getElementById('ggr' + increment).style.background = `rgb(${mid2}, ${max}, ${min})`;
+	document.getElementById('ggr' + increment).style.display = 'inherit';
+	document.getElementById('ggr' + increment).value = `rgb(${mid2}, ${max}, ${min})`;
+	document.getElementById('ggb' + increment).style.background = `rgb(${min}, ${max}, ${mid2})`;
+	document.getElementById('ggb' + increment).style.display = 'inherit';
+	document.getElementById('ggb' + increment).value = `rgb(${min}, ${max}, ${mid2})`;
+	document.getElementById('bbr' + increment).style.background = `rgb(${mid2}, ${min}, ${max})`;
+	document.getElementById('bbr' + increment).style.display = 'inherit';
+	document.getElementById('bbr' + increment).value = `rgb(${mid2}, ${min}, ${max})`;
+	document.getElementById('bbg' + increment).style.background = `rgb(${min}, ${mid2}, ${max})`;
+	document.getElementById('bbg' + increment).style.display = 'inherit';
+	document.getElementById('bbg' + increment).value = `rgb(${min}, ${mid2}, ${max})`;
+	//QUADRIARY
+	document.getElementById('trg' + increment).style.background = `rgb(${max2}, ${max2}, ${min})`;
+	document.getElementById('trg' + increment).style.display = 'inherit';
+	document.getElementById('trg' + increment).value = `rgb(${max2}, ${max2}, ${min})`;
+	document.getElementById('trb' + increment).style.background = `rgb(${max2}, ${min}, ${max2})`;
+	document.getElementById('trb' + increment).style.display = 'inherit';
+	document.getElementById('trb' + increment).value = `rgb(${max2}, ${min}, ${max2})`;
+	document.getElementById('tgb' + increment).style.background = `rgb(${min}, ${max2}, ${max2})`;
+	document.getElementById('tgb' + increment).style.display = 'inherit';
+	document.getElementById('tgb' + increment).value = `rgb(${min}, ${max2}, ${max2})`;
+	//GREYS
+	document.getElementById('rg1' + increment).style.background = `rgb(${max}, ${mid}, ${mid})`;
+	document.getElementById('rg1' + increment).style.display = 'inherit';
+	document.getElementById('rg1' + increment).value = `rgb(${max}, ${mid}, ${mid})`;
+	document.getElementById('bg1' + increment).style.background = `rgb(${mid}, ${max}, ${mid})`;
+	document.getElementById('bg1' + increment).style.display = 'inherit';
+	document.getElementById('bg1' + increment).value = `rgb(${mid}, ${max}, ${mid})`;
+	document.getElementById('gg1' + increment).style.background = `rgb(${mid}, ${mid}, ${max})`;
+	document.getElementById('gg1' + increment).style.display = 'inherit';
+	document.getElementById('gg1' + increment).value = `rgb(${mid}, ${mid}, ${max})`;
+	document.getElementById('rg2' + increment).style.background = `rgb(${max2}, ${mid2}, ${mid2})`;
+	document.getElementById('rg2' + increment).style.display = 'inherit';
+	document.getElementById('rg2' + increment).value = `rgb(${max2}, ${mid2}, ${mid2})`;
+	document.getElementById('gg2' + increment).style.background = `rgb(${mid2}, ${max2}, ${mid2})`;
+	document.getElementById('gg2' + increment).style.display = 'inherit';
+	document.getElementById('gg2' + increment).value = `rgb(${mid2}, ${max2}, ${mid2})`;
+	document.getElementById('bg2' + increment).style.background = `rgb(${mid2}, ${mid2}, ${max2})`;
+	document.getElementById('bg2' + increment).style.display = 'inherit';
+	document.getElementById('bg2' + increment).value = `rgb(${mid2}, ${mid2}, ${max2})`;
+	
+	increment++;
 }
-    
-function displaySetName(){
-    if(increment == 1){
-        System.out.println();
-        System.out.println("-----FIRST_SET-----");
-    }
-    else if(increment == 2){
-        System.out.println();
-        System.out.println("-----SECOND_SET-----");
-    }
-    else if(increment == 3){
-        System.out.println();
-        System.out.println("-----THIRD_SET-----");
-    }
-    else if(increment == 4){
-        System.out.println();
-        System.out.println("-----FOURTH_SET-----");
-    }
-    else if(increment == 5){
-        System.out.println();
-        System.out.println("-----FIFTH_SET-----");
-    }
+
+//------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------INTENSE_BASIC_MATH------------------------------------------------------
+function DoMath(){
+	RoundSum();
+	CalcSet();
 }
-    
-function displayPrimary(){
-    System.out.println();
-    System.out.println("Red: " + hex(max) + hex(min) + hex(min));
-    System.out.println("Green: " + hex(min) + hex(max) + hex(min));
-    System.out.println("Blue: " + hex(min) + hex(min) + hex(max));
+
+function RoundSum(){
+	var roundSum = sum;
+	
+	roundSum = roundSum / 1000;
+	roundSum = Math.round((roundSum + Number.EPSILON) * 100) / 100;
+	roundSum = roundSum * 1000;
+		
+	sum = roundSum;
 }
-    
-function displaySecondary(){
-    System.out.println();
-    System.out.println("Red-Green: " + hex(max) + hex(mid) + hex(min));
-    System.out.println("Red-Blue: " + hex(max) + hex(min) + hex(mid));
-    System.out.println("Green-Red: " + hex(mid) + hex(max) + hex(min));
-    System.out.println("Green-Blue: " + hex(min) + hex(max) + hex(mid));
-    System.out.println("Blue-Red: " + hex(mid) + hex(min) + hex(max));
-    System.out.println("Blue-Green: " + hex(min) + hex(mid) + hex(max));
+
+function CalcSet(){ //Rounding is being handled by built in rounding, may produce bad numbers.
+	if(increment == 0){
+		if(sum * maxRat <= 255){
+			while((sum * maxRat <= 255) && (255 <= (sum + 10) * maxRat)){
+				sum = sum + 10;
+			}
+			
+			max = Math.round(sum * maxRat);
+			mid = Math.round(sum * midRat);
+			min = Math.round(sum * minRat);
+		}
+		else{
+			console.log("FIRST_SET_FAILURE");
+		}
+	}
+	else if(increment == 1){
+		max = Math.round((sum - 80) * maxRat);
+		mid = Math.round((sum - 80) * midRat);
+		min = Math.round((sum - 80) * minRat);
+	}
+	else if(increment == 2){
+		max = Math.round((sum - 160) * maxRat);
+		mid = Math.round((sum - 160) * midRat);
+		min = Math.round((sum - 160) * minRat);
+	}
+	else if(increment == 3){
+		max = Math.round((sum - 240) * maxRat);
+		mid = Math.round((sum - 240) * midRat);
+		min = Math.round((sum - 240) * minRat);
+	}
+	else if(increment == 4){
+		max = Math.round((sum - 320) * maxRat);
+		mid = Math.round((sum - 320) * midRat);
+		min = Math.round((sum - 320) * minRat);
+	}
+	else{
+		console.log("INCREMENT_EXCEEDED_4");
+	}
+	
+	mid2 = Math.round((mid + min) / 2);
+	max2 = Math.round((max + mid) / 2);
 }
-    
-function displayTertiary(){
-    System.out.println();
-    System.out.println("Red-Red-Green: " + hex(max) + hex(mid2) + hex(min));
-    System.out.println("Red-Red-Blue: " + hex(max) + hex(min) + hex(mid2));
-    System.out.println("Green-Green-Red: " + hex(mid2) + hex(max) + min);
-    System.out.println("Green-Green-Blue: " + hex(min) + hex(max) + hex(mid2));
-    System.out.println("Blue-Blue-Red: " + hex(mid2) + hex(min) + hex(max));
-    System.out.println("Blue-Blue-Green: " + hex(min) + hex(mid2) + hex(max));
+
+function Round(value){
+	return Math.round(((value) + Number.EPSILON) * 100) / 100;
 }
-    
-function displayQuadrary(){
-    System.out.println();
-    System.out.println("True-Red-Green: " + hex(max2) + hex(max2) + hex(min));
-    System.out.println("True-Red-Blue: " + hex(max2) + hex(min) + hex(max2));
-    System.out.println("True-Green-Blue: " + hex(min) + hex(max2) + hex(min));
-}
-    
-function displayGreys(){
-    System.out.println();
-    System.out.println("Red-Grey1: " + hex(max) + hex(mid) + hex(mid));
-    System.out.println("Green-Grey1: " + hex(mid) + hex(max) + hex(mid));
-    System.out.println("Blue-Grey1: " + hex(mid) + hex(mid) + hex(max));
-    System.out.println("Red-Grey2: " + hex(max2) + hex(mid2) + hex(mid2));
-    System.out.println("Green-Grey2: " + hex(mid2) + hex(max2) + hex(mid2));
-    System.out.println("Blue-Grey2: " + hex(mid2) + hex(mid2) + hex(max2));
-    System.out.println();
-}
-    
-/**    Displays for RGB instead of HEX
-        public void displayPrimary(){
-        System.out.println();
-        System.out.println("Red: R:" + max + " G:" + min + " B:" + min);
-        System.out.println("Green: R:" + min + " G:" + max + " B:" + min);
-        System.out.println("Blue: R:" + min + " G:" + min + " B:" + max);
-    }
-    
-    public void displaySecondary(){
-        System.out.println();
-        System.out.println("Red-Green: R:" + max + " G:" + mid + " B:" + min);
-        System.out.println("Red-Blue: R:" + max + " G:" + min + " B:" + mid);
-        System.out.println("Green-Red: R:" + mid + " G:" + max + " B:" + min);
-        System.out.println("Green-Blue: R:" + min + " G:" + max + " B:" + mid);
-        System.out.println("Blue-Red: R:" + mid + " G:" + min + " B:" + max);
-        System.out.println("Blue-Green: R:" + min + " G:" + mid + " B:" + max);
-    }
-    
-    public void displayTertiary(){
-        System.out.println();
-        System.out.println("Red-Red-Green: R:" + max + " G:" + mid2 + " B:" + min);
-        System.out.println("Red-Red-Blue: R:" + max + " G:" + min + " B:" + mid2);
-        System.out.println("Green-Green-Red: R:" + mid2 + " G:" + max + " B:" + min);
-        System.out.println("Green-Green-Blue: R:" + min + " G:" + max + " B:" + mid2);
-        System.out.println("Blue-Blue-Red: R:" + mid2 + " G:" + min + " B:" + max);
-        System.out.println("Blue-Blue-Green: R:" + min + " G:" + mid2 + " B:" + max);
-    }
-    
-    public void displayQuadrary(){
-        System.out.println();
-        System.out.println("True-Red-Green: R:" + max2 + " G:" + max2 + " B:" + min);
-        System.out.println("True-Red-Blue: R:" + max2 + " G:" + min + " B:" + max2);
-        System.out.println("True-Green-Blue: R:" + min + " G:" + max2 + " B:" + min);
-    }
-    
-    public void displayGreys(){
-        System.out.println();
-        System.out.println("Red-Grey1: R:" + max + " G:" + mid + " B:" + mid);
-        System.out.println("Green-Grey1: R:" + mid + " G:" + max + " B:" + mid);
-        System.out.println("Blue-Grey1: R:" + mid + " G:" + mid + " B:" + max);
-        System.out.println("Red-Grey2: R:" + max2 + " G:" + mid2 + " B:" + mid2);
-        System.out.println("Green-Grey2: R:" + mid2 + " G:" + max2 + " B:" + mid2);
-        System.out.println("Blue-Grey2: R:" + mid2 + " G:" + mid2 + " B:" + max2);
-        System.out.println();
-    }*/
