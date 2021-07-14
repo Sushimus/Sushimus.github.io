@@ -371,6 +371,10 @@ input.gdcLink {
 	margin-left: 10%;
 	background-position: 100% 50%;
 }
+input.redditLink{
+	margin-left: 10%;
+	background-position: 50% 100%;
+}
 input.dropdownbutton{
 	background-position: 0% 0%;
 }
@@ -671,4 +675,61 @@ input.colour{
 	height: 100%;
 	padding: 0%;
 	display: none;
+}
+/*<----------------------------------------------Prototype1---------------------------------------------->*/
+div.proto1{
+	width: 1080px;
+	height: 2572px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-image: url(assets/prototype1.png);
+	background-repeat: no-repeat;
+	
+	border: 30px solid transparent;
+	border-image: var(--borderImg2);
+	-webkit-border-image: var(--borderImg2);
+	-moz-border-image: var(--borderImg2);
+	-o-border-image: var(--borderImg2);
+	border-image-slice: 17;
+}
+input.proto1Square{
+	position: absolute;
+	width: 46px;
+	height: 52px;
+	
+	border: none;
+	background: none;
+}
+input.proto1Circle{
+	position: absolute;
+	width: 50px;
+	height: 60px;
+	
+	border: none;
+	border-radius: 100%;
+	background: none;
+}
+input.proto1Boss{
+	position: absolute;
+	width: 50px;
+	height: 60px;
+	
+	border: none;
+	border-radius: 100%;
+	background: none;
+}
+div.score{
+	position: fixed;
+	margin-left: 63%;
+	margin-top: 15px;
+}
+input.proto1Square:hover{
+	background-color: rgba(100,100,255,0.25);
+}
+input.proto1Circle:hover{
+	background-color: rgba(255,100,100,0.25);
+}
+input.proto1Boss:hover{
+	background-color: rgba(0,0,0,0.25);
 }
