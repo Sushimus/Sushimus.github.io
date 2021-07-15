@@ -97,13 +97,11 @@ div.infograph{
 		height: var(--phoneUnit);
 		width: var(--phoneUnit);
 	}
-	div.contacts{
-		width: 175%;
+	.contacts{
 		margin-top: 0;
-		margin-left: 0;
+		margin-left: .2rem;
 		position: fixed;
-		z-index: 7;
-		height: var(--phoneUnit);
+		z-index: 10;
 	}
 	mark.welcome{
 		display: none;
@@ -163,20 +161,16 @@ div.infograph{
 	div.dropdown{
 		margin-top: .3%;
 		margin-left: .5%;
-		position: fixed;
+		z-index: 10;
+	}
+	.contacts{
+		margin-top: .3%;
+		margin-right: .5%;
 		z-index: 10;
 	}
 	.button{
 		height: var(--desktopUnit);
 		width: var(--desktopUnit);
-	}
-	div.contacts{
-		width: 100%;
-		margin-top: .3%;
-		margin-left: 44%;
-		position: fixed;
-		z-index: 7;
-		height: var(--desktopUnit);
 	}
 	mark.welcome{
 	position: absolute;
@@ -261,36 +255,14 @@ body{
 	height: 100%;
 }
 h1{
+	margin: 0;
+	padding-bottom: 20px;
 	color: var(--titleColour);
-	letter-spacing: 3px;	
+	letter-spacing: 8px;
+	word-spacing: 16px;
+	line-height: 50px;
 	text-align: center;
 	text-shadow: var(--textShadow);
-	background: var(--bannerFill);
-	border-style: solid;
-	border-color: var(--borderColour);
-	border-bottom-width: 1px;
-	border-style: solid;
-	border-top:none;
-	border-left: none;
-	border-right: none;
-}
-h2{
-	color: var(--titleColour);
-	letter-spacing: 3px;
-	font-size: var(--desktopUnit);
-	line-height: 30px;
-	margin-top: 45px;
-	padding-top: 25px;
-	text-align: center;
-	text-shadow: var(--textShadow);
-	background: var(--bannerFill);
-	border-style: solid;
-	border-color: var(--borderColour);
-	border-bottom-width: 1px;
-	border-style: solid;
-	border-top:none;
-	border-left: none;
-	border-right: none;
 }
 p{
 	vertical-align: middle;
@@ -339,10 +311,17 @@ input{
 	text-shadow: var(--textShadow);
 }
 div.banner {
-	margin-top: -47px;
+	margin-top: 0px;
 	position: fixed;
 	z-index: 7;
 	width: 100%;
+	background: var(--bannerFill);
+	border-style: solid;
+	border-color: var(--borderColour);
+	border-bottom-width: 1px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
 }
 .button{
 	background-size: 300% 300%;
@@ -352,28 +331,40 @@ div.banner {
 	border-style: solid;
 	border-color: var(--borderColour);
 }
-input.twitchLink{
+.contacts{
+	right: 0px;
+	display: inline-block;
+	position: absolute;
+}
+.twitchLink{
 	background-position: 50% 0%;
 }
-input.youtubeLink{
+.youtubeLink{
 	background-position: 0% 50%;
 }
-input.instaLink{
+.instaLink{
 	background-position: 100% 0%;
 }
-input.twitterLink{
+.twitterLink{
 	background-position: 50% 50%;
 }
-input.contact {
+.contact {
 	background-position: 0% 100%;
 }
-input.gdcLink {
+.gdcLink {
 	margin-left: 10%;
 	background-position: 100% 50%;
 }
-input.redditLink{
-	margin-left: 10%;
+.redditLink{
+	margin-left: 5px;
+	margin-right: 5px;
+	right: 0px;
 	background-position: 50% 100%;
+}
+.dropdown{
+	position: absolute;
+	display: inline-block;
+	left: 0px;
 }
 input.dropdownbutton{
 	background-position: 0% 0%;
@@ -482,8 +473,7 @@ mark.smolText{
 	letter-spacing: 1px;
 	color: inherit;
 	background: transparent;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding: 0px;
 }
 a.gameIdeas{
 	padding-top: 12px;
