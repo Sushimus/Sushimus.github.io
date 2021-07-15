@@ -50,7 +50,8 @@ function welcomeMessage() {
 			"Plorp is a good egg",
 			"All my homies hate trig",
 			"Whale onsie penguins are so 2019",
-			"Now adding suffering"
+			"Now adding suffering",
+			"Now with half the jank!"
 		]
 		var messageChoose = Math.floor(Math.random() * (messages.length));
 		var messageChosen = messages[messageChoose];
