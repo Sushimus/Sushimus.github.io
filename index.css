@@ -81,8 +81,8 @@ div.infograph{
 	}
 	h1{
 		font-size: var(--phoneUnit);
-		padding-top: 30px;
-		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-bottom: 5px;
 	}
 	div.padding{
 		padding-bottom: 100px;
@@ -98,7 +98,7 @@ div.infograph{
 		width: var(--phoneUnit);
 	}
 	.contacts{
-		margin-top: 0;
+		margin-top: 10px;
 		margin-left: .2rem;
 		position: fixed;
 		z-index: 10;
@@ -220,17 +220,6 @@ div.infograph{
 	}
 	table.colourPallet{
 		height: 720%;
-	}
-}
-	/*Desktop 16/10*/
-@media screen and (min-aspect-ratio: 16/10) {
-	div.contacts{
-		width: 100%;
-		margin-top: .3%;
-		margin-left: 42.8%;
-		position: fixed;
-		z-index: 7;
-		height: var(--desktopUnit);
 	}
 }
 /*<----------------------------------------------General Items---------------------------------------------->*/
@@ -396,7 +385,7 @@ div.content{
 	position: absolute;
 	width: 100%;
 }
-mark.homeButton{
+.homeButton{
 	padding-top: 12px;
 	background-color: rgb(246,209,205);
 	background-size: cover;
