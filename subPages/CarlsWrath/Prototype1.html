@@ -3,6 +3,11 @@
 <script src= "../../logik/background.js"></script>
 <script src= "../../logik/Prototype1.js"></script>
 
+<head>
+	<title>Slay that spire</title>
+	<link rel="icon" href="../../assets/icon.png" type="image/x-icon">
+</head>
+
 <body id= "body">
 <div class= "banner">
 	<div class= "dropdown">
@@ -27,7 +32,8 @@
 
 
 <!--------------------------------------------------------------------------------------------------------------------Content Starts Here-------------------------------------------------------------------------------------------------------------------->
-<div class= "padding"></div>
+<div class= "content">
+<!--------------------------------------------------------------Game Feedback-------------------------------------------------------------->
 <div class= "score">
 	<table>
 	<tr style= "padding-top: 10px; padding-bottom: 3px; padding-left: 5px; padding-right: 5px;">
@@ -46,6 +52,7 @@
 	</tr>
 	</table>
 </div>
+<!--------------------------------------------------------------Game-------------------------------------------------------------->
 <div class= "proto1" src= "../../assets/prototype1.png">
 	<input class= "proto1Square" type= "button" id= "185" style= "margin-top: 171px; margin-left: 10px;" onclick= "Navigate('choices', this);"></input>
 	<input class= "proto1Square" type= "button" id= "180" style= "margin-top: 350px; margin-left: 10px;" onclick= "Navigate('choices', this);"></input>
@@ -84,6 +91,7 @@
 	<mark id= "150" style= "display: blocked;" onclick= null></mark>
 	<mark id= "130" style= "display: blocked;" onclick= null></mark>
 </div>
-<div class= "padding"></div>
+
+</div>
 </body>
 </html>
