@@ -4,6 +4,11 @@
 <script src= "../logik/colourGen.js"></script>
 <meta name=”viewport” content=”width=device-width, initial-scale=1″>
 
+<head>
+	<title>~Colourful~</title>
+	<link rel="icon" href="../assets/icon.png" type="image/x-icon">
+</head>
+
 <body id= "body">
 <div class= "banner">
 	<div class= "dropdown">
@@ -21,7 +26,8 @@
 </div>
 
 <!--------------------------------------------------------------------------------------------------------------------Content Starts Here-------------------------------------------------------------------------------------------------------------------->
-<div class = "padding"></div>
+<div class= "content">
+<!--------------------------------------------------------------User Input-------------------------------------------------------------->
 <p>
 Until I learn clipboard API stuff you'll need to copy colours you want manually<br><br>
 R:<input class= "rgbInput" type= "text" id= "redInput" required maxlength= "3"> G:</input><input class= "rgbInput" type= "text" id= "greenInput" required maxlength= "3"></input> B:<input class= "rgbInput" type= "text" id= "blueInput" required maxlength= "3"></input><br><br>
@@ -33,6 +39,7 @@ HEX:<input class= "hexInput" type= "text" id= "hexInput" required maxlength= "6"
 <button onclick= "GenerateColours()">GENERATE</button>
 </mark><br>
 
+<!--------------------------------------------------------------Colour Output-------------------------------------------------------------->
 <table class= "colourPallet">
 <!---------PRIMARY_COLOURS--------->
 <tr>
@@ -208,6 +215,7 @@ HEX:<input class= "hexInput" type= "text" id= "hexInput" required maxlength= "6"
 <td><input class= "colour" type= "text" id= "bg24"></input></td>
 </tr>
 </table>
-<div class = "padding"></div>
+
+</div>
 </body>
 </html>
