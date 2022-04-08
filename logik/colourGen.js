@@ -285,8 +285,8 @@ function SetRatio(){
             notMaxRat = maxRat - minRat;
             notMaxRat2 = Math.round(((notMaxRat / 2) + Number.EPSILON) * 100) / 100;
             while((notMaxRat - notMaxRat2) >= .01){
-                notMaxRat = Round(notMaxRat - .01);
-                notMaxRat2 = Round(notMaxRat2 + .01);
+                notMaxRat = Math.round(((notMaxRat - .01) + Number.EPSILON) * 100) / 100;
+                notMaxRat2 = Math.round(((notMaxRat2 + .01) + Number.EPSILON) * 100) / 100;
                 loopCount = loopCount + 1;
             }
 
@@ -511,8 +511,4 @@ function CalcSet(){ //Rounding is being handled by built in rounding, may produc
 	
 	mid2 = Math.round((mid + min) / 2);
 	max2 = Math.round((max + mid) / 2);
-}
-
-function Round(value){
-	return Math.round(((value) + Number.EPSILON) * 100) / 100;
 }

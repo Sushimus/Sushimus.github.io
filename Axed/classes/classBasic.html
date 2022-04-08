@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<link rel= "stylesheet" type= "text/css" href= "../../index.css">
+<script src= "../../logik/generators.js"></script>
+<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+
+<body id= "body">
+<div class= "banner">
+	<h1>
+		w h a t <mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>a r e <mark style= "color: transparent; background-color: transparent; text-shadow: none;"> a </mark>t h e y
+	</h1>
+</div>
+
+<div class= "dropdown">
+	<input class= "dropdownbutton" type= "button"></input>
+	<div class= "dropdowncontent">
+		<a href="../../index.html">Home</a>
+		<a href= "../../mainPages/galleries.html">Galleries</a>
+		<a href= "../../mainPages/colourGen.html">ColourGen</a>
+		<!-- <a href="../classes.html">Classes</a> -->
+		<!--<a href="../../mods.html">Mods</a>-->
+		<a href="../../gameReviews.html">Reviews</a>
+	</div>
+</div>
+
+<div class= "contactMe">
+	<input id= "contactMe" class= "contact" type= "button" onclick="on()"></input>
+</div>
+<div class= "contactOverlay" id= "contactOverlay" onclick= "off()">
+	<div class= "overlayText" id= "overlayText">
+		<br><u>Contact Info</u><br>
+		real.sushimus@gmail.com<br>
+		instagram: real.sushimus<br>
+		twitter: real_sushimus
+	</div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------Content Starts Here-------------------------------------------------------------------------------------------------------------------->
+<div class="classChoose">
+  <div class= "class">
+    <img src="../assets/1.png" alt="Intro <br> words words words words words words more words" onclick="expandFunction(this);">
+  </div>
+  <div class="class">
+    <img src="../assets/2.png" alt="CPU" onclick="expandFunction(this);">
+  </div>
+  <div class="class">
+    <img src="../assets/3.png" alt="GPU" onclick="expandFunction(this);">
+  </div>
+  <div class="class">
+    <img src="../assets/4.png" alt="RAM" onclick="expandFunction(this);">
+  </div>
+  <div class= "class">
+    <img src="../assets/5.png" alt="MoBo" onclick="expandFunction(this);">
+  </div>
+  <div class="class">
+    <img src="../assets/6.png" alt="PSU" onclick="expandFunction(this);">
+  </div>
+  <div class="class">
+    <img src="../assets/7.png" alt="Case" onclick="expandFunction(this);">
+  </div>
+  <div class="class">
+    <img src="../assets/8.png" alt="Cooling" onclick="expandFunction(this);">
+  </div>
+  <div class="class">
+    <img src="../assets/9.png" alt="Xtra Devices" onclick="expandFunction(this);">
+  </div>
+  <div class="class">
+    <img src="../assets/10.png" alt="First Build" onclick="expandFunction(this);">
+  </div>
+</div>
+<div class="container">
+  <img id="expandedImg" hidden style="width: 100%;">
+  <div id="imgtext"></div>
+</div>
+<script>
+function expandFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</body>
+</html>

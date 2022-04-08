@@ -1,8 +1,8 @@
+/*<----------------------------------------------Root Stuff---------------------------------------------->*/
 @font-face {
 	font-family: Maker;
 	src: url(assets/font.woff);
 }
-/*<----------------------------------------------Root Stuff---------------------------------------------->*/
 :root{
 	--phoneUnit: 0.6rem;
 	--phoneBorder: 27px solid transparent;
@@ -39,27 +39,101 @@
 				   rgba(244,161,136,.85) 30% 70%,
 				   rgba(244,161,136,.8) 70%);
 }
-/*For smaller text blocks*/
+/*<----------------------------------------------General Items---------------------------------------------->*/
+html{
+	font-family: Maker;
+	font-size: 70px;
+	text-align: center;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	background-size: 100vw 100vh;
+	-webkit-background-size: 100vw 100vh;
+	-moz-background-size: 100vw 100vh;
+	-o-background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+body{
+	margin: 0;
+}
+h1{
+	margin: 0;
+	padding-bottom: 20px;
+	color: var(--titleColour);
+	letter-spacing: 8px;
+	word-spacing: 16px;
+	line-height: 50px;
+	text-align: center;
+	text-shadow: var(--textShadow);
+}
+p{
+	vertical-align: middle;
+	font-size: .5rem;
+	letter-spacing: 0px;
+	word-spacing: 3px;
+	line-height: 1.25;
+	color: var(--textColour);
+	text-shadow: var(--textShadow);
+}
+a{
+	vertical-align: middle;
+	font-size: .7rem;
+	letter-spacing: 1.75px;
+	line-height: 45px;
+	color: var(--titleColour);
+	text-shadow: var(--textShadow);
+	padding: .1rem;
+	border-width: var(--borderWidth);
+	border-style: solid;
+	border-color: transparent;
+}
+button{
+	cursor: pointer;
+	font-family: inherit;
+	background-color: transparent;
+	border: none;
+	vertical-align: middle;
+	font-size: .5rem;
+	letter-spacing: 1.75px;
+	line-height: 1.25;
+	color: var(--textColour);
+	text-shadow: var(--textShadow);
+}
+input{
+	font-family: inherit;
+	background-color: rgba(48,33,27,.5);
+	border-width: var(--borderWidth);
+	border-style: solid;
+	border-color: var(--borderColour);
+	vertical-align: middle;
+	font-size: .5rem;
+	letter-spacing: 1.75px;
+	line-height: 1.25;
+	color: var(--textColour);
+	text-shadow: var(--textShadow);
+}
+div.banner {
+	margin-top: 0px;
+	position: fixed;
+	z-index: 7;
+	width: 100%;
+	background: var(--bannerFill);
+	border-style: solid;
+	border-color: var(--borderColour);
+	border-bottom-width: 1px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+}
 div.paragraph{
 	position: relative;
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	background: var(--ditherFill);
-	background-size: 1vw;
-	background-clip: padding-box;
 	padding-left: 1vw;
 	padding-right: 1vw;
-}
-/*For information text blocks*/
-div.infograph{
-	z-index: 5;
-	position: absolute;
-	margin-top: 2.5rem;
-	margin-left: 9%;
-	margin-right: 10%;
-	margin-bottom: 1.5rem;
-	width: 80%;
 	background: var(--ditherFill);
 	background-size: 1vw;
 	background-clip: padding-box;
@@ -69,6 +143,80 @@ div.infograph{
 	-moz-border-image: var(--borderImg2);
 	-o-border-image: var(--borderImg2);
 	border-image-slice: 17;
+}
+div.content{
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.button{
+	background-size: 300% 300%;
+	background-repeat: no-repeat;
+	background-image: url(assets/ButtonSprites.png);
+	border-width: var(--borderWidth);
+	border-style: solid;
+	border-color: var(--borderColour);
+}
+.contacts{
+	right: 0px;
+	display: inline-block;
+	position: absolute;
+}
+.twitchLink{
+	background-position: 50% 0%;
+}
+.youtubeLink{
+	background-position: 0% 50%;
+}
+.instaLink{
+	background-position: 100% 0%;
+}
+.twitterLink{
+	background-position: 50% 50%;
+}
+.contact {
+	background-position: 0% 100%;
+}
+.gdcLink {
+	margin-left: 10%;
+	background-position: 100% 50%;
+}
+.redditLink{
+	margin-left: 5px;
+	margin-right: 5px;
+	right: 0px;
+	background-position: 50% 100%;
+}
+.dropdown{
+	position: absolute;
+	display: inline-block;
+	left: 0px;
+}
+input.dropdownbutton{
+	background-position: 0% 0%;
+}
+div.dropdowncontent{
+	display: none;
+	position: absolute;
+	z-index: 9;
+}
+.dropdowncontent a:hover {
+	text-shadow: var(--textShadow);
+	background-color: rgba(0,0,0,.1);
+	border-width: var(--borderWidth);
+	border-style: solid;
+	border-color: var(--borderColour);
+}
+.dropdown:hover .dropdowncontent{
+	display: block;
+}
+.dropdown:hover .dropdownbutton{
+	background-color: none;
+}
+html::-webkit-scrollbar{
+	width: 0px;
 }
 /*<----------------------------------------------Scaling Stuff---------------------------------------------->*/
 /*Phones*/
@@ -222,169 +370,7 @@ div.infograph{
 		height: 720%;
 	}
 }
-/*<----------------------------------------------General Items---------------------------------------------->*/
-html{
-	margin:0;
-	height: 100%;
-	font-family: Maker;
-	font-size: 70px;
-	text-align: center;
-	image-rendering: pixelated;
-	image-rendering: crisp-edges;
-	image-rendering: -moz-crisp-edges;
-	background-size: 100vw 100vh;
-	-webkit-background-size: 100vw 100vh;
-	-moz-background-size: 100vw 100vh;
-	-o-background-size: 100vw 100vh;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-body{
-	margin: 0;
-	height: 100%;
-}
-h1{
-	margin: 0;
-	padding-bottom: 20px;
-	color: var(--titleColour);
-	letter-spacing: 8px;
-	word-spacing: 16px;
-	line-height: 50px;
-	text-align: center;
-	text-shadow: var(--textShadow);
-}
-p{
-	vertical-align: middle;
-	font-size: .5rem;
-	letter-spacing: 0px;
-	word-spacing: 3px;
-	line-height: 1.25;
-	color: var(--textColour);
-	text-shadow: var(--textShadow);
-}
-a{
-	vertical-align: middle;
-	font-size: .7rem;
-	letter-spacing: 1.75px;
-	line-height: 45px;
-	color: var(--titleColour);
-	text-shadow: var(--textShadow);
-	padding: .1rem;
-	border-width: var(--borderWidth);
-	border-style: solid;
-	border-color: transparent;
-}
-button{
-	cursor: pointer;
-	font-family: inherit;
-	background-color: transparent;
-	border: none;
-	vertical-align: middle;
-	font-size: .5rem;
-	letter-spacing: 1.75px;
-	line-height: 1.25;
-	color: var(--textColour);
-	text-shadow: var(--textShadow);
-}
-input{
-	font-family: inherit;
-	background-color: rgba(48,33,27,.5);
-	border-width: var(--borderWidth);
-	border-style: solid;
-	border-color: var(--borderColour);
-	vertical-align: middle;
-	font-size: .5rem;
-	letter-spacing: 1.75px;
-	line-height: 1.25;
-	color: var(--textColour);
-	text-shadow: var(--textShadow);
-}
-div.banner {
-	margin-top: 0px;
-	position: fixed;
-	z-index: 7;
-	width: 100%;
-	background: var(--bannerFill);
-	border-style: solid;
-	border-color: var(--borderColour);
-	border-bottom-width: 1px;
-	border-top:none;
-	border-left: none;
-	border-right: none;
-}
-.button{
-	background-size: 300% 300%;
-	background-repeat: no-repeat;
-	background-image: url(assets/ButtonSprites.png);
-	border-width: var(--borderWidth);
-	border-style: solid;
-	border-color: var(--borderColour);
-}
-.contacts{
-	right: 0px;
-	display: inline-block;
-	position: absolute;
-}
-.twitchLink{
-	background-position: 50% 0%;
-}
-.youtubeLink{
-	background-position: 0% 50%;
-}
-.instaLink{
-	background-position: 100% 0%;
-}
-.twitterLink{
-	background-position: 50% 50%;
-}
-.contact {
-	background-position: 0% 100%;
-}
-.gdcLink {
-	margin-left: 10%;
-	background-position: 100% 50%;
-}
-.redditLink{
-	margin-left: 5px;
-	margin-right: 5px;
-	right: 0px;
-	background-position: 50% 100%;
-}
-.dropdown{
-	position: absolute;
-	display: inline-block;
-	left: 0px;
-}
-input.dropdownbutton{
-	background-position: 0% 0%;
-}
-div.dropdowncontent{
-	display: none;
-	position: absolute;
-	z-index: 9;
-}
-.dropdowncontent a:hover {
-	text-shadow: var(--textShadow);
-	background-color: rgba(0,0,0,.1);
-	border-width: var(--borderWidth);
-	border-style: solid;
-	border-color: var(--borderColour);
-}
-.dropdown:hover .dropdowncontent{
-	display: block;
-}
-.dropdown:hover .dropdownbutton{
-	background-color: none;
-}
-html::-webkit-scrollbar{
-	width: 0px;
-}
 /*<----------------------------------------------Home Page Stuff---------------------------------------------->*/
-div.content{
-	z-index: 5;
-	position: absolute;
-	width: 100%;
-}
 .homeButton{
 	padding-top: 12px;
 	background-color: rgb(246,209,205);
@@ -457,36 +443,7 @@ mark.random{
 	background: none;
 	color: inherit;
 }
-mark.smolText{
-	font-size: .36rem;
-	letter-spacing: 1px;
-	color: inherit;
-	background: transparent;
-	padding: 0px;
-}
-a.gameIdeas{
-	padding-top: 12px;
-	background-color: rgb(246,209,205);
-	background-size: cover;
-	background-clip: border-box;
-	border-width: 4px;
-	border-style: solid;
-	border-color: rgb(216,178,174);
-	vertical-align: middle;
-	font-size: .5rem;
-	letter-spacing: 1.75px;
-	line-height: 1.25;
-	color: var(--textColour);
-	text-shadow: var(--textShadow);
-	text-decoration: none;
-}
 /*<----------------------------------------------Main Pages---------------------------------------------->*/
-table.optionPreview{
-	margin: auto;
-	width: 90vw;
-	padding-top: 5%;
-	padding-bottom: 5%;
-}
 div.option{
 	padding: 0px;
 	cursor: pointer;
@@ -502,11 +459,9 @@ div.option:hover {
 	cursor: pointer;
 }
 /*<----------------------------------------------Gallery of Rex---------------------------------------------->*/
+/*WORK ON REMOVING WITH BETTER STANDARDIZATION*/
 div.photoContainer {
-	position: absolute;
 	width: 50%;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
 	border: var(--desktopBorder);
 	border-image: var(--borderImg2);
 	-webkit-border-image: var(--borderImg2);
@@ -537,98 +492,6 @@ div.photoContainer {
 }
 div.photoPadding{
 	width: 11%;
-}
-/*<----------------------------------------------Class Pages---------------------------------------------->*/
-.class {
-	float: left;
-	width: 10%;
-	cursor: pointer;
-}
-.class img {
-	opacity: 0.8;
-	cursor: pointer;
-	width: 50%;
-}
-.class img:hover {
-	opacity: 1;
-}
-.classChoose{
-	padding-top: 1.5rem;
-	width: 90%;
-	margin: auto;
-}
-.classChoose:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.container {
-	position: relative;
-	display: none;
-	width: 70%;
-	padding-bottom: 1rem;
-	margin: auto;
-}
-#imgtext {
-	position: absolute;
-	width: 92%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	top: 1rem;
-	color: var(--textColour);
-	text-shadow: var(--textShadow);
-	font-size: .5rem;
-	border: var(--desktopBorder);
-	border-image: var(--borderImg1);
-	-webkit-border-image: var(--borderImg1);
-	-moz-border-image: var(--borderImg1);
-	-o-border-image: var(--borderImg1);
-	border-image-slice: 17;
-	z-index: 4;
-	background: var(--ditherFill);
-	background-size: 1vw;
-	background-clip: padding-box;
-}
-/*<----------------------------------------------Game Reviews & Mods---------------------------------------------->*/
-table.info{
-	padding-top: 1vw;
-	padding-bottom: 1vw;
-}
-td.infoData{
-	padding-top: 3vw;
-}
-td.infoImage{
-	background: url(flavourStick.png);
-	background-size: 21px;
-	background-repeat: no-repeat repeat;
-	background-position: center;
-}
-td.infoImage img{
-	border: 30px solid transparent;
-	border-image: var(--borderImg2);
-	-webkit-border-image: var(--borderImg2);
-	-moz-border-image: var(--borderImg2);
-	-o-border-image: var(--borderImg2);
-	border-image-slice: 17;
-}
-p.infoWords{
-	background: var(--ditherFill);
-	background-size: 1vw;
-	background-clip: padding-box;
-	margin-right: 1.5vw;
-	margin-left: 1.5vw;
-	padding: 10px;
-}
-/*<----------------------------------------------Game Ideas---------------------------------------------->*/
-div.gameIdea p{
-	padding-left: 1vw;
-	padding-right: 1vw;
-}
-div.gameIdea img{
-	border-width: var(--borderWidth);
-	border-style: solid;
-	border-color: var(--borderColour);
-	margin: .5rem;
 }
 /*<----------------------------------------------Colour Gen---------------------------------------------->*/
 input.input{

@@ -366,44 +366,49 @@ function getIdea() {
 }
 
 //------------------------------------------------------------------------------------------------------Random Story Start Here------------------------------------------------------------------------------------------------------
+/*Stories To Add:
+	-Plot w/ character dilema's
+	-Depictions of civil strife
+	-Tales of insignificance
+*/
+/*Templates to add
+	-Following the events of {catastrophy name}, the survivors must now find ways to cope in the {setting adjective} {setting} {region name}.
+		+if(creatures == 0)
+		+if(creatures == 1) With enemies like the {creatureNature} {creatureAdjective} {creatureName} few have hope.
+		+if(creatures == 2) With enemies like the {creatureNature} {creatureAdjective} {creatureName} and {creatureNature} {creatureAdjective} {creatureName} few have hope.
+	-
+*/
 let StoryNotes = new Map();
-function GenerateStory(){
-	/*Stories To Add:
-		-Plot w/ character dilema's
-		-Depictions of civil strife
-		-Tales of insignificance
-	*/
-	
-	GenerateSetting(); //setting, setting adjective, region name
-	GenerateCreature(); //creature name, creature adjective
-	GenerateRelations(); //creature nature, peoples' relation, opening word
+function GenerateStory(){//Consider making template selection pull from array of classes storying functions to use
+	GenerateSetting(); //setting, settingAdjective, regionName
+	GenerateCatastrophe(); //catastophe, catastopheAdjective, catastopheCause
+	GenerateCreature(); //creatureName, creatureAdjective
+	GenerateRelations(); //creatureNature, peoplesRelation, openingWord
 	GenerateCulture(); //tradition, representation, cultureGrammar
 
-	if(StoryNotes.get('creatureIsDetailed') == true){
-		/*document.getElementById('storyGenerated').innerHTML = 
-		StoryNotes.get('openingWord') + " the " + StoryNotes.get('creatureNature') + " nature of the " + 
-		StoryNotes.get('creatureName') + ", the " + StoryNotes.get('settingAdjective') + " " + StoryNotes.get('setting') + 
-		" people from " + StoryNotes.get('regionName') + " " + StoryNotes.get('representation') + " " + StoryNotes.get('peoplesRelation') + 
-		" " + StoryNotes.get('cultureGrammar') + " their " + StoryNotes.get('tradition');*/
+	var storyChosen = Math.floor(Math.random() * 2); //Multiply by number of story types
+	
+	if(storyChosen == 0){
+		//if adjective isn't needed set adjective to a space. If adjective is needed, put a space at end of word.
+		if(StoryNotes.get('creatureIsDetailed') == true) StoryNotes.set('creatureAdjective', " ");
+		else StoryNotes.set('creatureAdjective', `${StoryNotes.get('creatureAdjective')} `);
 		
-		document.getElementById('storyGenerated').innerHTML = 
-		StoryNotes.get('openingWord') + " the " + StoryNotes.get('creatureNature') + " nature of the " + 
-		StoryNotes.get('creatureName') + ", people from the " + StoryNotes.get('settingAdjective') + " " + StoryNotes.get('setting') + 
-		" " + StoryNotes.get('regionName') + " " + StoryNotes.get('representation') + " " + StoryNotes.get('peoplesRelation') + 
-		" " + StoryNotes.get('cultureGrammar') + " their " + StoryNotes.get('tradition');
+		document.getElementById('storyGenerated').innerHTML =
+		`${StoryNotes.get('openingWord')} the ${StoryNotes.get('creatureNature')} nature of the 
+		${StoryNotes.get('creatureAdjective')}${StoryNotes.get('creatureName')}, 
+		people from the ${StoryNotes.get('settingAdjective')} ${StoryNotes.get('setting')} ${StoryNotes.get('regionName')} 
+		${StoryNotes.get('representation')} ${StoryNotes.get('peoplesRelation')} ${StoryNotes.get('cultureGrammar')} their ${StoryNotes.get('tradition')}`;
+	}
+	else if(storyChosen == 1){
+		//if adjective isn't needed set adjective to a space. If adjective is needed, put a space at end of word.
+		if(StoryNotes.get('catastopheIsDetailed') == true) StoryNotes.set('catastopheAdjective', " ");
+		else StoryNotes.set('catastopheAdjective', `${StoryNotes.get('catastopheAdjective')} `);
+		
+		document.getElementById('storyGenerated').innerHTML =
+		`Following the events of ${StoryNotes.get('catastophe')}, the survivors must now find ways to cope in the ${StoryNotes.get('settingAdjective')} ${StoryNotes.get('setting')} ${StoryNotes.get('regionName')}.${StoryNotes.get('isCreatures')}`;
 	}
 	else{
-		/*document.getElementById('storyGenerated').innerHTML = 
-		StoryNotes.get('openingWord') + " the " + StoryNotes.get('creatureNature') + " nature of the " + StoryNotes.get('creatureAdjective') + 
-		" " + StoryNotes.get('creatureName') + ", the " + StoryNotes.get('settingAdjective') + " " + StoryNotes.get('setting') + 
-		" people from " + StoryNotes.get('regionName') + " " + StoryNotes.get('representation') + " " + StoryNotes.get('peoplesRelation') + 
-		" " + StoryNotes.get('cultureGrammar') + " their " + StoryNotes.get('tradition');
-		*/
-		document.getElementById('storyGenerated').innerHTML = 
-		StoryNotes.get('openingWord') + " the " + StoryNotes.get('creatureNature') + " nature of the " + StoryNotes.get('creatureAdjective') + 
-		" " + StoryNotes.get('creatureName') + ", people from the " + StoryNotes.get('settingAdjective') + " " + StoryNotes.get('setting') + 
-		" " + StoryNotes.get('regionName') + " " + StoryNotes.get('representation') + " " + StoryNotes.get('peoplesRelation') + 
-		" " + StoryNotes.get('cultureGrammar') + " their " + StoryNotes.get('tradition');
+		console.log("STORY_CHOSEN_OVERFLOW");
 	}
 }
 
@@ -447,6 +452,22 @@ function GenerateSetting(){
 		else StoryNotes.set('setting', "taiga");
 	StoryNotes.set('settingAdjective', settingAdjectives[Math.floor(Math.random() * settingAdjectives.length)]);
 	StoryNotes.set('regionName', randString(Math.floor(Math.random() * 8) + 3));
+}
+
+function GenerateCatastrophe(){
+	var catastophe = [
+		
+	]
+	
+	var catastopheAdjective = [
+		
+	]
+	
+	var catastopheCause = [
+		
+	]
+	
+	
 }
 
 function GenerateCreature(){
@@ -829,6 +850,10 @@ function GenerateCreature(){
 	StoryNotes.set('creatureType', StoryNotes.get('creature').type);
 	StoryNotes.set('creatureAdjective', adjectives.get(StoryNotes.get('creatureType')));
 	StoryNotes.set('creatureIsDetailed', StoryNotes.get('creature').isDetailed);
+	var rand = Math.random();
+	if(rand < 0.33) StoryNotes.set('isCreatures', ` With enemies like the ${StoryNotes.get('creatureName')} few have hope.`);
+	else if(rand < 0.66) StoryNotes.set('isCreatures', ` With enemies like the ${StoryNotes.get('creatureName')} and ${StoryNotes.get('creatureName')} few have hope.`); //Prints out same creature twice
+	else StoryNotes.set('isCreatures', "");
 }
 
 function GenerateRelations(){
