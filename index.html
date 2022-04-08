@@ -6,6 +6,11 @@
 <script src= "logik/generators.js"></script>
 <script src= "logik/background.js"></script>
 
+<head>
+	<title>Undeniably Indie™</title>
+	<link rel="icon" href="assets/icon.png" type="image/x-icon">
+</head>
+
 <body id= "body">
 <div class= "banner">
 	<div class= "dropdown">
@@ -31,10 +36,8 @@
 	</h1>
 </div>
 
+<!--------------------------------------------------------------------------------------------------------------------Content Starts Here-------------------------------------------------------------------------------------------------------------------->
 <div class= "content" onmouseover= "welcomeMessage()">
-
-<div class = "padding"></div>
-
 <!------------------------------------------------------------------------------------------Introduction------------------------------------------------------------------------------------------>
 <div class= "paragraph intro">
 	<p><b>
@@ -44,17 +47,12 @@
 		Howdy!<br>
 		Hey<br>
 		Welcome to this website I cobbled together.<br>
-		Feel free to explore with the top left and if you want to contact me it's in the top right.<br><br>
-		Currently redoing mobile, sorry it's borked right now
+		Feel free to explore with the top left and if you want to contact me it's in the top right
 	</p>
 </div>
 
-<div class = "padding"></div>
-
-<!------------------------------------------------------------------------------------------Introduction------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------Promo------------------------------------------------------------------------------------------>
 <div class= "paragraph selfPromo" onclick= "location.href= 'https://www.reddit.com/r/carlswrath/'"></div>
-
-<div class = "padding"></div>
 
 <!------------------------------------------------------------------------------------------Monthly Idea------------------------------------------------------------------------------------------>
 <script>
@@ -139,13 +137,9 @@ function expand() {
 			Assuming they're in the right parts of space for it to work that is.
 			<br><br>
 			
-		<a href= "mainPages/gameIdeas.html" class="gameIdeas">Click me for previous ideas</a>
+			<button class= "homeButton" onclick= "location.href='mainPages/gameIdeas.html'">Click me for previous ideas</button>
 	</p>
 </div>
-
-<p id="help"></p>
-
-<div class = "padding"></div>
 
 <!------------------------------------------------------------------------------------------Idea Generator------------------------------------------------------------------------------------------>
 <div class= "paragraph random">
@@ -160,8 +154,6 @@ function expand() {
 <p>Have feedback?<br>
 Please let me know, I'd love this to be as useful as possible</p>
 </div>
-
-<div class = "padding"></div>
 
 </div>
 </body>
