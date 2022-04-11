@@ -17,3 +17,6 @@
 -Backgrounds
 ----Standardize colour pallet
 ----Not quite time for total redo, but tweak some
+
+-Mods
+----CSS classes fucked
