@@ -338,8 +338,9 @@ function getIdea() {
 				"Strategy game where AI mechanic involves military packs and spies revealing the types of units you have,"+"<br>"+
 				"then when planning to invade they build counter-units and units that stack decently against yours",
 				
-				"Prison Architect, only with SCPs"+"<br>"+
-				""
+				"Prison Architect, only with SCPs",
+				
+				"An ASMR-type puzzle experience entirely about organizing messy blocks of code"
 			]
 			var seventhSetChoose = Math.floor(Math.random() * (seventhSet.length));
 			var ideaChosen = seventhSet[seventhSetChoose];
