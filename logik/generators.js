@@ -363,7 +363,7 @@ function getIdea() {
 			
 			break;
 	}
-	document.getElementById('idea').innerHTML = ideaChosen;
+	document.getElementById('randomText').innerHTML = ideaChosen;
 }
 
 //------------------------------------------------------------------------------------------------------Random Story Start Here------------------------------------------------------------------------------------------------------
@@ -394,7 +394,7 @@ function GenerateStory(){//Consider making template selection pull from array of
 		if(StoryNotes.get('creatureIsDetailed') == true) StoryNotes.set('creatureAdjective', " ");
 		else StoryNotes.set('creatureAdjective', `${StoryNotes.get('creatureAdjective')} `);
 		
-		document.getElementById('storyGenerated').innerHTML =
+		document.getElementById('randomText').innerHTML =
 		`${StoryNotes.get('openingWord')} the ${StoryNotes.get('creatureNature')} nature of the 
 		${StoryNotes.get('creatureAdjective')}${StoryNotes.get('creatureName')}, 
 		people from the ${StoryNotes.get('settingAdjective')} ${StoryNotes.get('setting')} ${StoryNotes.get('regionName')} 
@@ -405,7 +405,7 @@ function GenerateStory(){//Consider making template selection pull from array of
 		if(StoryNotes.get('catastopheIsDetailed') == true) StoryNotes.set('catastopheAdjective', " ");
 		else StoryNotes.set('catastopheAdjective', `${StoryNotes.get('catastopheAdjective')} `);
 		
-		document.getElementById('storyGenerated').innerHTML =
+		document.getElementById('randomText').innerHTML =
 		`Following the events of ${StoryNotes.get('catastophe')}, the survivors must now find ways to cope in the ${StoryNotes.get('settingAdjective')} ${StoryNotes.get('setting')} ${StoryNotes.get('regionName')}.${StoryNotes.get('isCreatures')}`;
 	}
 	else{
