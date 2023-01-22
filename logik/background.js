@@ -32,3 +32,10 @@ document.getElementById('body').style.backgroundRepeat = "no-repeat";
 document.getElementById('body').style.backgroundAttachment = "fixed";
 document.getElementById('body').style.backgroundSize = "100vw 100vh";
 }
+
+//const getBorderPath = (hours) => {
+//  return hours < 18 
+//    ? `https://sushimus.github.io/assets/borderDay.png`
+//    : `https://sushimus.github.io/assets/borderNight.png`
+//}
+//document.getElementById('border').style.borderImage = "url(\"" + `$getBorderPath(date.getHours())` + "\")";

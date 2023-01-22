@@ -8,9 +8,9 @@
 	--phoneBorder: 27px solid transparent;
 	--desktopUnit: 0.8rem;
 	--desktopBorder: 33px solid transparent;
-	--titleColour: #f292cf;
-	--textColour: #ffbaa7;
-	--textShadowColour: #644238;
+	--titleColour: #e5dacb;
+	--textColour: #e5dacb;
+	--textShadowColour: #141414;
 	--textShadow: 1px 0px 2px var(--textShadowColour),
 				  0px 1px 2px var(--textShadowColour),
 				  -1px 0px 2px var(--textShadowColour),
@@ -20,24 +20,11 @@
 				  -1px 1px 2px var(--textShadowColour),
 				  1px -1px 2px var(--textShadowColour),
 				  -1px -1px 2px var(--textShadowColour);
-	--borderColour: #624438;
+	--borderColour: #141414;
 	--borderWidth: 1px;
 	--borderImg1: url(assets/borderDay.png) 11 repeat;
 	--borderImg2: url(assets/borderDay.png) 11 repeat;
-	--ditherFill: url(assets/dither.png), rgba(48,33,27,.8);
-	--bannerFill: linear-gradient(
-				   295deg,
-				   rgba(0,0,0,0) 50%,
-				   rgb(222,146,124) 50% 50.25%,
-				   rgb(244,161,136) 50.25% 50.75%,
-				   rgb(222,146,124) 50.75% 51%,
-				   rgba(0,0,0,0) 51%),
-		
-				  linear-gradient(
-				   65deg,
-				   rgba(244,161,136,.8) 30%,
-				   rgba(244,161,136,.85) 30% 70%,
-				   rgba(244,161,136,.8) 70%);
+	--ditherFill: url(assets/dither.png), rgba(54,54,54,0.8);
 }
 /*<----------------------------------------------General Items---------------------------------------------->*/
 html{
@@ -114,7 +101,7 @@ div.banner {
 	position: fixed;
 	z-index: 7;
 	width: 100%;
-	background: var(--bannerFill);
+	background: rgba(199,129,116,0.9);
 	border-style: solid;
 	border-color: var(--borderColour);
 	border-bottom-width: 1px;
@@ -196,6 +183,7 @@ input.dropdownbutton{
 div.dropdowncontent{
 	display: none;
 	position: absolute;
+	text-align: left;
 	z-index: 9;
 }
 .dropdowncontent a:hover {
@@ -369,12 +357,12 @@ html::-webkit-scrollbar{
 /*<----------------------------------------------Home Page Stuff---------------------------------------------->*/
 .homeButton{
 	padding-top: 12px;
-	background-color: rgb(246,209,205);
+	background-color: rgb(229,218,203);
 	background-size: cover;
 	background-clip: border-box;
 	border-width: 4px;
 	border-style: solid;
-	border-color: rgb(216,178,174);
+	border-color: rgb(215,188,164);
 	vertical-align: middle;
 	font-size: .5rem;
 	letter-spacing: 1.75px;
@@ -414,7 +402,7 @@ div.monthlyIdea{
 	border-image-slice: 17;
 }
 div.monthlyIdea:hover{
-	background-color: rgba(48,33,27,.85);
+	background-color: rgba(54,54,54,.85);
 }
 div.monthlyIdea::-webkit-scrollbar {
 	width: 7px;
