@@ -8,9 +8,9 @@
 	--phoneBorder: 27px solid transparent;
 	--desktopUnit: 0.8rem;
 	--desktopBorder: 33px solid transparent;
-	--titleColour: #e5dacb;
-	--textColour: #e5dacb;
-	--textShadowColour: #141414;
+	--titleColour: #e4d1d0;
+	--textColour: #e4d1d0;
+	--textShadowColour: #190f12;
 	--textShadow: 1px 0px 2px var(--textShadowColour),
 				  0px 1px 2px var(--textShadowColour),
 				  -1px 0px 2px var(--textShadowColour),
@@ -20,7 +20,7 @@
 				  -1px 1px 2px var(--textShadowColour),
 				  1px -1px 2px var(--textShadowColour),
 				  -1px -1px 2px var(--textShadowColour);
-	--borderColour: #141414;
+	--borderColour: #190f12;
 	--borderWidth: 1px;
 	--borderImg1: url(assets/borderDay.png) 11 repeat;
 	--borderImg2: url(assets/borderDay.png) 11 repeat;
@@ -101,7 +101,7 @@ div.banner {
 	position: fixed;
 	z-index: 7;
 	width: 100%;
-	background: rgba(199,129,116,0.9);
+	background: rgba(205,145,142,0.9);
 	border-style: solid;
 	border-color: var(--borderColour);
 	border-bottom-width: 1px;

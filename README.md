@@ -9,4 +9,4 @@ This is just a website with a few core focuses:
 
 -representing myself online
 
--most importantly, showing off my doggo rex. he's a good noodle
+-most importantly, showing off mr. brew who is a little loaf
