@@ -57,177 +57,209 @@ HEX:<input class= "hexInput" type= "text" id= "hexInput" required maxlength= "6"
 <!--------------------------------------------------------------Colour Output-------------------------------------------------------------->
 <table class= "colourPallet">
 <!---------PRIMARY_COLOURS--------->
-<tr>
-<td><input class= "colour" type= "text" id= "r0"></td>
-<td><input class= "colour" type= "text" id= "r1"></td>
-<td><input class= "colour" type= "text" id= "r2"></td>
-<td><input class= "colour" type= "text" id= "r3"></td>
-<td><input class= "colour" type= "text" id= "r4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "g0"></td>
-<td><input class= "colour" type= "text" id= "g1"></td>
-<td><input class= "colour" type= "text" id= "g2"></td>
-<td><input class= "colour" type= "text" id= "g3"></td>
-<td><input class= "colour" type= "text" id= "g4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "b0"></td>
-<td><input class= "colour" type= "text" id= "b1"></td>
-<td><input class= "colour" type= "text" id= "b2"></td>
-<td><input class= "colour" type= "text" id= "b3"></td>
-<td><input class= "colour" type= "text" id= "b4"></td>
+<tr class= "colourRow">
+	<td><!-- RED -->
+	<button class= "colour size1" type= "text" id= "r0">
+	<button class= "colour size2" type= "text" id= "r1">
+	<button class= "colour size3" type= "text" id= "r2">
+	<button class= "colour size4" type= "text" id= "r3">
+	<button class= "colour size5" type= "text" id= "r4">
+	</td>
+
+	<td><!-- GREEN -->
+	<button class= "colour size1" type= "text" id= "g0">
+	<button class= "colour size2" type= "text" id= "g1">
+	<button class= "colour size3" type= "text" id= "g2">
+	<button class= "colour size4" type= "text" id= "g3">
+	<button class= "colour size5" type= "text" id= "g4">
+	</td>
+
+	<td><!-- BLUE -->
+	<button class= "colour size1" type= "text" id= "b0">
+	<button class= "colour size2" type= "text" id= "b1">
+	<button class= "colour size3" type= "text" id= "b2">
+	<button class= "colour size4" type= "text" id= "b3">
+	<button class= "colour size5" type= "text" id= "b4">
+	</td>
 </tr>
 <!---------SECONDARY_COLOURS--------->
-<tr>
-<td><input class= "colour" type= "text" id= "rg0"></td>
-<td><input class= "colour" type= "text" id= "rg1"></td>
-<td><input class= "colour" type= "text" id= "rg2"></td>
-<td><input class= "colour" type= "text" id= "rg3"></td>
-<td><input class= "colour" type= "text" id= "rg4"></td>
+<tr class= "colourRow">
+	<td><!-- RED-GREEN -->
+	<button class= "colour size1" type= "text" id= "rg0">
+	<button class= "colour size2" type= "text" id= "rg1">
+	<button class= "colour size3" type= "text" id= "rg2">
+	<button class= "colour size4" type= "text" id= "rg3">
+	<button class= "colour size5" type= "text" id= "rg4">
+	</td>
+
+	<td><!-- GREEN-RED -->
+	<button class= "colour size1" type= "text" id= "gr0">
+	<button class= "colour size2" type= "text" id= "gr1">
+	<button class= "colour size3" type= "text" id= "gr2">
+	<button class= "colour size4" type= "text" id= "gr3">
+	<button class= "colour size5" type= "text" id= "gr4">
+	</td>
+
+	<td><!-- BLUE-RED -->
+	<button class= "colour size1" type= "text" id= "br0">
+	<button class= "colour size2" type= "text" id= "br1">
+	<button class= "colour size3" type= "text" id= "br2">
+	<button class= "colour size4" type= "text" id= "br3">
+	<button class= "colour size5" type= "text" id= "br4">
+	</td>
 </tr>
-<tr>
-<td><input class= "colour" type= "text" id= "rb0"></td>
-<td><input class= "colour" type= "text" id= "rb1"></td>
-<td><input class= "colour" type= "text" id= "rb2"></td>
-<td><input class= "colour" type= "text" id= "rb3"></td>
-<td><input class= "colour" type= "text" id= "rb4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "gr0"></td>
-<td><input class= "colour" type= "text" id= "gr1"></td>
-<td><input class= "colour" type= "text" id= "gr2"></td>
-<td><input class= "colour" type= "text" id= "gr3"></td>
-<td><input class= "colour" type= "text" id= "gr4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "gb0"></td>
-<td><input class= "colour" type= "text" id= "gb1"></td>
-<td><input class= "colour" type= "text" id= "gb2"></td>
-<td><input class= "colour" type= "text" id= "gb3"></td>
-<td><input class= "colour" type= "text" id= "gb4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "br0"></td>
-<td><input class= "colour" type= "text" id= "br1"></td>
-<td><input class= "colour" type= "text" id= "br2"></td>
-<td><input class= "colour" type= "text" id= "br3"></td>
-<td><input class= "colour" type= "text" id= "br4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "bg0"></td>
-<td><input class= "colour" type= "text" id= "bg1"></td>
-<td><input class= "colour" type= "text" id= "bg2"></td>
-<td><input class= "colour" type= "text" id= "bg3"></td>
-<td><input class= "colour" type= "text" id= "bg4"></td>
+<tr class= "colourRow">
+	<td><!-- RED-BLUE -->
+	<button class= "colour size1" type= "text" id= "rb0">
+	<button class= "colour size2" type= "text" id= "rb1">
+	<button class= "colour size3" type= "text" id= "rb2">
+	<button class= "colour size4" type= "text" id= "rb3">
+	<button class= "colour size5" type= "text" id= "rb4">
+	</td>
+	
+	<td><!-- GREEN-BLUE -->
+	<button class= "colour size1" type= "text" id= "gb0">
+	<button class= "colour size2" type= "text" id= "gb1">
+	<button class= "colour size3" type= "text" id= "gb2">
+	<button class= "colour size4" type= "text" id= "gb3">
+	<button class= "colour size5" type= "text" id= "gb4">
+	</td>
+
+	<td><!-- BLUE-GREEN -->
+	<button class= "colour size1" type= "text" id= "bg0">
+	<button class= "colour size2" type= "text" id= "bg1">
+	<button class= "colour size3" type= "text" id= "bg2">
+	<button class= "colour size4" type= "text" id= "bg3">
+	<button class= "colour size5" type= "text" id= "bg4">
+	</td>
 </tr>
 <!---------TERTIARY_COLOURS--------->
-<tr>
-<td><input class= "colour" type= "text" id= "rrg0"></td>
-<td><input class= "colour" type= "text" id= "rrg1"></td>
-<td><input class= "colour" type= "text" id= "rrg2"></td>
-<td><input class= "colour" type= "text" id= "rrg3"></td>
-<td><input class= "colour" type= "text" id= "rrg4"></td>
+<tr class= "colourRow">
+	<td><!-- RED-RED-GREEN -->
+	<button class= "colour size1" type= "text" id= "rrg0">
+	<button class= "colour size2" type= "text" id= "rrg1">
+	<button class= "colour size3" type= "text" id= "rrg2">
+	<button class= "colour size4" type= "text" id= "rrg3">
+	<button class= "colour size5" type= "text" id= "rrg4">
+	</td>
+
+	<td><!-- GREEN-GREEN-RED -->
+	<button class= "colour size1" type= "text" id= "ggr0">
+	<button class= "colour size2" type= "text" id= "ggr1">
+	<button class= "colour size3" type= "text" id= "ggr2">
+	<button class= "colour size4" type= "text" id= "ggr3">
+	<button class= "colour size5" type= "text" id= "ggr4">
+	</td>
+
+	<td><!-- BLUE-BLUE-RED -->
+	<button class= "colour size1" type= "text" id= "bbr0">
+	<button class= "colour size2" type= "text" id= "bbr1">
+	<button class= "colour size3" type= "text" id= "bbr2">
+	<button class= "colour size4" type= "text" id= "bbr3">
+	<button class= "colour size5" type= "text" id= "bbr4">
+	</td>
 </tr>
-<tr>
-<td><input class= "colour" type= "text" id= "rrb0"></td>
-<td><input class= "colour" type= "text" id= "rrb1"></td>
-<td><input class= "colour" type= "text" id= "rrb2"></td>
-<td><input class= "colour" type= "text" id= "rrb3"></td>
-<td><input class= "colour" type= "text" id= "rrb4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "ggr0"></td>
-<td><input class= "colour" type= "text" id= "ggr1"></td>
-<td><input class= "colour" type= "text" id= "ggr2"></td>
-<td><input class= "colour" type= "text" id= "ggr3"></td>
-<td><input class= "colour" type= "text" id= "ggr4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "ggb0"></td>
-<td><input class= "colour" type= "text" id= "ggb1"></td>
-<td><input class= "colour" type= "text" id= "ggb2"></td>
-<td><input class= "colour" type= "text" id= "ggb3"></td>
-<td><input class= "colour" type= "text" id= "ggb4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "bbr0"></td>
-<td><input class= "colour" type= "text" id= "bbr1"></td>
-<td><input class= "colour" type= "text" id= "bbr2"></td>
-<td><input class= "colour" type= "text" id= "bbr3"></td>
-<td><input class= "colour" type= "text" id= "bbr4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "bbg0"></td>
-<td><input class= "colour" type= "text" id= "bbg1"></td>
-<td><input class= "colour" type= "text" id= "bbg2"></td>
-<td><input class= "colour" type= "text" id= "bbg3"></td>
-<td><input class= "colour" type= "text" id= "bbg4"></td>
+<tr class= "colourRow">
+	<td><!-- RED-RED-BLUE -->
+	<button class= "colour size1" type= "text" id= "rrb0">
+	<button class= "colour size2" type= "text" id= "rrb1">
+	<button class= "colour size3" type= "text" id= "rrb2">
+	<button class= "colour size4" type= "text" id= "rrb3">
+	<button class= "colour size5" type= "text" id= "rrb4">
+	</td>
+
+	<td><!-- BLUE-BLUE-GREEN -->
+	<button class= "colour size1" type= "text" id= "bbg0">
+	<button class= "colour size2" type= "text" id= "bbg1">
+	<button class= "colour size3" type= "text" id= "bbg2">
+	<button class= "colour size4" type= "text" id= "bbg3">
+	<button class= "colour size5" type= "text" id= "bbg4">
+	</td>
+	
+	<td><!-- GREEN-GREEN-BLUE -->
+	<button class= "colour size1" type= "text" id= "ggb0">
+	<button class= "colour size2" type= "text" id= "ggb1">
+	<button class= "colour size3" type= "text" id= "ggb2">
+	<button class= "colour size4" type= "text" id= "ggb3">
+	<button class= "colour size5" type= "text" id= "ggb4">
+	</td>
 </tr>
 <!---------QUADRARY_COLOURS--------->
-<tr>
-<td><input class= "colour" type= "text" id= "trg0"></td>
-<td><input class= "colour" type= "text" id= "trg1"></td>
-<td><input class= "colour" type= "text" id= "trg2"></td>
-<td><input class= "colour" type= "text" id= "trg3"></td>
-<td><input class= "colour" type= "text" id= "trg4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "trb0"></td>
-<td><input class= "colour" type= "text" id= "trb1"></td>
-<td><input class= "colour" type= "text" id= "trb2"></td>
-<td><input class= "colour" type= "text" id= "trb3"></td>
-<td><input class= "colour" type= "text" id= "trb4"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "tgb0"></td>
-<td><input class= "colour" type= "text" id= "tgb1"></td>
-<td><input class= "colour" type= "text" id= "tgb2"></td>
-<td><input class= "colour" type= "text" id= "tgb3"></td>
-<td><input class= "colour" type= "text" id= "tgb4"></td>
+<tr class= "colourRow">
+	<td><!-- TRUE-RED-GREEN -->
+	<button class= "colour size1" type= "text" id= "trg0">
+	<button class= "colour size2" type= "text" id= "trg1">
+	<button class= "colour size3" type= "text" id= "trg2">
+	<button class= "colour size4" type= "text" id= "trg3">
+	<button class= "colour size5" type= "text" id= "trg4">
+	</td>
+
+	<td><!-- TRUE-RED-BLUE -->
+	<button class= "colour size1" type= "text" id= "trb0">
+	<button class= "colour size2" type= "text" id= "trb1">
+	<button class= "colour size3" type= "text" id= "trb2">
+	<button class= "colour size4" type= "text" id= "trb3">
+	<button class= "colour size5" type= "text" id= "trb4">
+	</td>
+
+	<td><!-- TRUE-GREEN-BLUE -->
+	<button class= "colour size1" type= "text" id= "tgb0">
+	<button class= "colour size2" type= "text" id= "tgb1">
+	<button class= "colour size3" type= "text" id= "tgb2">
+	<button class= "colour size4" type= "text" id= "tgb3">
+	<button class= "colour size5" type= "text" id= "tgb4">
+	</td>
 </tr>
 <!---------GREY_COLOURS--------->
-<tr>
-<td><input class= "colour" type= "text" id= "rg10"></td>
-<td><input class= "colour" type= "text" id= "rg11"></td>
-<td><input class= "colour" type= "text" id= "rg12"></td>
-<td><input class= "colour" type= "text" id= "rg13"></td>
-<td><input class= "colour" type= "text" id= "rg14"></td>
+<tr class= "colourRow">
+	<td><!-- RED-GREY-#1 -->
+	<button class= "colour size1" type= "text" id= "rg10">
+	<button class= "colour size2" type= "text" id= "rg11">
+	<button class= "colour size3" type= "text" id= "rg12">
+	<button class= "colour size4" type= "text" id= "rg13">
+	<button class= "colour size5" type= "text" id= "rg14">
+	</td>
+
+	<td><!-- GREEN-GREY-#1 -->
+	<button class= "colour size1" type= "text" id= "gg10">
+	<button class= "colour size2" type= "text" id= "gg11">
+	<button class= "colour size3" type= "text" id= "gg12">
+	<button class= "colour size4" type= "text" id= "gg13">
+	<button class= "colour size5" type= "text" id= "gg14">
+	</td>
+
+	<td><!-- BLUE-GREY-#1 -->
+	<button class= "colour size1" type= "text" id= "bg10">
+	<button class= "colour size2" type= "text" id= "bg11">
+	<button class= "colour size3" type= "text" id= "bg12">
+	<button class= "colour size4" type= "text" id= "bg13">
+	<button class= "colour size5" type= "text" id= "bg14">
+	</td>
 </tr>
-<tr>
-<td><input class= "colour" type= "text" id= "gg10"></td>
-<td><input class= "colour" type= "text" id= "gg11"></td>
-<td><input class= "colour" type= "text" id= "gg12"></td>
-<td><input class= "colour" type= "text" id= "gg13"></td>
-<td><input class= "colour" type= "text" id= "gg14"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "bg10"></td>
-<td><input class= "colour" type= "text" id= "bg11"></td>
-<td><input class= "colour" type= "text" id= "bg12"></td>
-<td><input class= "colour" type= "text" id= "bg13"></td>
-<td><input class= "colour" type= "text" id= "bg14"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "rg20"></td>
-<td><input class= "colour" type= "text" id= "rg21"></td>
-<td><input class= "colour" type= "text" id= "rg22"></td>
-<td><input class= "colour" type= "text" id= "rg23"></td>
-<td><input class= "colour" type= "text" id= "rg24"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "gg20"></td>
-<td><input class= "colour" type= "text" id= "gg21"></td>
-<td><input class= "colour" type= "text" id= "gg22"></td>
-<td><input class= "colour" type= "text" id= "gg23"></td>
-<td><input class= "colour" type= "text" id= "gg24"></td>
-</tr>
-<tr>
-<td><input class= "colour" type= "text" id= "bg20"></td>
-<td><input class= "colour" type= "text" id= "bg21"></td>
-<td><input class= "colour" type= "text" id= "bg22"></td>
-<td><input class= "colour" type= "text" id= "bg23"></td>
-<td><input class= "colour" type= "text" id= "bg24"></td>
+<tr class= "colourRow">
+	<td><!-- RED-GREY-#2 -->
+	<button class= "colour size1" type= "text" id= "rg20">
+	<button class= "colour size2" type= "text" id= "rg21">
+	<button class= "colour size3" type= "text" id= "rg22">
+	<button class= "colour size4" type= "text" id= "rg23">
+	<button class= "colour size5" type= "text" id= "rg24">
+	</td>
+
+	<td><!-- GREEN-GREY-#2 -->
+	<button class= "colour size1" type= "text" id= "gg20">
+	<button class= "colour size2" type= "text" id= "gg21">
+	<button class= "colour size3" type= "text" id= "gg22">
+	<button class= "colour size4" type= "text" id= "gg23">
+	<button class= "colour size5" type= "text" id= "gg24">
+	</td>
+
+	<td><!-- BLUE-GREY-#2 -->
+	<button class= "colour size1" type= "text" id= "bg20">
+	<button class= "colour size2" type= "text" id= "bg21">
+	<button class= "colour size3" type= "text" id= "bg22">
+	<button class= "colour size4" type= "text" id= "bg23">
+	<button class= "colour size5" type= "text" id= "bg24">
+	</td>
 </tr>
 </table>
 
