@@ -23,6 +23,41 @@ var maxRat = 0.5;
 var midRat = 0.35;
 var minRat = 0.15;
 
+//Value Storing
+var colours = {"r" : [], "g" : [], "b" : [],
+			   "rg" : [], "rb" : [], "gr" : [], "gb" : [], "br" : [], "bg" : [],
+			   "rrg" : [], "rrb" : [], "ggr" : [], "ggb" : [], "bbr" : [], "bbg" : [],
+			   "trg" : [], "trb" : [], "tgb" : [],
+			   "rg1" : [], "gg1" : [], "bg1" : [], "rg2" : [], "gg2" : [], "bg2" : []}
+/*const r = [];
+const g = [];
+const b = [];
+
+const rg = [];
+const rb = [];
+const gr = [];
+const gb = [];
+const br = [];
+const bg = [];
+
+const rrg = [];
+const rrb = [];
+const ggr = [];
+const ggb = [];
+const bbr = [];
+const bbg = [];
+
+const trg = [];
+const trb = [];
+const tgb = [];
+
+const rg1 = [];
+const gg1 = [];
+const bg1 = [];
+const rg2 = [];
+const gg2 = [];
+const bg2 = [];*/
+
 function GenerateColours(){
 	SetInput();
 	Init();
@@ -371,86 +406,72 @@ function SetDisplayType(){
 
 //--------------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------DISPLAYS------------------------------------------------------
-function Display(){//Fuck me this is a big one. Try for looping.
+function Display(){
 	//PRIMARY
 	document.getElementById('r' + increment).style.background = `rgb(${max}, ${min}, ${min})`;
-	document.getElementById('r' + increment).style.display = 'inherit';
-	document.getElementById('r' + increment).value = `rgb(${max}, ${min}, ${min})`;
+	colours["r"][increment]= `rgb(${max}, ${min}, ${min})`;
 	document.getElementById('g' + increment).style.background = `rgb(${min}, ${max}, ${min})`;
-	document.getElementById('g' + increment).style.display = 'inherit';
-	document.getElementById('g' + increment).value = `rgb(${min}, ${max}, ${min})`;
+	colours["g"][increment]= `rgb(${min}, ${max}, ${min})`;
 	document.getElementById('b' + increment).style.background = `rgb(${min}, ${min}, ${max})`;
-	document.getElementById('b' + increment).style.display = 'inherit';
-	document.getElementById('b' + increment).value = `rgb(${min}, ${min}, ${max})`;
+	colours["b"][increment]= `rgb(${min}, ${min}, ${max})`;
 	//SECONDARY
 	document.getElementById('rg' + increment).style.background = `rgb(${max}, ${mid}, ${min})`;
-	document.getElementById('rg' + increment).style.display = 'inherit';
-	document.getElementById('rg' + increment).value = `rgb(${max}, ${mid}, ${min})`;
+	colours["rg"][increment]= `rgb(${max}, ${mid}, ${min})`;
 	document.getElementById('rb' + increment).style.background = `rgb(${max}, ${min}, ${mid})`;
-	document.getElementById('rb' + increment).style.display = 'inherit';
-	document.getElementById('rb' + increment).value = `rgb(${max}, ${min}, ${mid})`;
+	colours["rb"][increment]= `rgb(${max}, ${min}, ${mid})`;
 	document.getElementById('gr' + increment).style.background = `rgb(${mid}, ${max}, ${min})`;
-	document.getElementById('gr' + increment).style.display = 'inherit';
-	document.getElementById('gr' + increment).value = `rgb(${mid}, ${max}, ${min})`;
+	colours["gr"][increment]= `rgb(${mid}, ${max}, ${min})`;
 	document.getElementById('gb' + increment).style.background = `rgb(${min}, ${max}, ${mid})`;
-	document.getElementById('gb' + increment).style.display = 'inherit';
-	document.getElementById('gb' + increment).value = `rgb(${min}, ${max}, ${mid})`;
+	colours["gb"][increment]= `rgb(${min}, ${max}, ${mid})`;
 	document.getElementById('br' + increment).style.background = `rgb(${mid}, ${min}, ${max})`;
-	document.getElementById('br' + increment).style.display = 'inherit';
-	document.getElementById('br' + increment).value = `rgb(${mid}, ${min}, ${max})`;
+	colours["br"][increment]= `rgb(${mid}, ${min}, ${max})`;
 	document.getElementById('bg' + increment).style.background = `rgb(${min}, ${mid}, ${max})`;
-	document.getElementById('bg' + increment).style.display = 'inherit';
-	document.getElementById('bg' + increment).value = `rgb(${min}, ${mid}, ${max})`;
+	colours["bg"][increment]= `rgb(${min}, ${mid}, ${max})`;
 	//TERTIARY
 	document.getElementById('rrg' + increment).style.background = `rgb(${max}, ${mid2}, ${min})`;
-	document.getElementById('rrg' + increment).style.display = 'inherit';
-	document.getElementById('rrg' + increment).value = `rgb(${max}, ${mid2}, ${min})`;
+	colours["rrg"][increment]= `rgb(${max}, ${mid2}, ${min})`;
 	document.getElementById('rrb' + increment).style.background = `rgb(${max}, ${min}, ${mid2})`;
-	document.getElementById('rrb' + increment).style.display = 'inherit';
-	document.getElementById('rrb' + increment).value = `rgb(${max}, ${min}, ${mid2})`;
+	colours["rrb"][increment]= `rgb(${max}, ${min}, ${mid2})`;
 	document.getElementById('ggr' + increment).style.background = `rgb(${mid2}, ${max}, ${min})`;
-	document.getElementById('ggr' + increment).style.display = 'inherit';
-	document.getElementById('ggr' + increment).value = `rgb(${mid2}, ${max}, ${min})`;
+	colours["ggr"][increment]= `rgb(${mid2}, ${max}, ${min})`;
 	document.getElementById('ggb' + increment).style.background = `rgb(${min}, ${max}, ${mid2})`;
-	document.getElementById('ggb' + increment).style.display = 'inherit';
-	document.getElementById('ggb' + increment).value = `rgb(${min}, ${max}, ${mid2})`;
+	colours["ggb"][increment]= `rgb(${min}, ${max}, ${mid2})`;
 	document.getElementById('bbr' + increment).style.background = `rgb(${mid2}, ${min}, ${max})`;
-	document.getElementById('bbr' + increment).style.display = 'inherit';
-	document.getElementById('bbr' + increment).value = `rgb(${mid2}, ${min}, ${max})`;
+	colours["bbr"][increment]= `rgb(${mid2}, ${min}, ${max})`;
 	document.getElementById('bbg' + increment).style.background = `rgb(${min}, ${mid2}, ${max})`;
-	document.getElementById('bbg' + increment).style.display = 'inherit';
-	document.getElementById('bbg' + increment).value = `rgb(${min}, ${mid2}, ${max})`;
+	colours["bbg"][increment]= `rgb(${min}, ${mid2}, ${max})`;
 	//QUADRIARY
 	document.getElementById('trg' + increment).style.background = `rgb(${max2}, ${max2}, ${min})`;
-	document.getElementById('trg' + increment).style.display = 'inherit';
-	document.getElementById('trg' + increment).value = `rgb(${max2}, ${max2}, ${min})`;
+	colours["trg"][increment]= `rgb(${max2}, ${max2}, ${min})`;
 	document.getElementById('trb' + increment).style.background = `rgb(${max2}, ${min}, ${max2})`;
-	document.getElementById('trb' + increment).style.display = 'inherit';
-	document.getElementById('trb' + increment).value = `rgb(${max2}, ${min}, ${max2})`;
+	colours["trb"][increment]= `rgb(${max2}, ${min}, ${max2})`;
 	document.getElementById('tgb' + increment).style.background = `rgb(${min}, ${max2}, ${max2})`;
-	document.getElementById('tgb' + increment).style.display = 'inherit';
-	document.getElementById('tgb' + increment).value = `rgb(${min}, ${max2}, ${max2})`;
+	colours["tgb"][increment]= `rgb(${min}, ${max2}, ${max2})`;
 	//GREYS
 	document.getElementById('rg1' + increment).style.background = `rgb(${max}, ${mid}, ${mid})`;
-	document.getElementById('rg1' + increment).style.display = 'inherit';
-	document.getElementById('rg1' + increment).value = `rgb(${max}, ${mid}, ${mid})`;
+	colours["rg1"][increment]= `rgb(${max}, ${mid}, ${mid})`;
 	document.getElementById('bg1' + increment).style.background = `rgb(${mid}, ${max}, ${mid})`;
-	document.getElementById('bg1' + increment).style.display = 'inherit';
-	document.getElementById('bg1' + increment).value = `rgb(${mid}, ${max}, ${mid})`;
+	colours["bg1"][increment]= `rgb(${mid}, ${max}, ${mid})`;
 	document.getElementById('gg1' + increment).style.background = `rgb(${mid}, ${mid}, ${max})`;
-	document.getElementById('gg1' + increment).style.display = 'inherit';
-	document.getElementById('gg1' + increment).value = `rgb(${mid}, ${mid}, ${max})`;
+	colours["gg1"][increment]= `rgb(${mid}, ${mid}, ${max})`;
 	document.getElementById('rg2' + increment).style.background = `rgb(${max2}, ${mid2}, ${mid2})`;
-	document.getElementById('rg2' + increment).style.display = 'inherit';
-	document.getElementById('rg2' + increment).value = `rgb(${max2}, ${mid2}, ${mid2})`;
+	colours["rg2"][increment]= `rgb(${max2}, ${mid2}, ${mid2})`;
 	document.getElementById('gg2' + increment).style.background = `rgb(${mid2}, ${max2}, ${mid2})`;
-	document.getElementById('gg2' + increment).style.display = 'inherit';
-	document.getElementById('gg2' + increment).value = `rgb(${mid2}, ${max2}, ${mid2})`;
+	colours["gg2"][increment]= `rgb(${mid2}, ${max2}, ${mid2})`;
 	document.getElementById('bg2' + increment).style.background = `rgb(${mid2}, ${mid2}, ${max2})`;
-	document.getElementById('bg2' + increment).style.display = 'inherit';
-	document.getElementById('bg2' + increment).value = `rgb(${mid2}, ${mid2}, ${max2})`;
+	colours["bg2"][increment]= `rgb(${mid2}, ${mid2}, ${max2})`;
 	
 	increment++;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------UTILITY-----------------------------------------------------------
+function ClipboardCopy(bttn){
+	var id = bttn.id;
+	var colour = id.substring(0, id.length - 1);
+	var increment = id.substring(id.length - 1, id.length);
+	
+	navigator.clipboard.writeText(colours[colour][increment]);
 }
 
 //------------------------------------------------------------------------------------------------------------------------------
