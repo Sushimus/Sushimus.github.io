@@ -1,10 +1,10 @@
 :root{
 	--phoneBorder: 17px solid transparent;
 	--desktopBorder: 33px solid transparent;
-	--borderImg: url(assets/borderDay.png) 11 repeat;
+	--borderImg: url(../assets/borderDay.png) 11 repeat;
 	--borderSlice: 17;
 	--borderGeneric: 1px solid #190f12;
-	--ditherFill: url(assets/dither.png), rgba(54,54,54,0.8);
+	--ditherFill: url(../assets/dither.png), rgba(54,54,54,0.8);
 }
 div.score{
 	position: fixed;
@@ -66,120 +66,120 @@ input.proto1Boss:hover{
 	background-color: rgba(0,0,0,0.25);
 }
 
-/*combats*/
-#combat12{
+/*dialogs*/
+#dialog12{
 	margin-top: 6vw;
 	margin-left: 19.5vw;
 }
-#combat11{
+#dialog11{
 	margin-top: 12.5vw;
 	margin-left: 19vw;
 }
-#combat10{
+#dialog10{
 	margin-top: 18.5vw;
 	margin-left: 19.5vw;
 }
-#combat9{
+#dialog9{
 	margin-top: 30vw;
 	margin-left: 19vw;
 }
-#combat8{
+#dialog8{
 	margin-top: 35.5vw;
 	margin-left: 19vw;
 }
-#combat7{
+#dialog7{
 	margin-top: 42vw;
 	margin-left: 19vw;
 }
-#combat6{
+#dialog6{
 	margin-top: 51.5vw;
 	margin-left: 18.5vw;
 }
-#combat5{
+#dialog5{
 	margin-top: 58vw;
 	margin-left: 18.5vw;
 }
-#combat4{
+#dialog4{
 	margin-top: 63vw;
 	margin-left: 18.5vw;
 }
-#combat3{
+#dialog3{
 	margin-top: 73.5vw;
 	margin-left: 18.5vw;
 }
-#combat2{
+#dialog2{
 	margin-top: 80vw;
 	margin-left: 18.5vw;
 }
-#combat1{
+#dialog1{
 	margin-top: 85vw;
 	margin-left: 18.5vw;
 }
 
-/*dialogs*/
-#dialog12{
+/*combats*/
+#combat12{
 	margin-top: 6.5vw;
 	margin-left: 14vw;
 }
-#dialog11{
+#combat11{
 	margin-top: 12.5vw;
 	margin-left: 24vw;
 }
-#dialog10{
+#combat10{
 	margin-top: 18.5vw;
 	margin-left: 14vw;
 }
-#dialog9{
+#combat9{
 	margin-top: 29.5vw;
 	margin-left: 24vw;
 }
-#dialog8{
+#combat8{
 	margin-top: 35.5vw;
 	margin-left: 13vw;
 }
-#dialog7{
+#combat7{
 	margin-top: 41.5vw;
 	margin-left: 23vw;
 }
-#dialog6{
+#combat6{
 	margin-top: 51vw;
 	margin-left: 13.5vw;
 }
-#dialog5{
+#combat5{
 	margin-top: 58vw;
 	margin-left: 22.5vw;
 }
-#dialog4{
+#combat4{
 	margin-top: 62.5vw;
 	margin-left: 13vw;
 }
-#dialog3{
+#combat3{
 	margin-top: 73.5vw;
 	margin-left: 23vw;
 }
-#dialog2{
+#combat2{
 	margin-top: 80vw;
 	margin-left: 15vw;
 }
-#dialog1{
+#combat1{
 	margin-top: 84.5vw;
 	margin-left: 22.5vw;
 }
 
 /*bosses*/
-#carl{
+#--boss4{
 	margin-top: 0vw;
 	margin-left: 19vw;
 }
-#boss3{
+#--boss3{
 	margin-top: 23vw;
 	margin-left: 19vw;
 }
-#boss2{
+#--boss2{
 	margin-top: 46vw;
 	margin-left: 18.5vw;
 }
-#boss1{
+#--boss1{
 	margin-top: 68.5vw;
 	margin-left: 18vw;
 }
@@ -215,120 +215,120 @@ input.proto1Boss:hover{
 		height: 4vw;
 	}
 	
-	/*combats*/
-	#combat12{
+	/*dialogs*/
+	#dialog12{
 		margin-top: 12vw;
 		margin-left: 39vw;
 	}
-	#combat11{
+	#dialog11{
 		margin-top: 25vw;
 		margin-left: 38vw;
 	}
-	#combat10{
+	#dialog10{
 		margin-top: 37vw;
 		margin-left: 39vw;
 	}
-	#combat9{
+	#dialog9{
 		margin-top: 60vw;
 		margin-left: 38vw;
 	}
-	#combat8{
+	#dialog8{
 		margin-top: 71vw;
 		margin-left: 38vw;
 	}
-	#combat7{
+	#dialog7{
 		margin-top: 84vw;
 		margin-left: 38vw;
 	}
-	#combat6{
+	#dialog6{
 		margin-top: 103vw;
 		margin-left: 37vw;
 	}
-	#combat5{
+	#dialog5{
 		margin-top: 116vw;
 		margin-left: 37vw;
 	}
-	#combat4{
+	#dialog4{
 		margin-top: 126vw;
 		margin-left: 37vw;
 	}
-	#combat3{
+	#dialog3{
 		margin-top: 147vw;
 		margin-left: 37vw;
 	}
-	#combat2{
+	#dialog2{
 		margin-top: 160vw;
 		margin-left: 38vw;
 	}
-	#combat1{
+	#dialog1{
 		margin-top: 170vw;
 		margin-left: 37vw;
 	}
 	
-	/*dialogs*/
-	#dialog12{
+	/*combats*/
+	#combat12{
 		margin-top: 13vw;
 		margin-left: 28vw;
 	}
-	#dialog11{
+	#combat11{
 		margin-top: 25vw;
 		margin-left: 48vw;
 	}
-	#dialog10{
+	#combat10{
 		margin-top: 37vw;
 		margin-left: 28vw;
 	}
-	#dialog9{
+	#combat9{
 		margin-top: 59vw;
 		margin-left: 48vw;
 	}
-	#dialog8{
+	#combat8{
 		margin-top: 71vw;
 		margin-left: 26vw;
 	}
-	#dialog7{
+	#combat7{
 		margin-top: 83vw;
 		margin-left: 46vw;
 	}
-	#dialog6{
+	#combat6{
 		margin-top: 102vw;
 		margin-left: 27vw;
 	}
-	#dialog5{
+	#combat5{
 		margin-top: 116vw;
 		margin-left: 46vw;
 	}
-	#dialog4{
+	#combat4{
 		margin-top: 125vw;
 		margin-left: 26vw;
 	}
-	#dialog3{
+	#combat3{
 		margin-top: 147vw;
 		margin-left: 46vw;
 	}
-	#dialog2{
+	#combat2{
 		margin-top: 160vw;
 		margin-left: 30vw;
 	}
-	#dialog1{
+	#combat1{
 		margin-top: 169vw;
 		margin-left: 46vw;
 	}
 	
 	/*bosses*/
-	#carl{
+	#--boss4{
 		margin-top: 0vw;
 		margin-left: 39vw;
 	}
-	#boss3{
+	#--boss3{
 		margin-top: 46vw;
 		margin-left: 38vw;
 	}
-	#boss2{
+	#--boss2{
 		margin-top: 92vw;
 		margin-left: 37vw;
 	}
-	#boss1{
+	#--boss1{
 		margin-top: 137vw;
 		margin-left: 37vw;
 	}
