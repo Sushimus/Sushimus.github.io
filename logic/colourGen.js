@@ -407,6 +407,11 @@ function SetDisplayType(){
 //--------------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------DISPLAYS------------------------------------------------------
 function Display(){
+	document.getElementById('colourPallet').style.background = 'var(--ditherFill)';
+	document.getElementById('colourPallet').style.clip = 'padding-box';
+	document.getElementById('colourPallet').style.backgroundSize = '0.5rem';
+	document.getElementById('colourPallet').style.border = 'var(--borderGeneric)';
+	
 	//PRIMARY
 	document.getElementById('r' + increment).style.background = `rgb(${max}, ${min}, ${min})`;
 	colours["r"][increment]= `rgb(${max}, ${min}, ${min})`;

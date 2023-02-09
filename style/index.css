@@ -176,9 +176,13 @@ div.dropdown{
 }
 div.dropdowncontent{
 	display: none;
+	z-index: 9;
 	position: absolute;
 	text-align: left;
-	z-index: 9;
+	background: var(--ditherFill);
+	background-clip: padding-box;
+	background-size: 0.5rem;
+	border: var(--borderGeneric);
 }
 mark.welcome{
 	position: absolute;
@@ -267,6 +271,9 @@ table.colourPallet{
 	height: var(--desktopUnit);
 	width: var(--desktopUnit);
 	background-position: 50% 100%;
+}
+button.mainButton:hover{
+	background: #cd918e;
 }
 .dropdowncontent a:hover{
 	text-shadow: var(--textShadow);
