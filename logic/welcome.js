@@ -1,9 +1,8 @@
 //------------------------------------------------------------------------------------------------------Welcome Message Start Here------------------------------------------------------------------------------------------------------
-var isNotWelcomed = true;
-
+var welcomed = false;
 function welcomeMessage() {
-	if (isNotWelcomed){
-		isNotWelcomed = false;
+	if (!welcomed){
+		welcomed = true;
 		
 		var messages = [
 			"Now Featuring Flying Whales",
@@ -39,20 +38,66 @@ function welcomeMessage() {
 			"Providing Dad-Energy Since 19",
 			"Command Hooks are Great",
 			"Now Ripping Off Minecraft",
-			"Carl is waiting.",
-			"Now moderately useful!",
-			"Go binge GDC",
-			"Next Confinement episode when??",
-			"Snails are mollusk cows.",
-			"Cows are mammal snails.",
+			"Carl is Waiting.",
+			"Now Moderately Useful!",
+			"Go Binge GDC",
+			"Next Confinement Episode When??",
+			"Snails are Mollusk Cows.",
+			"Cows are Mammal Snails.",
 			"Watch out for Big Condiment",
 			"SLIME RANCHER 2 2022!!",
-			"Plorp is a good egg",
-			"All my homies hate trig",
-			"Whale onsie penguins are so 2019",
-			"Now adding suffering",
-			"Now with half the jank!",
-			"Engineering Art"
+			"Plorp is a Good Egg",
+			"All my Homies Hate Trig",
+			"Whale Onsie Penguins are so 2019",
+			"Now Adding Suffering",
+			"Now with Half the Jank!",
+			"Engineering Art",
+			"Mr Brew is Pure",
+			"Calculating Colours",
+			"I'll Build a Portfolio Maybe",
+			"Calculus Makes Me Sad",
+			"Mojang Hire Me Plz",
+			"Paws of Mischief",
+			"Carl's Wrath",
+			"Maker",
+			"make_me_",
+			"Drinks Litres of Coffee",
+			"Check Out My Free Assets",
+			"Ziggs Main",
+			"Check out My Free Code",
+			"Generating Colours",
+			"Mr Big Ideas",
+			"My Hands are Clamy",
+			"Turtle-Ducks are Cute",
+			"Website Code Eludes Me",
+			"IOS Please Work",
+			"Mr Brew is a Baby Angel",
+			"Creme of Wheat Enjoyer",
+			"How to Art?",
+			"Colour Pallets Elude Me",
+			"Silly Cat Game Go Brrr",
+			"Follow Abi.Toads on Instagram",
+			"Follow Faunwood on Instagram",
+			"Maker of Wallpaper Dumps",
+			"I can do a Handstand!",
+			"Hat Enthusiast",
+			"Yet to Watch StarWars",
+			"Heart Machine Hire Me Plz",
+			"Provider of Spiced Meat",
+			"Sussymus",
+			"I've got a Headache",
+			"Graduated Trade School",
+			"Night Owl",
+			"Mr Brew is Crazy",
+			"Bananas Make Brew Angery",
+			"Deniably Mainstream",
+			"*dabs*",
+			"Crying to be Beautiful",
+			"Eyes Wide Open",
+			"Enjoyer of Plushies",
+			"Java < C#",
+			"Two-Timing Tony",
+			"Monomi Park Hire Me Plz"
 		]
 		var messageChoose = Math.floor(Math.random() * (messages.length));
 		var messageChosen = messages[messageChoose];

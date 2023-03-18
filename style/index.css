@@ -192,7 +192,7 @@ mark.welcome{
 	background: transparent;
 	color: var(--titleColour);
 	text-shadow: var(--textShadow);
-	transform: rotate(30deg);
+	transform: rotate(20deg);
 	float: right;
 	animation-name: welcome;
 	animation-duration: 4s;

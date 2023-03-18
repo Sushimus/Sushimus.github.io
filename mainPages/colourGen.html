@@ -7,7 +7,7 @@
 	<link rel= "stylesheet" type= "text/css" href= "../style/index.css">
 	<link rel= "stylesheet" type= "text/css" href= "../style/colourGen.css">
 	<script src= "../logic/background.js"></script>
-	<script src= "../logic/colourGen.js"></script>
+	<script src= "../logic/colourGen2.js"></script>
 	
 	<title>~Colourful~</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
@@ -25,7 +25,8 @@
 					<div class= "dropdowncontent">
 						<a href="../index.html">Home</a><br>
 						<a href= "galleries.html">Galleries</a><br>
-						<a href= "carlsWrath.html">CarlsWrath</a>
+						<a href= "carlsWrath.html">CarlsWrath</a><br>
+						<a href= "slimecraft.html">Slimecraft</a>
 					</div>
 				</div>
 			</td>
@@ -48,12 +49,15 @@
 <div class= "content">
 <!--------------------------------------------------------------User Input-------------------------------------------------------------->
 <p>
+This page is under construction!!<br>
+Rework in the making soon™<br><br>
+
 R:<input class= "rgbInput" type= "text" id= "redInput" required maxlength= "3"> G:<input class= "rgbInput" type= "text" id= "greenInput" required maxlength= "3"> B:<input class= "rgbInput" type= "text" id= "blueInput" required maxlength= "3"><br><br>
 HEX:<input class= "hexInput" type= "text" id= "hexInput" required maxlength= "6"><br>
 </p>
 
 <p><mark class= "random" id= "storyGenerated"></mark></p>
-<button class= "mainButton" onclick= "GenerateColours()">GENERATE</button>
+<button class= "mainButton" onclick= "ColourGen()">GENERATE</button>
 
 <!--------------------------------------------------------------Colour Output-------------------------------------------------------------->
 <table class= "colourPallet" id= "colourPallet">
@@ -68,6 +72,7 @@ HEX:<input class= "hexInput" type= "text" id= "hexInput" required maxlength= "6"
 	</td>
 
 	<td class= "centre"><!-- GREEN -->
+	<button onclick= "ClipboardCopy(this)" class= "colour size5" type= "text" id= "debug">
 	<button onclick= "ClipboardCopy(this)" class= "colour size1" type= "text" id= "g0">
 	<button onclick= "ClipboardCopy(this)" class= "colour size2" type= "text" id= "g1">
 	<button onclick= "ClipboardCopy(this)" class= "colour size3" type= "text" id= "g2">
