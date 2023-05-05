@@ -64,7 +64,7 @@ function welcomeMessage() {
 			"Drinks Litres of Coffee",
 			"Check Out My Free Assets",
 			"Ziggs Main",
-			"Check out My Free Code",
+			"Check Out My Free Code",
 			"Generating Colours",
 			"Mr Big Ideas",
 			"My Hands are Clamy",
@@ -97,7 +97,11 @@ function welcomeMessage() {
 			"Enjoyer of Plushies",
 			"Java < C#",
 			"Two-Timing Tony",
-			"Monomi Park Hire Me Plz"
+			"Monomi Park Hire Me Plz",
+			"No Stopping the Womblacongus",
+			"Goober Sweep",
+			"Womblacongus Amongus",
+			"Mr Brew is a Floppy Boi"
 		]
 		var messageChoose = Math.floor(Math.random() * (messages.length));
 		var messageChosen = messages[messageChoose];

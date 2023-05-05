@@ -6,10 +6,11 @@ class ColourSet{
 }
 
 class ColourRatio{
-	constructor(name, min, max){
+	constructor(name, redBounds, greenBounds, blueBounds){
 		this.name = name;
-		this.min = min;
-		this.max = max;
+		this.redBounds = redBounds;
+		this.greenBounds = greenBounds;
+		this.blueBounds = blueBounds;
 	}
 	
 	ratio = [];
@@ -23,17 +24,18 @@ class ColourRatio{
 //		--- May be worth playing with taking the difference of min/max as a percentage of the min and mid - min as a percentage of the scale of the difference
 //TODO Remember to shift greys slightly red when lighter and slightly blue when darker
 //TODO Eventually a colour wheel picker with a saturation slider would be great for primary input
+//NOTE The smallest colour controls the saturation amount
 var Rainbow = [];
 const RainbowRatios = [//Colour pallet website: https://lospec.com/palette-list
-	new ColourRatio("red", [0.33, 0.33, 0.34], [0.33, 0.33, 0.34]),
-	new ColourRatio("orange", [0.33, 0.33, 0.34], [0.33, 0.33, 0.34]),
-	new ColourRatio("yellow", [0.33, 0.33, 0.34], [0.33, 0.33, 0.34]),
-	new ColourRatio("green", [0.33, 0.33, 0.34], [0.33, 0.33, 0.34]),
-	new ColourRatio("blue", [0.33, 0.33, 0.34], [0.33, 0.33, 0.34]),
-	new ColourRatio("violet", [0.33, 0.33, 0.34], [0.33, 0.33, 0.34]),
-	new ColourRatio("brown", [0.33, 0.33, 0.34], [0.33, 0.33, 0.34]),
-	new ColourRatio("black", [0.33, 0.33, 0.34], [0.33, 0.33, 0.34]),
-	new ColourRatio("white", [0.33, 0.33, 0.34], [0.33, 0.33, 0.34])
+	new ColourRatio("red", [1, 0], [1, 0], [1, 0]),
+	new ColourRatio("orange", [1, 0], [1, 0], [1, 0]),
+	new ColourRatio("yellow", [1, 0], [1, 0], [1, 0]),
+	new ColourRatio("green", [1, 0], [1, 0], [1, 0]),
+	new ColourRatio("blue", [1, 0], [1, 0], [1, 0]),
+	new ColourRatio("violet", [1, 0], [1, 0], [1, 0]),
+	new ColourRatio("brown", [1, 0], [1, 0], [1, 0]),
+	new ColourRatio("black", [1, 0], [1, 0], [1, 0]),
+	new ColourRatio("white", [1, 0], [1, 0], [1, 0])
 ]
 
 var input = "";
