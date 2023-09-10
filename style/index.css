@@ -289,44 +289,15 @@ button.mainButton:hover{
 	background-color: none;
 }
 	
-/*Home Page*/
-@keyframes welcome{
-	0% {font-size: .5rem;}
-	25% {font-size: .55rem;}
-	50% {font-size: .5rem;}
-	75% {font-size: .55rem;} 
-}
-div.monthlyIdea{
-	height: 40vh;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-div.monthlyIdea:hover{
-	background-color: rgba(54,54,54,.85);
-}
-div.monthlyIdea::-webkit-scrollbar-track {
-	background: rgba(0,0,0,.3);
-}
-div.monthlyIdea::-webkit-scrollbar-thumb {
-	background: rgba(0,0,0,.3);
-}
-div.monthlyIdea::-webkit-scrollbar-thumb:hover {
-	background: rgba(0,0,0,.6);
-}
-div.monthlyIdea::-webkit-scrollbar{
-	width: 7px;
-}
-	
 /*Main Pages*/
 div.subpage{
 	cursor: pointer;
 	position: relative;
 	float: left;
-	width: 24.03vw;
-	height: 27vw;
-	margin-top: 10vh;
-	margin-left: 11vw;
-	margin-right: 11vw;
+	height: 8.8rem;
+	width: 6.6rem;
+	margin-top: 1rem;
+	margin-left: 1.1rem;
 	padding: 0px;
 	border: var(--desktopBorder);
 	border-image: var(--borderImg);
@@ -340,8 +311,8 @@ div.subpage:hover {
 	cursor: pointer;
 }
 input.subpage{
-	height: 27vw;
-	width: 24.03vw;
+	height: 8.8rem;
+	width: 6.6rem;
 	cursor: pointer;
 	background-size: cover;
 	background-repeat: no-repeat;
