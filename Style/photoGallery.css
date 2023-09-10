@@ -1,0 +1,55 @@
+:root{
+	--phoneBorder: 17px solid transparent;
+	--desktopBorder: 33px solid transparent;
+	--borderImg: url(../assets/borderDay.png) 11 repeat;
+	--borderSlice: 17;
+	--borderGeneric: 1px solid #190f12;
+	--ditherFill: url(../assets/dither.png), rgba(54,54,54,0.8);
+}
+div.photoContainer {
+	width: 50%;
+	margin-top: 0.875rem;
+	margin-left: 25%;
+	border: var(--desktopBorder);
+	border-image: var(--borderImg);
+	-webkit-border-image: var(--borderImg);
+	-moz-border-image: var(--borderImg);
+	-o-border-image: var(--borderImg);
+	border-image-slice: var(--borderSlice);
+	background: var(--ditherFill);
+	background-clip: padding-box;
+	background-size: 0.5rem;
+}
+.photos {
+	margin-bottom: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.photoColumn {
+	width: 100%;
+	padding: 4px;
+	flex: 1;
+	-ms-flex: 1;
+}
+.photoColumn img {
+	width: 100%;
+	margin-top: 8px;
+	vertical-align: middle;
+ 	border: var(--borderGeneric);
+}
+
+/*<----------------------------------------------Phones---------------------------------------------->*/
+@media screen and (max-aspect-ratio: 16/9) {
+	div.photoContainer {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		border: var(--phoneBorder);
+		border-image: var(--borderImg);
+		-webkit-border-image: var(--borderImg);
+		-moz-border-image: var(--borderImg);
+		-o-border-image: var(--borderImg);
+		border-image-slice: var(--borderSlice);
+	}
+}
