@@ -10,13 +10,13 @@ const screenSize = window.matchMedia("(min-aspect-ratio: 16/9)");
 
 const getWallpaperPath = (day, hours) => {
   return hours < 18 
-    ? `https://sushimus.github.io/assets/backgrounds/${day}/day1.png`
-    : `https://sushimus.github.io/assets/backgrounds/${day}/night1.png`
+    ? `https://sushimus.github.io/Assets/backgrounds/${day}/day1.png`
+    : `https://sushimus.github.io/Assets/backgrounds/${day}/night1.png`
 }
 const getWallpaperPathSmall = (day, hours) => {
   return hours < 18 
-    ? `https://sushimus.github.io/assets/backgrounds/${day}/day2.png`
-    : `https://sushimus.github.io/assets/backgrounds/${day}/night2.png`
+    ? `https://sushimus.github.io/Assets/backgrounds/${day}/day2.png`
+    : `https://sushimus.github.io/Assets/backgrounds/${day}/night2.png`
 }
 
 
