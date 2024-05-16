@@ -1,10 +1,10 @@
 :root{
 	--phoneBorder: 17px solid transparent;
 	--desktopBorder: 33px solid transparent;
-	--borderImg: url(../Assets/borderDay.png) 11 repeat;
+	--borderImg: url(../assets/border_day.png) 11 repeat;
 	--borderSlice: 17;
 	--borderGeneric: 1px solid #190f12;
-	--ditherFill: url(../Assets/dither.png), rgba(54,54,54,0.8);
+	--ditherFill: url(../assets/dither.png), rgba(54,54,54,0.8);
 }
 div.photoContainer {
 	width: 50%;

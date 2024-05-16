@@ -15,7 +15,7 @@
 /*<----------------------------------------------Root Stuff---------------------------------------------->*/
 @font-face {
 	font-family: Maker;
-	src: url(../Assets/font.woff);
+	src: url(../assets/font.woff);
 }
 :root{
 	--phoneUnit: 0.75rem;
@@ -36,9 +36,9 @@
 				  1px -1px 2px var(--textShadowColour),
 				  -1px -1px 2px var(--textShadowColour);
 	--borderGeneric: 1px solid #190f12;
-	--borderImg: url(../Assets/borderDay.png) 11 repeat;
+	--borderImg: url(../assets/border_day.png) 11 repeat;
 	--borderSlice: 17;
-	--ditherFill: url(../Assets/dither.png), rgba(54,54,54,0.8);
+	--ditherFill: url(../assets/dither.png), rgba(54,54,54,0.8);
 }
 
 /*<----------------------------------------------Default (Desktop)---------------------------------------------->*/
@@ -221,7 +221,7 @@ table.colourPallet{
 	width: var(--desktopUnit);
 	background-size: 300% 300%;
 	background-repeat: no-repeat;
-	background-image: url(../Assets/ButtonSprites.png);
+	background-image: url(../assets/button_sprites.png);
 	border: var(--borderGeneric);
 }
 .dropdown{
