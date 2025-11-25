@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* grid many pics, centered, half screen desktop */
+.grid {
+    width: 100%;
+    max-width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.brew-pic {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 7%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.0625s ease;
+}
+
+.brew-pic:hover {
+    transform: scale(1.05);
+}
+
+.brew-pic.big {
+    position: relative;
+    z-index: 10;
+    transform: scale(1.6) !important;
+}
+
+#bigbox {
+    display: none;
+}
+
+/* phone full width */
+@media (max-width: 700px) {
+    .grid {
+        max-width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
