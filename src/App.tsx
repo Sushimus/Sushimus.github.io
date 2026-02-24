@@ -103,7 +103,7 @@ export default function App() {
             `}
           />
 
-          <ImageTextBlock
+          {/*<ImageTextBlock
             head = "Deep Among the Swarm"//Deep Among the Swarm AppID -> 2746030
             imgUrl = "https://cdn.cloudflare.steamstatic.com/steam/apps/2746030/library_600x900.jpg"
             mobileImgUrl = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2746030/capsule_616x353.jpg"
@@ -121,7 +121,7 @@ export default function App() {
               - Playtesting
               - Bug Reports
             `}
-          />
+          />*/}
         </div>
 
         <SlidingImages side="right" />
