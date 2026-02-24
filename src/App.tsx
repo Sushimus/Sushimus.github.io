@@ -19,6 +19,8 @@ export default function App() {
       <div className="main-grid">
         <SlidingImages side="left" />
 
+        {/* dont forget to readd this after it goes live*/}
+        {/*- Deep Among the Swarm*/}
         <div className="main-body">
           <TextBlock
             head = "About"
@@ -35,7 +37,6 @@ export default function App() {
               - Praise Dead
               - Buggos
               - Buggos 2
-              - Deep Among the Swarm
 
               ### Other Work Experience
               - Walmart
