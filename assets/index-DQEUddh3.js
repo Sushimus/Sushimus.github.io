@@ -38,7 +38,6 @@ ${o}`)}return a}function Rm({head:a,content:i}){return ot.jsxs("div",{className:
               - Praise Dead
               - Buggos
               - Buggos 2
-              - Deep Among the Swarm
 
               ### Other Work Experience
               - Walmart
