@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Maker';
-  src: url('/src/assets/generic/Comfortaa-VariableFont_wght.ttf') format('truetype');
+  src: url('./assets/generic/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
 
 body {

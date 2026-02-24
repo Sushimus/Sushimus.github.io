@@ -1,4 +1,13 @@
 import { useEffect } from "react";
+const backgroundFiles = import.meta.glob(
+  "/src/assets/generic/images/*/background/*/*.png",
+  { eager: true, query: "?url", import: "default" }
+);
+
+const uiFiles = import.meta.glob(
+  "/src/assets/generic/images/*/*.png",
+  { eager: true, query: "?url", import: "default" }
+);
 
 export function useDateTheme() {
   useEffect(() => {
@@ -6,9 +15,7 @@ export function useDateTheme() {
     const timeOfDay =
       now.getHours() >= 6 && now.getHours() < 18 ? "day" : "night";
 
-    const currentDevice = window.matchMedia(
-      "(min-aspect-ratio: 16/9)"
-    ).matches
+    const currentDevice = window.matchMedia("(min-aspect-ratio: 16/9)").matches
       ? "desktop"
       : "mobile";
 
@@ -22,20 +29,32 @@ export function useDateTheme() {
       "saturday",
     ][now.getDay()];
 
-    const backgroundURL = `/src/assets/generic/images/${timeOfDay}/background/${currentDay}/${currentDevice}.png`;
+    const bgKey = `/src/assets/generic/images/${timeOfDay}/background/${currentDay}/${currentDevice}.png`;
+    const buttonsKey = `/src/assets/generic/images/${timeOfDay}/buttons.png`;
+    const borderKey = `/src/assets/generic/images/${timeOfDay}/border.png`;
 
-    document.body.style.backgroundImage = `url("${backgroundURL}")`;
-    document.body.style.backgroundSize = "cover";
+    const realBgUrl = backgroundFiles[bgKey];
+    const realButtonsUrl = uiFiles[buttonsKey];
+    const realBorderUrl = uiFiles[borderKey];
 
-    document.documentElement.style.setProperty(
-      "--dateThemeButtonImg",
-      `url("/src/assets/generic/images/${timeOfDay}/buttons.png")`
-    );
+    if (realBgUrl) {
+        document.body.style.backgroundImage = `url("${realBgUrl}")`;
+        document.body.style.backgroundSize = "cover";
+    }
 
-    document.documentElement.style.setProperty(
-      "--dateThemeBorderImg",
-      `url("/src/assets/generic/images/${timeOfDay}/border.png")`
-    );
+    if (realButtonsUrl) {
+        document.documentElement.style.setProperty(
+        "--dateThemeButtonImg",
+        `url("${realButtonsUrl}")`
+        );
+    }
+
+    if (realBorderUrl) {
+        document.documentElement.style.setProperty(
+        "--dateThemeBorderImg",
+        `url("${realBorderUrl}")`
+        );
+    }
 
     const dateThemeColour = timeOfDay == "day" ? "rgba(205, 145, 142, 0.89)" : "rgba(142, 145, 205, 0.89)";
     document.documentElement.style.setProperty(
