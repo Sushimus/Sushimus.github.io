@@ -1,4 +1,5 @@
 import "./App.css";
+import BrewGallery from './pages/Brew';
 import { slogans } from "./data/slogans";
 import { useDateTheme } from "./hooks/useDataTheme";
 
@@ -11,6 +12,7 @@ document.title = slogans[Math.floor(Math.random() * slogans.length)];
 
 export default function App() {
   useDateTheme();
+  if (window.location.pathname === '/brew') { return <BrewGallery />; }
 
   return (
     <>

@@ -1,0 +1,42 @@
+.brew-full-zone {
+  position: relative;
+  width: 100%;
+  min-height: 90vh; 
+  overflow: hidden; 
+  padding-top: 20px;
+}
+
+.floating-cat {
+  position: absolute;
+  object-fit: cover;
+  
+  border: 6px solid white;
+  border-bottom: 25px solid white; 
+  border-radius: 4px;
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.4);
+  
+  pointer-events: none; 
+  z-index: 1; 
+  
+  opacity: 0;
+  animation: popFade 4s ease-in-out forwards;
+}
+
+@keyframes popFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.1) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1) rotate(var(--rot));
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1) rotate(var(--rot));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2) rotate(var(--rot));
+  }
+}
