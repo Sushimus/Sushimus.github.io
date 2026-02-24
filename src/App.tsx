@@ -12,7 +12,7 @@ document.title = slogans[Math.floor(Math.random() * slogans.length)];
 
 export default function App() {
   useDateTheme();
-  if (window.location.pathname === '/brew') { return <BrewGallery />; }
+  if (window.location.pathname.endsWith('/brew')) { return <BrewGallery />; }
 
   return (
     <>
