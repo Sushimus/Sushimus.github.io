@@ -1,9 +1,8 @@
 .brew-full-zone {
-  position: relative;
+  position: absolute;
   width: 100%;
-  min-height: 90vh; 
-  overflow: hidden; 
-  padding-top: 20px;
+  height: 100%;
+  overflow: hidden;
 }
 
 .floating-cat {

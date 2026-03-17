@@ -1,0 +1,56 @@
+:root {
+  --mossGreen: #2d4a22;
+  --boneWhite: #e3dac9;
+  --darkDirt: #1a1614;
+  --boneShadow: 1px 0px 2px var(--darkDirt),
+                0px 1px 2px var(--darkDirt),
+                -1px 0px 2px var(--darkDirt),
+                0px -1px 2px var(--darkDirt);
+}
+
+.moss-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('https://placehold.co/1920x1080/1a1614/2d4a22?text=Dark+Moss+Woods');
+  background-attachment: fixed;
+  background-size: cover;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: 'Maker', sans-serif;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.moss-center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.moss-title {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  text-shadow: var(--boneShadow);
+  color: var(--boneWhite);
+  text-align: center;
+}
+
+.moss-banner {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background: var(--darkDirt);
+  border-bottom: 2px solid var(--mossGreen);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+}

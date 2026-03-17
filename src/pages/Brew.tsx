@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css'; 
-import './brew.css'; 
-
-import SiteHeader from "../components/layout/SiteHeader";
+import './brew.css';
 
 const brewFiles = import.meta.glob(
   "/src/assets/brew/images/*.{png,jpg,jpeg,svg,gif}",
@@ -61,8 +59,6 @@ const BrewGallery: React.FC = () => {
 
   return (
     <>
-      <SiteHeader />
-
       <div className="brew-full-zone">
           {cats.map((cat) => (
           <img
