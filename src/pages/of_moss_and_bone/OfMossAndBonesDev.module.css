@@ -1,0 +1,84 @@
+.devContainer {
+  background: var(--dateThemeSecondaryAccentColour);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.devHeader {
+  background: var(--dateThemeColour);
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* New label style */
+.label {
+  background: var(--dateThemeColour);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  width: fit-content;
+  margin: 0;
+}
+
+.input, .textarea {
+  background: var(--dateThemeAccentColour);
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.optionsBox {
+  border: 2px dashed var(--dateThemeColour);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.optionWidget {
+  background: var(--dateThemeAccentColour);
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.optionWidget p {
+  margin: 0;
+  background: var(--dateThemeSecondaryAccentColour);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.button {
+  background: var(--dateThemeColour);
+  color: inherit;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  filter: brightness(1.2);
+}

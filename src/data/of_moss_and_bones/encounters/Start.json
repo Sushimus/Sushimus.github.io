@@ -1,0 +1,13 @@
+{
+  "id": "Start",
+  "header": "Deep In The Forest",
+  "asciiUrl": "skull",
+  "content": "Dim. Eerie. Fog.\nYou find yourself awakened in the waning hours of a forest, how you got here unknown.",
+  "dialoguePreview": "How have you seen this?..",
+  "requirements": [],
+  "options": [
+    {
+      "id": "Test"
+    }
+  ]
+}

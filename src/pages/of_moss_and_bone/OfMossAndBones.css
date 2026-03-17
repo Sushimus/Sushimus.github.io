@@ -11,7 +11,7 @@
 .moss-container {
   min-height: 100vh;
   width: 100vw;
-  background-image: url('https://placehold.co/1920x1080/1a1614/2d4a22?text=Dark+Moss+Woods');
+  background-image: url("../../assets/of_moss_and_bones/images/background.png");
   background-attachment: fixed;
   background-size: cover;
   
