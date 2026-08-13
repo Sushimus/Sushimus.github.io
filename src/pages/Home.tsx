@@ -50,8 +50,7 @@ export default function Home() {
             mobileImgUrl="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2459180/capsule_616x353.jpg"
             link="https://store.steampowered.com/app/2459180/Praise_Dead/"
             content={`
-              John was added to the team working on Praise Dead in the Spring of 2025.
-              He refactored legacy code and more than double the product's content.
+              John refactored legacy code and more than double the product's content.
               Additionally he reworked much of the UI to be more flexible and maintainable with special focus on improved user experience.
 
               ### Primary Contributions
@@ -71,7 +70,7 @@ export default function Home() {
             mobileImgUrl="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/789660/capsule_616x353.jpg"
             link="https://store.steampowered.com/app/789660/Buggos/"
             content={`
-              John took a leading role in community management in Autumn of 2022.
+              John took a leading role in community management on Discord.
               He also assisted level design and rigorous product testing, submitting dozens of bug reports.
 
               ### Primary Contributions
@@ -88,8 +87,7 @@ export default function Home() {
             mobileImgUrl="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2908500/capsule_616x353.jpg"
             link="https://store.steampowered.com/app/2908500/Buggos_2/"
             content={`
-              John was joined Buggos 2 in Autumn of 2025.
-              He primarily worked on content design and implementation, though he made significant contributions to marketing and the user interface.
+              John primarily worked on content design and implementation, though he made significant contributions to marketing and user interface.
               These include level transition animations, an in-game encyclopedia, and groundwork for the level editor.
 
               ### Primary Contributions
